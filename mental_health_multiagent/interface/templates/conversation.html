@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Conversation - Mental Health Multi-Agent System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container app-container">
+        <div class="navbar">
+            <div class="nav-logo">Mental Health Multi-Agent</div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Logs</a>
+                <a href="/conversation" class="nav-link active">Generate</a>
+                <a href="/chat" class="nav-link">Chat</a>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <!-- Left side: Configuration form -->
+            <div class="config-panel" id="config-panel">                
+                <!-- Add mode toggle -->
+                <div class="mode-toggle">
+                    <button class="toggle-btn active" id="single-mode-btn">Turn-based</button>
+                    <button class="toggle-btn" id="oneshot-mode-btn">One-shot</button>
+                    <button class="toggle-btn" id="batch-mode-btn">Full Simulation</button>
+                </div>
+
+                <form id="conversation-form">
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="questionnaire-select">Select Questionnaire:</label>
+                            <select id="questionnaire-select" name="questionnaire" required>
+                                <option value="" disabled selected>Loading questionnaires...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="profile-select">Select Profile:</label>
+                            <select id="profile-select" name="profile">
+                                <option value="" disabled selected>Loading profiles...</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Add batch mode option for randomizing profiles -->
+                        <div class="form-group checkbox-group batch-only" style="display: none;">
+                            <input type="checkbox" id="randomize-profiles" name="randomize_profiles">
+                            <label for="randomize-profiles">Randomize profiles for each conversation</label>
+                        </div>
+                    </div>
+
+                    <!-- Add batch count option -->
+                    <div class="form-section batch-only" style="display: none;">
+                        
+                        <div class="form-group">
+                            <label for="batch-count">Number of Conversations:</label>
+                            <input type="number" id="batch-count" name="batch_count" min="1" max="100" value="5">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Model Selection</h3>
+                        <div class="form-group turn-based-only batch-only">
+                            <label for="assistant-model-select">Assistant Model:</label>
+                            <select id="assistant-model-select" name="assistant_model">
+                                <option value="" disabled selected>Loading models...</option>
+                            </select>
+                        </div>
+                        <div class="form-group turn-based-only batch-only">
+                            <label for="patient-model-select">Patient Model:</label>
+                            <select id="patient-model-select" name="patient_model">
+                                <option value="" disabled selected>Loading models...</option>
+                            </select>
+                        </div>
+                        <div class="form-group oneshot-only" style="display: none;">
+                            <label for="agent-model-select">Agent Model:</label>
+                            <select id="agent-model-select" name="agent_model">
+                                <option value="" disabled selected>Loading models...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Advanced Options</h3>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="save-logs" name="save_logs" checked>
+                            <label for="save-logs">Save conversation logs</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="refresh-cache" name="refresh_cache">
+                            <label for="refresh-cache">Refresh document cache</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="disable-rag" name="disable_rag">
+                            <label for="disable-rag">Disable RAG (no document retrieval)</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="disable-rag-evaluation" name="disable_rag_evaluation">
+                            <label for="disable-rag-evaluation">Disable RAG evaluation (keep document retrieval)</label>
+                        </div>
+                        
+                        <!-- Add Groq API Key input -->
+                        <div class="form-group groq-api-section" id="groq-api-section" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc;">
+                            <label for="groq-api-key">Groq API Key:</label>
+                            <div style="display: flex; gap: 5px;">
+                                <input type="password" id="groq-api-key" name="groq_api_key" placeholder="Enter your Groq API key">
+                                <button type="button" id="toggle-api-key-btn" style="flex: 0 0 auto; padding: 5px 8px;">Show</button>
+                            </div>
+                            <small>Required when using Groq models. Get your key at <a href="https://console.groq.com/" target="_blank">console.groq.com</a></small>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="start-btn" class="start-btn">Start Conversation</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right side: Conversation display -->
+            <div class="conversation-panel" id="conversation-panel">
+                <!-- Turn-based conversation view -->
+                <div id="single-conversation-view" style="display: block;">
+                    <div class="conversation-header">
+                        <h2>Turn-based Conversation</h2>
+                        <div class="status" id="status">Ready to start</div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <p><strong>Turn-based mode:</strong> Simulates a conversation one message at a time.</p>
+                        <p>This mode allows you to observe the back-and-forth dialogue as it unfolds step by step.</p>
+                    </div>
+                    
+                    <div class="conversation-display" id="conversation-display">
+                        <div class="conversation-placeholder">
+                            <p>Your conversation will appear here.</p>
+                            <p>Configure settings on the left and click "Start Turn-based Conversation".</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnosis-panel" id="diagnosis-panel">
+                        <h3>Diagnosis</h3>
+                        <div class="diagnosis-content" id="diagnosis-content">
+                            <p>The diagnosis will appear here after the conversation completes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="conversation-actions">
+                        <button id="stop-btn" class="stop-btn" disabled>Stop Conversation</button>
+                        <button id="view-log-btn" class="view-log-btn" disabled>View Saved Log</button>
+                    </div>
+                </div>
+                
+                <!-- One-shot conversation view -->
+                <div id="oneshot-conversation-view" style="display: none;">
+                    <div class="conversation-header">
+                        <h2>One-shot Conversation</h2>
+                        <div class="status" id="oneshot-status">Ready to generate</div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <p><strong>One-shot mode:</strong> Generates the entire conversation automatically in a single step.</p>
+                        <p>This mode is useful for quickly generating complete assessment conversations for evaluation or review.</p>
+                    </div>
+                    
+                    <div class="conversation-display" id="oneshot-conversation-display">
+                        <div class="conversation-placeholder">
+                            <p>A complete conversation will be generated at once.</p>
+                            <p>Configure settings on the left and click "Generate One-shot Conversation".</p>
+                            <p>Generation may take 1-2 minutes to complete.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnosis-panel" id="oneshot-diagnosis-panel">
+                        <h3>Diagnosis</h3>
+                        <div class="diagnosis-content" id="oneshot-diagnosis-content">
+                            <p>The diagnosis will appear here after generation completes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="conversation-actions">
+                        <button id="stop-oneshot-btn" class="stop-btn" disabled>Stop Generation</button>
+                        <button id="view-oneshot-log-btn" class="view-log-btn" disabled>View Saved Log</button>
+                    </div>
+                </div>
+                
+                <!-- Batch generation view -->
+                <div id="batch-conversation-view" style="display: none;">
+                    <div class="conversation-header">
+                        <h2>Full Simulation</h2>
+                        <div class="status" id="batch-status">Ready to start</div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <p><strong>Full Simulation mode:</strong> Generates multiple complete conversations automatically.</p>
+                        <p>This mode is useful for running many simulations in a row and analyzing patterns across conversations.</p>
+                    </div>
+                    
+                    <div class="batch-progress">
+                        <h3>Progress</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="batch-progress-bar"></div>
+                        </div>
+                        <div class="progress-text" id="batch-progress-text">0 / 0 conversations completed</div>
+                        <div class="progress-details" id="batch-progress-details">Waiting to start simulation...</div>
+                    </div>
+                    
+                    <div class="batch-results">
+                        <h3>Simulation Results</h3>
+                        <div id="batch-results-container">
+                            <p>Simulation results will appear here after completion.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="conversation-actions">
+                        <button id="stop-batch-btn" class="stop-btn" disabled>Stop Simulation</button>
+                        <button id="view-batch-btn" class="view-log-btn" disabled>View Simulation Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/conversation.js') }}"></script>
+    <!-- Initialize data from server, no JSON.parse needed since Jinja tojson already produces JSON -->
+    <script>
+        var models = {{ models_data|tojson|safe }};
+        var providersData = {{ providers_data|tojson|safe }};
+    </script>
+</body>
+</html>
