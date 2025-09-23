@@ -3,7 +3,7 @@ import random
 from utils.llm_client_base import LLMClient
 
 class Patient:
-    """Agent representing a patient with mental health concerns."""
+    """Agent representing a patient with postnatal depression symptoms for EPDS screening."""
     
     def __init__(self, provider="ollama", provider_options=None, model="qwen3:4b", profile_name=None):
         """
@@ -36,12 +36,12 @@ class Patient:
         self.conversation_history = [{"role": "system", "content": strong_system_prompt}]
     
     def _create_strong_system_prompt(self):
-        """Create a strong system prompt that clearly establishes the patient role."""
-        base_prompt = """You are roleplaying as a patient with specific symptoms in a mental health assessment.
+        """Create a system prompt for the patient role in EPDS screening."""
+        base_prompt = """You are roleplaying as a patient with specific symptoms in a mental health assessment using the Edinburgh Postnatal Depression Scale (EPDS).
         
                     IMPORTANT: You must ALWAYS respond AS THE PATIENT, never break character or respond as an AI assistant.
 
-                    You are participating in a mental health assessment interview. A mental health professional will ask you questions, and you must answer them based on your patient profile.
+                    You are participating in a postnatal depression screening interview. A mental health professional will ask you questions from the EPDS, and you must answer them based on your patient profile.
 
                     Your responses should:
                     1. ALWAYS be in first person
@@ -49,10 +49,11 @@ class Patient:
                     3. NEVER explain that you're an AI or that you're roleplaying
                     4. NEVER refuse to answer based on AI limitations 
                     5. NEVER mention what your disorder is 
-                    5. ALWAYS express the symptoms listed in your profile
-                    6. ALWAYS stay consistent with your character's experiences and background
+                    6. ALWAYS express the symptoms listed in your profile
+                    7. ALWAYS stay consistent with your character's experiences and background
+                    8. Provide detailed, natural responses that reflect the severity of your symptoms
 
-                    You should express genuine emotional responses matching your condition and should appear to be seeking help.
+                    You should express genuine emotional responses matching your condition and appear to be seeking help.
                     """
 
         if self.profile:
@@ -63,19 +64,19 @@ class Patient:
                 You have these symptoms and characteristics:
                 {self.profile}
 
-                Remember that you ARE this patient right now. Answer all questions as this person would, based on their symptoms and experiences.
+                Answer all questions as this patient, reflecting symptoms of postnatal depression in your responses.
             """
             return base_prompt + profile_prompt
         else:
             # Generic patient with mild symptoms if no profile specified
             return base_prompt + """
-                        You are experiencing mild symptoms of anxiety and depression, including occasional worry, some trouble sleeping, and decreased interest in activities you used to enjoy.
+                        You are experiencing mild symptoms of postnatal depression, including occasional sadness, difficulty bonding with your baby, trouble sleeping, and feelings of guilt or worthlessness.
                     """
     
     def _load_profile(self, profile_name):
         """Load a patient profile from file."""
         if not profile_name:
-            return None
+            return "Mild postnatal depression symptoms: occasional sadness, difficulty bonding with baby, trouble sleeping, feelings of guilt."
         
         profiles_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "profiles")
         
@@ -83,12 +84,12 @@ class Patient:
         profile_path = os.path.join(profiles_dir, f"{profile_name}.txt")
         
         if os.path.exists(profile_path):
-            with open(profile_path, 'r') as f:
+            with open(profile_path, 'r', encoding="utf-8") as f:
                 profile_content = f.read()
             return profile_content
         else:
-            print(f"Warning: Profile '{profile_name}' not found. Using default profile.")
-            return None
+            print(f"Warning: Profile '{profile_name}' not found. Using default postnatal depression profile.")
+            return "Profile: Postnatal depression symptoms including persistent sadness, difficulty bonding with baby, sleep disturbances, feelings of guilt, occasional thoughts of self-harm."
     
     @staticmethod
     def list_available_profiles():

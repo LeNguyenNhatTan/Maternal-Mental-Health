@@ -14,6 +14,9 @@ from utils.full_conversation_handler import FullConversationHandler
 from utils.chat_logger import ChatLogger
 from utils.batch_processor import BatchProcessor
 
+import logging
+logging.getLogger("comtypes").setLevel(logging.WARNING)
+
 # Define default paths
 DEFAULT_DOCS_DIR = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), 
@@ -186,6 +189,7 @@ def run_conversation(pdf_path, patient_profile=None, assistant_provider="ollama"
     # Initialize agents
     debug_log("Initializing assistant agent")
     try:
+
         assistant = MentalHealthAssistant(
             provider=assistant_provider,
             provider_options=assistant_provider_options,
@@ -429,6 +433,7 @@ def process_batch_with_optimization(batch_size, questions, questionnaire_name, p
                 from utils.conversation_handler import ConversationHandler
                 
                 debug_log("Initializing assistant and patient agents with pre-loaded resources")
+   
                 assistant = MentalHealthAssistant(
                     provider=assistant_provider,
                     provider_options=assistant_provider_options,
@@ -558,41 +563,129 @@ def process_batch_with_optimization(batch_size, questions, questionnaire_name, p
         debug_log(f"Traceback: {traceback.format_exc()}")
         raise
 
+def process_question(raw_question, provider, provider_options, model):
+        """Extract the core content of an EPDS question, removing scoring options."""
+        # Load system prompt from file
+        prompt_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 
+                                  "prompts", "mental_health_assistant_prompt.txt")
+        if os.path.exists(prompt_path):
+            with open(prompt_path, 'r') as f:
+                system_prompt = f.read()
+        else:
+            system_prompt = """
+                You are a compassionate perinatal mental health specialist conducting EPDS assessments for new mothers experiencing potential postpartum depression.
+
+                CORE ROLE:
+                - Screen for PPD using official EPDS 10 questions (past 7 days)
+                - Rephrase questions naturally, empathetically without options/scoring
+                - Internally score responses (0-3, reverse Q3,5-10)
+                - Provide risk assessment (0-9 minimal, 10-12 moderate, 13+ high)
+                - Handle Item 10 safety alerts immediately
+
+                ASSESSMENT FLOW:
+                1. Warm introduction explaining EPDS screening
+                2. 10 conversational questions for postpartum context
+                3. Diagnosis report with score, risk, recommendations
+
+                EMPATHETIC COMMUNICATION:
+                - Validate new motherhood challenges
+                - Normalize emotional changes
+                - Reassure confidentiality and support
+                - Sensitive to self-harm (Q10)
+
+                INTERNAL SCORING ONLY:
+                - Q1,2,4: 0=Best, 3=Worst
+                - Q3,5-10: 3=Worst, 0=Best
+                - Total 0-30, Item 10 ≥1 = Safety alert
+
+                DIAGNOSIS FORMAT:
+                1. Compassionate summary
+                **EPDS RESULTS:** Score, risk category
+                **CLINICAL IMPRESSION:** PPD assessment + mood analysis
+                **RATIONALE:** Key symptoms, scores, quotes
+                **RECOMMENDATIONS:** Numbered actions, resources
+
+                Use <med>, <sym>, <quote> tags. Warm, professional tone.
+                """
+        from utils.llm_client_base import LLMClient
+        client = LLMClient.create(provider, **provider_options)
+
+        new_questions = []
+        for q in raw_question:
+        # Prompt to rephrase the question naturally
+            prompt = f"""
+            You are a compassionate mental health clinician speaking to a new mother. 
+            Your task is to take the 'core content' of an EPDS question and rephrase it into a **friendly, natural, and conversational question** 
+            that feels supportive, non-judgmental, and easy for a patient to answer. 
+
+            Guidelines:
+            - Use gentle language, as if speaking directly to the patient.
+            - Make it clear, simple, and empathetic.
+            - Avoid medical or formal phrasing.
+            - Start the question with phrases like "Have you been feeling...", "Do you sometimes feel...", "How have you been feeling..." 
+            to make it more approachable.
+
+            Core content: {q}
+
+            Output formatting rules:
+            - Output ONLY the rephrased question.
+            - Do NOT include "Core:" or "Rephrased:" labels.
+            - Do NOT include explanations or extra text.
+            - The output must be a single sentence question.
+
+            Example:
+            Core: "I have felt sad or miserable"
+            Output: "Have you been feeling sad or miserable lately?"
+
+            Now, rewrite the core content into a conversational, patient-friendly question.
+            """
+                
+            temp_conversation = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}
+            ]
+            result = client.chat(model, temp_conversation)
+            new_questions.append(result['response'])
+
+        return new_questions
+
 def main():
     parser = argparse.ArgumentParser(description="Multi-agent Mental Health Assistant Application")
     parser.add_argument('--pdf_path', type=str, help="Path to a specific questionnaire PDF")
     parser.add_argument('--docs_dir', type=str, default=DEFAULT_DOCS_DIR, 
-                        help=f"Directory containing reference documents (default: {DEFAULT_DOCS_DIR})")
+                       help=f"Directory containing reference documents (default: {DEFAULT_DOCS_DIR})")
     parser.add_argument('--questionnaires_dir', type=str, default=DEFAULT_QUESTIONNAIRES_DIR,
-                        help=f"Directory containing questionnaires (default: {DEFAULT_QUESTIONNAIRES_DIR})")
+                       help=f"Directory containing questionnaires (default: {DEFAULT_QUESTIONNAIRES_DIR})")
     
     # LLM provider options
     parser.add_argument('--assistant_provider', type=str, default="ollama", choices=["ollama", "groq", "openai"],
-                        help="LLM provider to use for the assistant (default: ollama)")
+                       help="LLM provider to use for the assistant (default: ollama)")
     parser.add_argument('--patient_provider', type=str, default="ollama", choices=["ollama", "groq", "openai"],
-                        help="LLM provider to use for the patient (default: ollama)")
+                       help="LLM provider to use for the patient (default: ollama)")
     parser.add_argument('--ollama_url', type=str, default="http://localhost:11434", 
-                        help="URL for the Ollama API (default: http://localhost:11434)")
+                       help="URL for the Ollama API (default: http://localhost:11434)")
     parser.add_argument('--groq_api_key', type=str, help="API key for Groq (can also be set via GROQ_API_KEY env var)")
     parser.add_argument('--openai_api_key', type=str, help="API key for OpenAI (can also be set via OPENAI_API_KEY env var)")
     
     # Model options
     parser.add_argument('--assistant_model', type=str, default="qwen3:4b", 
-                        help="Model to use for the assistant (default: qwen3:4b)")
+                       help="Model to use for the assistant (default: qwen3:4b)")
     parser.add_argument('--patient_model', type=str, default="qwen3:4b", 
-                        help="Model to use for the patient (default: qwen3:4b)")
+                       help="Model to use for the patient (default: qwen3:4b)")
     
-    # Other options remain the same
+    # Other options
     parser.add_argument('--patient_profile', type=str, help="Profile to use for the patient")
     parser.add_argument('--refresh_cache', action='store_true', help="Refresh the document cache")
     parser.add_argument('--no-save', action='store_true', help="Don't save conversation logs")
     parser.add_argument('--logs-dir', type=str, default=DEFAULT_LOGS_DIR,
                        help=f"Directory to save conversation logs (default: {DEFAULT_LOGS_DIR})")
+    parser.add_argument('--disable-output', action='store_true',
+                       help="Disable console output during conversation")  # Added line
     
     # Add batch processing arguments
     parser.add_argument('--batch', '-n', type=int, help="Number of conversations to generate in batch mode")
     parser.add_argument('--randomize-profiles', action='store_true', 
-                        help="Randomize patient profiles for each conversation in batch mode")
+                       help="Randomize patient profiles for each conversation in batch mode")
     
     # Add state file argument for API mode
     parser.add_argument('--state-file', type=str, help="Path to a state file for API mode")
@@ -613,13 +706,16 @@ def main():
     parser.add_argument('--disable-rag', action='store_true',
                        help="Disable the use of RAG for retrieving information")
     
+    parser.add_argument('--refresh-cache', action='store_true', default=False,  
+                       help="Force refresh of document cache (slower, use only when needed)")
+    
     # Add option to disable just RAG evaluation
     parser.add_argument('--disable-rag-evaluation', action='store_true',
                        help="Disable only the RAG evaluation after responses, but keep RAG document retrieval")
     
     args = parser.parse_args()
     debug_log("Starting main function with args: " + str(vars(args)))
-    
+
     # Set environment variable to skip transformers if requested
     if args.skip_transformers:
         os.environ['SKIP_TRANSFORMERS'] = '1'
@@ -647,7 +743,18 @@ def main():
     print("Initializing RAG engine and processing documents...")
     debug_log("About to initialize main RAG engine")
     try:
-        rag_engine = RAGEngine(args.docs_dir, questionnaire_dir=args.questionnaires_dir)
+        rag_engine = RAGEngine(
+            args.docs_dir, 
+            questionnaire_dir=args.questionnaires_dir,
+            refresh_cache=args.refresh_cache,  
+            cache_dir=args.logs_dir if args.logs_dir else None 
+        )
+
+        # Print cache info
+        if not args.disable_output:
+            cache_info = rag_engine.get_cache_info()
+            print(f"Cache loaded: {cache_info['vector_store'].get('num_documents', 0)} docs")   
+             
         debug_log("Main RAG engine initialized successfully")
     except Exception as e:
         debug_log(f"ERROR initializing main RAG engine: {str(e)}")
@@ -923,6 +1030,14 @@ def main():
             print("Error: OpenAI API key required. Set with --openai_api_key or OPENAI_API_KEY environment variable.")
             sys.exit(1)
     
+    # Process each question to rephrase it
+    questions = process_question(
+        raw_question=questions,
+        provider = args.assistant_provider,
+        provider_options=assistant_provider_options,
+        model = args.assistant_model)
+    
+
     if args.full_conversation:
         from agents.full_conversation_agent import FullConversationAgent
         agent = FullConversationAgent(
@@ -935,6 +1050,7 @@ def main():
             questionnaire_name=selected_name
         )
     else:
+
         # Initialize agents
         assistant = MentalHealthAssistant(
             provider=args.assistant_provider,

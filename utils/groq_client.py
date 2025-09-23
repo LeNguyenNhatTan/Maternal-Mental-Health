@@ -272,10 +272,10 @@ class GroqClient(LLMClient):
             text_response = response_data["choices"][0]["message"]["content"]
             
             # Log the first 100 characters of the response for debugging
-            if len(text_response) > 100:
-                print(f"Groq response preview: {text_response[:100]}...")
-            else:
-                print(f"Groq response: {text_response}")
+            # if len(text_response) > 100:
+            #     print(f"Groq response preview: {text_response[:100]}...")
+            # else:
+            #     print(f"Groq response: {text_response}")
             
             return {
                 "response": text_response,

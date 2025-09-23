@@ -20,14 +20,14 @@ class RAGEngine:
     def __init__(self, documents_dir: str, questionnaire_dir: str = None, cache_dir: str = None, refresh_cache: bool = False):
         """
         Initialize the RAG engine.
-        
+
         Args:
             documents_dir: Directory containing reference documents
             questionnaire_dir: Directory containing questionnaires (if None, uses documents_dir)
             cache_dir: Directory to cache embeddings
             refresh_cache: Whether to refresh the document cache
         """
-        print(f"RAGEngine: Initializing with documents_dir={documents_dir}")
+        print(f"RAGEngine: Initializing with documents_dir={documents_dir}, refresh_cache={refresh_cache}")
         self.documents_dir = documents_dir
         self.questionnaire_dir = questionnaire_dir or documents_dir
         self.refresh_cache = refresh_cache
@@ -37,8 +37,15 @@ class RAGEngine:
             cache_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cache")
         
         # Create vector store
-        print("RAGEngine: Creating vector store")
-        self.vector_store = SimpleVectorStore(cache_dir=cache_dir)
+        print(f"RAGEngine: Creating vector store with refresh_cache={refresh_cache}")
+        self.vector_store = SimpleVectorStore(
+            cache_dir=cache_dir, 
+            refresh_cache=refresh_cache
+        )
+        
+        # Print cache status
+        cache_stats = self.vector_store.get_cache_stats()
+        print(f"Cache status: {cache_stats.get('status', 'unknown')}, {cache_stats.get('num_documents', 0)} docs")
         
         # Load and process all documents for RAG
         print("RAGEngine: Loading documents")
@@ -125,11 +132,24 @@ class RAGEngine:
         """Load questionnaires from the questionnaire directory."""
         questionnaire_map = {}
         
+        # Default EPDS questions as fallback
+        default_epds_questions = [
+            "I have been able to laugh and see the funny side of things",
+            "I have looked forward with enjoyment to things",
+            "I have blamed myself unnecessarily when things went wrong",
+            "I have been anxious or worried for no good reason",
+            "I have felt scared or panicky for no very good reason",
+            "Things have been getting on top of me",
+            "I have been so unhappy that I have had difficulty sleeping",
+            "I have felt sad or miserable",
+            "I have been so unhappy that I have been crying",
+            "The thought of harming myself has occurred to me"
+        ]
+        
         print(f"Loading questionnaires from {self.questionnaire_dir}")
         
         if self.questionnaire_dir == self.documents_dir:
             # If using the same directory, we've already processed these documents
-            # Just extract questions from what we have
             if '.pdf' in self.document_map:
                 for document in self.document_map['.pdf']:
                     questions = extract_questions_from_text(document.content)
@@ -137,6 +157,9 @@ class RAGEngine:
                     print(f"  - {filename}: Found {len(questions)} questions")
                     if questions:
                         questionnaire_map[filename] = questions
+                    else:
+                        print(f"  - {filename}: No questions found, using default EPDS questions")
+                        questionnaire_map[filename] = default_epds_questions
         else:
             # Process the questionnaire directory separately
             questionnaire_docs = process_documents_directory(self.questionnaire_dir)
@@ -149,32 +172,14 @@ class RAGEngine:
                     print(f"  - {filename}: Found {len(questions)} questions")
                     if questions:
                         questionnaire_map[filename] = questions
+                    else:
+                        print(f"  - {filename}: No questions found, using default EPDS questions")
+                        questionnaire_map[filename] = default_epds_questions
         
-        # If no questionnaires found but we have documents, try to create placeholder questions
-        if not questionnaire_map and self.document_map:
-            for ext, docs in self.document_map.items():
-                if docs:
-                    # Get first document
-                    doc = docs[0]
-                    filename = doc.metadata.get('filename', 'Unknown')
-                    
-                    # Create some default questions if we can't extract them
-                    print(f"No questions detected in {filename}. Creating default questions.")
-                    
-                    # Split content into chunks and turn them into basic questions
-                    content = doc.content
-                    chunks = [content[i:i+200].replace("\n", " ").strip() 
-                             for i in range(0, min(len(content), 2000), 200)]
-                    
-                    questions = []
-                    for i, chunk in enumerate(chunks, 1):
-                        if chunk:
-                            # Create a question from the chunk
-                            questions.append(f"Question {i}: Based on this text: '{chunk}', how do you feel?")
-                    
-                    if questions:
-                        questionnaire_map[filename] = questions
-                        break
+        # If no questionnaires found, use default EPDS questions
+        if not questionnaire_map:
+            print("RAGEngine: No questionnaires detected. Using default EPDS questions.")
+            questionnaire_map["default_epds"] = default_epds_questions
         
         return questionnaire_map
     
@@ -205,8 +210,8 @@ class RAGEngine:
         self.accessed_documents = []  # Reset accessed documents for this query
         self.retrieval_stats["total_retrievals"] += 1
         
-        # Request more documents than needed to account for potential duplicates
-        search_k = top_k * 4  # Get four times as many to allow for filtering
+        # Request more documents to account for potential duplicates
+        search_k = top_k * 4
         
         # Get results with scores
         results = self.vector_store.search(query, top_k=search_k)
@@ -226,18 +231,18 @@ class RAGEngine:
                 break
                 
             if score >= threshold:
-                # Get document source
-                source = doc.metadata.get("source", "Unknown")
-                if "filename" in doc.metadata:
-                    source = doc.metadata["filename"]
+                # Create a unique identifier using filename and a hash of content
+                source = doc.metadata.get("filename", doc.metadata.get("source", "Unknown"))
+                content_hash = hash(doc.content[:100])  # Use first 100 chars for uniqueness
+                doc_id = f"{source}|{content_hash}"
                 
                 # Skip if we've already seen this document in this query
-                if source in seen_in_query:
-                    print(f"RAGEngine: Skipping duplicate document in query: {source}")
+                if doc_id in seen_in_query:
+                    # print(f"RAGEngine: Skipping duplicate document in query: {source} (hash: {content_hash})")
                     continue
                     
                 # Mark as seen for this query
-                seen_in_query.add(source)
+                seen_in_query.add(doc_id)
                 
                 filtered_results.append((doc, score))
                 content_list.append(doc.content)
@@ -245,7 +250,7 @@ class RAGEngine:
                 # Extract and highlight the most relevant portion of the document
                 highlighted_content = self._extract_highlight(doc.content, query)
                 
-                # Generate a relevance explanation for why this document was returned
+                # Generate a relevance explanation
                 relevance_explanation = self._generate_relevance_explanation(
                     query=query, 
                     document_content=doc.content, 
@@ -272,7 +277,7 @@ class RAGEngine:
                 
                 total_score += score
         
-        # If we have fewer documents than requested due to filtering
+        # Log if we have fewer documents than requested
         if len(filtered_results) < top_k:
             print(f"RAGEngine: Found only {len(filtered_results)} unique documents after filtering duplicates")
             
@@ -283,7 +288,6 @@ class RAGEngine:
             self.retrieval_stats["total_retrievals"]
         )
         
-        # Return enhanced result
         return {
             "content_list": content_list,
             "documents": documents,
@@ -530,3 +534,15 @@ class RAGEngine:
             citation += f"\n{i}. {title} (relevance: {score:.2f})"
             
         return citation
+    def get_cache_info(self) -> Dict[str, Any]:
+        """Get detailed cache information."""
+        cache_stats = self.vector_store.get_cache_stats()
+        doc_count = sum(len(docs) for docs in self.document_map.values())
+        
+        return {
+            'vector_store': cache_stats,
+            'total_documents': doc_count,
+            'questionnaires': len(self.questionnaire_map),
+            'cache_dir': str(self.vector_store.cache_dir),
+            'refresh_cache': self.refresh_cache
+        }

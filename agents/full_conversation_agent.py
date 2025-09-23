@@ -68,7 +68,8 @@ class FullConversationAgent:
         else:
             print(f"Warning: Profile '{profile_name}' not found. Using default profile.")
             return f"Profile named {profile_name} (profile details not found)"
-        
+    
+    
     def generate_conversation(self):
         """Generate a full conversation between the full conversation agent and patient."""
         print("[DEBUG] Retrieving full questionnaire document")
@@ -110,7 +111,7 @@ class FullConversationAgent:
         
         # Create a prompt for the conversation generation
         base_conversation_prompt = f"""
-        You are an agent which generates a full conversation between a mental health professional and a patient according to a questionnaire.
+        You are an agent which generates a full conversation between a postpartum mental health professional and a patient according to a questionnaire.
         
         IMPORTANT INSTRUCTIONS:
         - Use ONLY the actual name of the questionnaire as provided in the user message
@@ -118,7 +119,7 @@ class FullConversationAgent:
         - Your role is to administer the questionnaire without making diagnostic assumptions up front
         
         Profile for the Mental Health Professional:
-            You are a professional mental health assistant tasked with conducting a psychological assessment interview. Your job is to:
+        You are a professional postpartum mental health assistant tasked with conducting a psychological assessment interview. Your job is to:
 
             1. Ask questions from a the questionnaire in a compassionate, professional manner
             2. Respond appropriately to the patient's answers with empathy and understanding
@@ -132,8 +133,7 @@ class FullConversationAgent:
             - Be thorough and methodical in your approach
             - Provide evidence-based recommendations
 
-            You have expertise in recognizing symptoms of various mental health conditions including depression, anxiety, PTSD, bipolar disorder, and schizophrenia. Use this knowledge to inform your final assessment.
-            Only output the exact question without additional intros, summaries, or sign-offs.
+            When asking, always use the exact wording from the questionnaire, but deliver it in a warm and empathetic way, so the question feels natural and compassionate.
             Keep your tone professional but warm, showing empathy while maintaining clinical objectivity.
             Make sure to correctly identify and name the specific questionnaire you're administering.
         """
@@ -167,9 +167,9 @@ class FullConversationAgent:
         {self.patient_profile}
         
         EXTREMELY IMPORTANT:
-        - The mental health professional MUST ask ALL the questions from the questionnaire in order
+        - The postpartum mental health professional MUST ask ALL the questions from the questionnaire in order
         - Use the EXACT wording of the questions as they appear in the questionnaire
-        - Do NOT skip any questions or add additional diagnostic questions
+        - Do NOT skip any questions or add additional diagnostic and screening questions
         - Do not stop after the first question
         - Make sure all {len(self.questions)} questions from the questionnaire are covered in the conversation
         - The patient should respond in NATURAL CONVERSATIONAL LANGUAGE, not with numerical ratings
@@ -221,9 +221,9 @@ class FullConversationAgent:
             {self.patient_profile}
             
             EXTREMELY IMPORTANT:
-            - The mental health professional MUST ask ALL the questions from the questionnaire in order
+            - The postpartum mental health professional MUST ask ALL the questions from the questionnaire in order
             - Use the EXACT wording of the questions as they appear in the questionnaire
-            - Do NOT skip any questions or add additional diagnostic questions
+            - Do NOT skip any questions or add additional diagnostic and screening questions
             - Make sure all {len(self.questions)} questions from the questionnaire are covered in the conversation
             - The patient should respond in NATURAL CONVERSATIONAL LANGUAGE, not with numerical ratings
             - Patient responses should be descriptive and elaborate on their experiences, not just "3" or "4"
@@ -384,202 +384,142 @@ class FullConversationAgent:
             if self.conversation_history:
                 self._extract_responses_from_conversation_history()
         
-        # If we didn't get any messages, try to extract turn-by-turn conversation as a last resort
-        if not self.conversation_history:
-            print("Warning: Could not parse conversation in standard format, attempting fallback extraction")
-            self._extract_responses_from_conversation(conversation_text)
-        
-        # Check if we have sufficient question-answer pairs
-        # If not, regenerate the conversation
-        MAX_REGENERATION_ATTEMPTS = 2
-        regeneration_attempts = 0
-        
-        while len(self.responses) < 5 and regeneration_attempts < MAX_REGENERATION_ATTEMPTS:
-            print(f"WARNING: Generated conversation only has {len(self.responses)} Q&A pairs, fewer than the required 5. Regenerating...")
-            regeneration_attempts += 1
-            
-            # Clear existing data before regenerating
-            self.conversation_history = []
-            self.responses = []
-            
-            # Regenerate with a more explicit prompt
-            enhanced_prompt = user_prompt + f"""
-            
-            CRITICAL REQUIREMENT: Your response MUST include a FULL conversation covering ALL {len(self.questions)} questions from the questionnaire. 
-            The current generation only produced {len(self.responses)} question-answer pairs, which is insufficient.
-            Make sure the mental health professional asks ALL questions and the patient responds to each one.
-            """
-            
-            # Create a temporary conversation for regeneration
-            regeneration_conversation = [
-                {"role": "system", "content": conversation_prompt},
-                {"role": "user", "content": enhanced_prompt}
-            ]
-            
-            # Generate a new conversation
-            result = self.client.chat(self.model, regeneration_conversation)
-            conversation_text = result['response']
-            
-            try:
-                # Clean and try to parse JSON
-                cleaned_text = extract_and_clean_json(conversation_text)
-                
-                # Try to parse the cleaned JSON
-                conversation_data = json.loads(cleaned_text)
-                
-                # Validate and process the conversation data
-                if isinstance(conversation_data, list):
-                    # Process the conversation data as before
-                    for i, message in enumerate(conversation_data):
-                        if not isinstance(message, dict):
-                            continue
-                        
-                        if "role" not in message or "content" not in message:
-                            continue
-                        
-                        role = message.get("role", "")
-                        content = message.get("content", "")
-                        
-                        # Validate and standardize roles
-                        if any(r in role.lower() for r in ["assistant", "clinician", "therapist", "professional", "mental health"]):
-                            role = "assistant"
-                        elif any(r in role.lower() for r in ["user", "patient"]):
-                            role = "patient"
-                        else:
-                            role = "assistant"
-                        
-                        # Ensure content is a string
-                        if not isinstance(content, str):
-                            content = str(content)
-                        
-                        # Add the message to the conversation history
-                        self.conversation_history.append({
-                            "role": role,
-                            "content": content
-                        })
-                    
-                    # Extract responses from conversation history after parsing
-                    self._extract_responses_from_conversation_history()
-                else:
-                    # Try text-based extraction as a fallback
-                    self._extract_conversation_from_text(conversation_text)
-                    if self.conversation_history:
-                        self._extract_responses_from_conversation_history()
-            except json.JSONDecodeError:
-                # If JSON parsing fails, try text-based extraction
-                self._extract_conversation_from_text(conversation_text)
-                if self.conversation_history:
-                    self._extract_responses_from_conversation_history()
-            
-            # If we still don't have enough responses, try another method
-            if not self.conversation_history or len(self.responses) < 5:
-                self._extract_responses_from_conversation(conversation_text)
-            
-            print(f"Regeneration attempt {regeneration_attempts}: now have {len(self.responses)} Q&A pairs")
-        
-        if len(self.responses) < 5:
-            print(f"WARNING: After {MAX_REGENERATION_ATTEMPTS} attempts, still only generated {len(self.responses)} Q&A pairs. Skipping this conversation attempt as instructed.")
-        
-    def _extract_responses_from_conversation(self, conversation):
-        """
-        Extract question-answer pairs from the generated conversation.
-        
-        Args:
-            conversation (str): The generated conversation
-        """
-        import json
-        import re
-        
-        # Clear existing responses
-        self.responses = []
-        
-        try:
-            # First, try to clean up the JSON string to handle common parsing issues
-            def clean_json_string(json_str):
-                # Start with basic whitespace cleanup
-                json_str = json_str.strip()
-                
-                # Remove markdown code markers
-                json_str = re.sub(r'^```json\s*', '', json_str)
-                json_str = re.sub(r'^```\s*', '', json_str)
-                json_str = re.sub(r'\s*```$', '', json_str)
-                
-                # Extract just the JSON array if there's other text
-                match = re.search(r'\[.*\]', json_str, re.DOTALL)
-                if match:
-                    json_str = match.group(0)
-                
-                # Remove or replace common problematic characters
-                json_str = re.sub(r'[\x00-\x1F\x7F]', '', json_str)
-                
-                # Replace any Unicode quotes with standard quotes
-                json_str = json_str.replace('\u201c', '"').replace('\u201d', '"')
-                json_str = json_str.replace('\u2018', "'").replace('\u2019', "'")
-                
-                return json_str
-            
-            # Clean and try to parse as JSON
-            cleaned_text = clean_json_string(conversation)
-            
-            try:
-                conversation_data = json.loads(cleaned_text)
-                
-                # Extract questions and answers
-                current_question = None
-                
-                for msg in conversation_data:
-                    # Handle different formats of role/content fields
-                    role = msg.get("role", "")
-                    # Also try 'text' field if 'content' is not found
-                    content = msg.get("content", msg.get("text", ""))
-                    
-                    # Convert role to lowercase for case-insensitive comparison
-                    role_lower = role.lower()
-                    
-                    if any(r in role_lower for r in ["assistant", "clinician", "therapist", "professional", "mental health"]):
-                        # Consider all assistant messages as potential questions
-                        # Rather than requiring a question mark which excludes prompts/statements
-                        current_question = content
-                    elif any(r in role_lower for r in ["user", "patient"]) and current_question:
-                        # This is an answer to the previous question
-                        self.responses.append((current_question, content))
-                        current_question = None
-                        
-                print(f"[DEBUG] Successfully parsed JSON and extracted {len(self.responses)} Q&A pairs")
-                
-            except json.JSONDecodeError as e:
-                print(f"[DEBUG] JSON parsing failed after cleaning: {str(e)}")
-                print(f"[DEBUG] Attempted to parse: {cleaned_text[:100]}...")
-                # Fall through to regex approach below
-        
-        except Exception as e:
-            print(f"[DEBUG] Error extracting responses from conversation: {str(e)}")
-        
-        # If we couldn't extract responses from JSON, try pattern matching
-        if not self.responses:
-            try:
-                print("[DEBUG] Trying pattern matching to extract question-answer pairs")
-                
-                # Try to find pairs of assistant/patient messages
-                # Pattern for "Assistant/Clinician: [content]" followed by "Patient: [answer]"
-                # No longer requiring content to end with a question mark
-                qa_pattern = re.compile(r'(?:assistant|clinician|therapist|professional|doctor)\s*:\s*([^\n]+)[^\n]*\n+(?:patient|user)\s*:\s*([^\n]+)', re.IGNORECASE)
-                
-                matches = qa_pattern.findall(conversation)
-                for question, answer in matches:
-                    self.responses.append((question.strip(), answer.strip()))
-                    
-                print(f"[DEBUG] Extracted {len(self.responses)} Q&A pairs using pattern matching")
-            except Exception as e:
-                print(f"[DEBUG] Error in pattern matching: {str(e)}")
-        
-        # If all else fails, use the questions from the questionnaire and empty responses
         if not self.responses and self.questions:
-            print("[DEBUG] Using questionnaire questions with empty responses")
+            print("[DEBUG] Using EPDS questions with empty responses")
             for question in self.questions:
-                self.responses.append((question, "No response provided"))
+                self.responses.append((question, ""))
+    
+    def _score_response(self, response, question_idx):
+        """Map a response to an EPDS score (0–3) using LLM and RAG with provided EPDS guidelines."""
+        rag_context = ""
+        if self.rag_engine:
+            rag_query = f"Edinburgh Postnatal Depression Scale scoring guidelines for question: {self.questions[question_idx]}"
+            rag_result = self.rag_engine.retrieve(rag_query, top_k=3)
+            if isinstance(rag_result, dict) and "content_list" in rag_result:
+                documents = rag_result.get("documents", [])
+                filtered_content = []
+                for i, doc in enumerate(documents):
+                    doc_id = doc.get("title", "") + "|" + doc.get("highlight", "")[:50]
+                    if doc_id not in self.seen_documents:
+                        self.seen_documents.add(doc_id)
+                        if i < len(rag_result["content_list"]):
+                            filtered_content.append(rag_result["content_list"][i])
+                if filtered_content:
+                    rag_context = "\n\n".join(filtered_content)
         
-        print(f"[DEBUG] Final extraction result: {len(self.responses)} question-answer pairs")
+        epds_guidelines = """
+        The Edinburgh Postnatal Depression Scale (EPDS) Scoring Guidelines:
+        - Items 1, 2, 4: Score 0-3 (top option = 0, bottom = 3).
+        1. I have been able to laugh and see the funny side of things:
+            - As much as I always could (0)
+            - Not quite as much now (1)
+            - Definitely not so much now (2)
+            - Not at all (3)
+        2. I have looked forward with enjoyment to things:
+            - As much as I ever did (0)
+            - Rather less than I used to (1)
+            - Definitely less than I used to (2)
+            - Hardly at all (3)
+        4. I have been anxious or worried for no good reason:
+            - No, not at all (0)
+            - Hardly ever (1)
+            - Yes, sometimes (2)
+            - Yes, very often (3)
+        - Items 3, 5-10: Reverse-scored (top = 3, bottom = 0).
+        3. I have blamed myself unnecessarily when things went wrong:
+            - Yes, most of the time (3)
+            - Yes, some of the time (2)
+            - Not very often (1)
+            - No, never (0)
+        5. I have felt scared or panicky for no very good reason:
+            - Yes, quite a lot (3)
+            - Yes, sometimes (2)
+            - No, not much (1)
+            - No, not at all (0)
+        6. Things have been getting on top of me:
+            - Yes, most of the time I haven't been able to cope at all (3)
+            - Yes, sometimes I haven't been coping as well as usual (2)
+            - No, most of the time I have coped quite well (1)
+            - No, I have been coping as well as ever (0)
+        7. I have been so unhappy that I have had difficulty sleeping:
+            - Yes, most of the time (3)
+            - Yes, sometimes (2)
+            - Not very often (1)
+            - No, not at all (0)
+        8. I have felt sad or miserable:
+            - Yes, most of the time (3)
+            - Yes, quite often (2)
+            - Not very often (1)
+            - No, not at all (0)
+        9. I have been so unhappy that I have been crying:
+            - Yes, most of the time (3)
+            - Yes, quite often (2)
+            - Only occasionally (1)
+            - No, never (0)
+        10. The thought of harming myself has occurred to me:
+            - Yes, quite often (3)
+            - Sometimes (2)
+            - Hardly ever (1)
+            - Never (0)
+        """
+        
+        prompt = f"""
+        Respond ONLY with a valid JSON object. No other text, no explanations, no markdown. Just the JSON.
+        You are a mental health professional scoring a patient's response to an EPDS question.
+        
+        Question: {self.questions[question_idx]}
+        Patient Response: {response}
+        Scoring Guidelines: {epds_guidelines}
+        Additional Context: {rag_context}
+        
+        INSTRUCTIONS:
+        - Analyze the response semantically to assign a score (0–3) based on the EPDS scoring guidelines.
+        - For questions 1, 2, 4: Top option = 0, bottom = 3.
+        - For questions 3, 5–10: Top option = 3, bottom = 0.
+        - Return a JSON object with:
+        - score: Integer (0–3)
+        - explanation: Brief explanation of the scoring decision
+        - warning: String (only for question 10 if score ≥1, otherwise empty)
+        """
+        temp_conversation = [
+            {"role": "system", "content": self.system_prompt},
+            {"role": "user", "content": prompt}
+        ]
+        result = self.client.chat(self.model, temp_conversation)
+        response_text = result['response']
+        
+        # Thêm phần clean JSON (copy từ extract_and_clean_json trong full_conversation_agent.py)
+        cleaned_text = response_text.strip()
+        cleaned_text = re.sub(r'^```json\s*', '', cleaned_text)
+        cleaned_text = re.sub(r'^```\s*', '', cleaned_text)
+        cleaned_text = re.sub(r'\s*```$', '', cleaned_text)
+        array_match = re.search(r'$$ .* $$', cleaned_text, re.DOTALL)  # Nếu cần, nhưng ở đây là object nên bỏ
+        if array_match:
+            cleaned_text = array_match.group(0)
+        cleaned_text = re.sub(r'[\x00-\x1F\x7F]', '', cleaned_text)
+        cleaned_text = cleaned_text.replace('\u201c', '"').replace('\u201d', '"')
+        cleaned_text = cleaned_text.replace('\u2018', "'").replace('\u2019', "'")
+        cleaned_text = re.sub(r'([{,])\s*\'([^\']+)\'\s*:', r'\1"\2":', cleaned_text)
+        cleaned_text = re.sub(r':\s*\'([^\']+)\'\s*([,}])', r':"\1"\2', cleaned_text)
+        
+        # Giữ nguyên phần try-except parse
+        try:
+            result_json = json.loads(cleaned_text)
+            if not isinstance(result_json, dict) or 'score' not in result_json:
+                raise ValueError("Invalid JSON structure: missing 'score' key")
+            print(f"[DEBUG] Successfully parsed score: {result_json['score']}")
+            return result_json['score']  # Nếu cần explanation/warning, return full dict
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"[DEBUG] Failed to parse LLM response: {response_text}")
+            print(f"[DEBUG] Parsing error: {str(e)}")
+            # Fallback: Extract score from text if possible
+            score_match = re.search(r'"score"\s*:\s*(\d)', response_text)
+            if score_match:
+                score = int(score_match.group(1))
+                print(f"[DEBUG] Extracted score {score} from text")
+                return score
+            print("[DEBUG] Using default score due to parsing failure")
+            return 1  # Default score
 
     def generate_diagnosis(self):
         """
@@ -588,83 +528,81 @@ class FullConversationAgent:
         Returns:
             dict: Diagnosis from the assistant with RAG usage information
         """
-
-        # print("--------------------------------")
-        # print("Responses:")
-        # print(self.responses)
-        # print(f"Number of Q&A pairs extracted: {len(self.responses)}")
-        # print("--------------------------------")
-
-        # First, use AI to summarize observations from the patient responses
+        epds_score = 0
+        score_explanations = []
+        warnings = []
+        for idx, (question, response) in enumerate(self.responses):
+            score = self._score_response(response, idx)
+            epds_score += score
+            score_explanations.append(f"Q{idx+1}: {question}\nResponse: {response}\nScore: {score}\n")
+            if idx == 9 and score >= 1:  # Item 10
+                warnings.append("Immediate follow-up required for self-harm risk.")
+        
+        risk_level = "Low risk" if epds_score <= 9 else "Moderate risk" if epds_score <= 12 else "High risk"
+        
         observations = self._summarize_observations()
         print(f"[DEBUG] Generated clinical observations: {observations[:100]}...")
         
         # Create a prompt for diagnosis that includes the observations
         diagnosis_prompt = f"""
-        Based on the questionnaire responses, please provide a comprehensive mental health assessment.
-        
-        Questionnaire responses:
-        {self._format_responses()}
-        
+        Based on the questionnaire responses, please provide a comprehensive screening assessment using the Edinburgh Postnatal Depression Scale (EPDS).
+
+        Questionnaire responses and Scores:
+        {''.join(score_explanations)}
+        Warnings: {''.join(warnings) or 'None'}
+
         Clinical observations and potential concerns:
         {observations}
-        
-        IMPORTANT DIAGNOSTIC CONSIDERATIONS:
-        - Consider multiple possible diagnoses that could explain the symptoms
-        - Do not default to Somatic Symptom Disorder unless clearly warranted by the symptoms
-        - Be open to various diagnostic possibilities including anxiety disorders, mood disorders, trauma-related disorders, etc.
-        - Make your diagnosis based solely on the symptoms presented, not on assumptions
-        - If symptoms are insufficient for a definitive diagnosis, indicate this is a provisional impression
-        
-        Please analyze these responses and observations and provide a professional assessment that MUST follow this EXACT structure:
+        EPDS Score: {epds_score}
+
+        IMPORTANT SCREENING CONSIDERATIONS:
+        - The EPDS is a screening tool, not a diagnostic instrument.
+        - Interpret results as indicators of risk level only.
+        - Recommend follow-up based on score thresholds: 0–9 (low risk), 10–12 (moderate risk), 13–30 (high risk).
+        - If Item 10 score ≥1, flag for immediate self-harm risk assessment.
+        - Avoid definitive diagnoses; emphasize need for professional evaluation.
+
+        Please provide a professional assessment that MUST follow this EXACT structure:
 
         1. First paragraph: Write a compassionate summary of what you've heard from the patient, showing empathy for their situation.
-        
-        2. After that, include a section with the heading "**Diagnosis:**" (exactly as shown, with the asterisks)
-           - On the same line, immediately after the heading, provide the specific diagnosis or clinical impression
-           - Do not add extra newlines between the heading and the diagnosis
-        
+
+        2. After that, include a section with the heading "**EPDS Screening Results:**" (exactly as shown, with the asterisks)
+        - On the same line, immediately after the heading, state the total score and risk level (e.g., "Total Score: 15/30 - High Risk").
+        - Do not add extra newlines between the heading and the results.
+
         3. Next, include a section with the heading "**Reasoning:**" (exactly as shown, with the asterisks)
-           - Immediately after this heading, explain your rationale for the diagnosis/impression
-           - Do not add extra newlines between the heading and your explanation
-        
-        4. Finally, include a section with the heading "**Recommended Next Steps/Treatment Options:**" (exactly as shown, with the asterisks)
-           - List specific numbered recommendations (1., 2., 3., etc.)
-           - Make each recommendation clear and actionable
-        
+        - Immediately after this heading, explain the score calculation and how responses align with EPDS criteria.
+        - Do not add extra newlines between the heading and your explanation.
+
+        4. Finally, include a section with the heading "**Recommended Next Steps:**" (exactly as shown, with the asterisks)
+        - List specific numbered recommendations (1., 2., 3., etc.), such as referral to a clinician, support resources, or safety planning.
+        - Make each recommendation clear and actionable.
+
         When writing your assessment, use these special tags:
         - Wrap medical terms and conditions in <med>medical term</med> tags
         - Wrap symptoms in <sym>symptom</sym> tags
         - Wrap patient quotes or paraphrases in <quote>patient quote</quote> tags
-        
+
         EXTREMELY IMPORTANT:
-        1. Do NOT include any introductory statements answering the prompt" 
+        1. Do NOT include any introductory statements answering the prompt.
         2. Do NOT begin with phrases like "Okay, here's a clinical assessment..."
-        3. Start DIRECTLY with the compassionate summary paragraph without any preamble
-        4. Never include meta-commentary about what you're about to write
-        5. Include all four components in the exact order specified
-        6. Format section headings consistently with double asterisks
-        7. Maintain proper spacing between sections (one blank line)
-        8. Do not add extra newlines within sections
-        9. Always wrap medical terms, symptoms, and quotes in the specified tags
+        3. Start DIRECTLY with the compassionate summary paragraph without any preamble.
+        4. Never include meta-commentary about what you're about to write.
+        5. Include all four components in the exact order specified.
+        6. Format section headings consistently with double asterisks.
+        7. Maintain proper spacing between sections (one blank line).
+        8. Do not add extra newlines within sections.
+        9. Always wrap medical terms, symptoms, and quotes in the specified tags.
+        10. Do not provide a formal diagnosis; frame everything as screening results.
 
         Keep your tone professional but warm, showing empathy while maintaining clinical objectivity.
         """
         
         # Initialize RAG usage information
         rag_usage = None
-        
-        # Enhance with RAG if available and not disabled - ONLY use RAG during diagnosis phase
-        if self.rag_engine:
-            print("[DEBUG] Now using RAG for diagnosis...")
-            
-            # Query RAG using the observations instead of raw responses
-            print(f"[DEBUG] Querying RAG using clinical observations...")
-            
-            # Create a more focused query using the observations
-            rag_query = f"mental health diagnosis for patient with symptoms: {observations}"
-            
-            # Get context for general mental health diagnosis
+        if self.rag_engine and not self.disable_rag_evaluation:
+            print("[DEBUG] Using RAG for diagnosis...")
+            rag_query = f"postnatal depression diagnosis for patient with EPDS score {epds_score}: {observations}"
             rag_result = self.rag_engine.retrieve(rag_query, top_k=5)
             
             if isinstance(rag_result, dict) and "content_list" in rag_result:
@@ -752,7 +690,7 @@ class FullConversationAgent:
         
         # Create a prompt for the observation summarization
         summarization_prompt = f"""
-        You are a mental health professional reviewing patient responses to a questionnaire.
+        You are a postpartum mental health professional reviewing patient responses to a questionnaire.
         
         Here are the patient's responses:
         {formatted_responses}
@@ -770,7 +708,7 @@ class FullConversationAgent:
         
         # Create a temporary conversation for generating the observations
         temp_conversation = [
-            {"role": "system", "content": "You are a clinical mental health professional conducting an assessment."},
+            {"role": "system", "content": "You are a clinical postpartum mental health professional conducting an assessment."},
             {"role": "user", "content": summarization_prompt}
         ]
         
@@ -800,7 +738,8 @@ class FullConversationAgent:
         """Format the patient's responses for diagnosis."""
         formatted = ""
         for i, (question, response) in enumerate(self.responses, 1):
-            formatted += f"Q{i}: {question}\nA{i}: {response}\n\n"
+            score = self._score_response(response, i-1)
+            formatted += f"Q{i}: {question}\nA{i}: {response}\nScore: {score}\n\n"
         return formatted
 
     def _extract_conversation_from_text(self, text):
