@@ -206,7 +206,7 @@ class MentalHealthAssistant:
             },
             {
                 "question": "I have blamed myself unnecessarily when things went wrong",
-                "reverse": True,  # top=3, bottom=0
+                "reverse": True,  
                 "options": [
                     {"text": "Yes, most of the time", "score": 3},
                     {"text": "Yes, some of the time", "score": 2},
