@@ -101,8 +101,8 @@ class MentalHealthAssistant:
             self.conversation_history.append({"role": "assistant", "content": next_question})
             return next_question
         else:
-            print("[DEBUG] All EPDS questions asked. Generating diagnosis.")
-            return self.generate_diagnosis()
+            print("[DEBUG] All EPDS questions asked. Generating screening.")
+            return self.generate_screening()
     
     def _generate_introduction(self):
         """Generate an introduction for the mental health assessment."""
@@ -127,36 +127,35 @@ class MentalHealthAssistant:
             full_questionnaire_content = ""
         
         intro_prompt = f"""
-        You are a postpartum professional mental health clinician about to conduct an assessment using a mental health questionnaire.
-        
-        Here is the full questionnaire document you will be administering:
-        
-        ```
-        {full_questionnaire_content or chr(10).join([f"{i+1}. {q}" for i, q in enumerate(self.questions)])}
-        ```
-        
-        IMPORTANT INSTRUCTIONS:
-        - Use ONLY the actual name of the questionnaire as shown in the document above
-        - DO NOT introduce this as a "Somatic Symptom Disorder questionnaire" unless that is explicitly the name in the document
-        - DO NOT assume what specific condition is being assessed
-        - The questionnaire may be a general mental health assessment or focused on various conditions
-        - Your role is to administer the questionnaire without making diagnostic assumptions up front
-        
-        Based on this questionnaire document, please generate a warm, professional introduction to the patient that:
-        1. Introduces yourself as a postpartum mental health professional
-        2. Identifies the specific questionnaire you're using by name (from the document)
-        3. Explains the purpose of this specific assessment 
-        4. Reassures the patient about confidentiality and creating a safe space
-        5. Briefly explains how the assessment will proceed ({len(self.questions)} questions)
-        6. Indicates you're ready to begin with the first question
-        
-        Keep your tone professional but warm, showing empathy while maintaining clinical objectivity.
-        Make sure to correctly identify and name the specific questionnaire you're administering.
-        For the first interaction, provide a complete introduction followed by your first question.
-        
-        This is real-time conversation with a human patient, so make your introduction engaging, natural, and conversational.
-        """
-        
+            You are a postpartum mental health professional about to conduct an assessment with a new mother using a validated questionnaire.
+
+            Here is the full questionnaire document you will be administering:
+            
+            ```
+            {full_questionnaire_content}
+            ```
+            
+            IMPORTANT INSTRUCTIONS:
+            - Use ONLY the actual name of the questionnaire as shown in the document above
+            - DO NOT introduce this as another type of questionnaire unless that is explicitly the name in the document
+            - DO NOT assume or state the diagnosis in advance
+            - The questionnaire may screen for postpartum depression or related concerns, but your role is only to administer it as written
+            - Always remain professional, supportive, and focused on the patient's postpartum experience
+            
+            Based on this questionnaire document, please generate a warm, professional introduction to the patient that:
+            1. Introduces yourself as a clinician specializing in postpartum mental health
+            2. Identifies the specific questionnaire by its correct name (from the document)
+            3. Explains the purpose of this specific assessment in the postpartum context
+            4. Reassures the patient about confidentiality and creating a safe, supportive space
+            5. Briefly explains how the assessment will proceed ({len(self.questions)} questions)
+            6. Indicates you're ready to begin with the first question
+            
+            Keep your tone professional but warm, showing empathy while maintaining clinical objectivity.
+            For the first interaction, provide a complete introduction followed by your first question.
+            
+            This is real-time conversation with a new mother, so make your introduction engaging, natural, and conversational.
+            """
+    
         # Create a temporary conversation for generating the introduction
         temp_conversation = [
             {"role": "system", "content": self.system_prompt},
@@ -164,9 +163,13 @@ class MentalHealthAssistant:
         ]
         result = self.client.chat(self.model, temp_conversation)
         return result['response']
-    
+
     def _score_response(self, response, question_idx):
-        """Map a response to an EPDS score (0–3) using LLM and RAG with provided EPDS guidelines."""
+        """Map a response to an EPDS score (0-3) using LLM and RAG with provided EPDS guidelines."""
+        if question_idx < 0 or question_idx >= len(self.questions):
+            print(f"[DEBUG] Invalid question_idx {question_idx}, returning default score")
+            return {"score": 0, "explanation": "Invalid question index", "warning": ""}
+
         rag_context = ""
         if self.rag_engine:
             rag_query = f"Edinburgh Postnatal Depression Scale scoring guidelines for question: {self.questions[question_idx]}"
@@ -182,21 +185,21 @@ class MentalHealthAssistant:
                             filtered_content.append(rag_result["content_list"][i])
                 if filtered_content:
                     rag_context = "\n\n".join(filtered_content)
-        
+
         epds_guidelines = [
             {
                 "question": "I have been able to laugh and see the funny side of things",
-                "reverse": False,  # top=0, bottom=3
+                "reverse": True,  # Corrected: Reverse scoring
                 "options": [
                     {"text": "As much as I always could", "score": 0},
-                    {"text": "Not quite as much now", "score": 1},
+                    {"text": "Not quite so much now", "score": 1},
                     {"text": "Definitely not so much now", "score": 2},
                     {"text": "Not at all", "score": 3},
                 ],
             },
             {
                 "question": "I have looked forward with enjoyment to things",
-                "reverse": False,
+                "reverse": True,  # Corrected: Reverse scoring
                 "options": [
                     {"text": "As much as I ever did", "score": 0},
                     {"text": "Rather less than I used to", "score": 1},
@@ -206,7 +209,7 @@ class MentalHealthAssistant:
             },
             {
                 "question": "I have blamed myself unnecessarily when things went wrong",
-                "reverse": True,  
+                "reverse": True,
                 "options": [
                     {"text": "Yes, most of the time", "score": 3},
                     {"text": "Yes, some of the time", "score": 2},
@@ -286,174 +289,212 @@ class MentalHealthAssistant:
             },
         ]
 
-        
         prompt = f"""
-        Respond ONLY with a valid JSON object. 
-        No explanations, no markdown, no text outside JSON. 
+        Respond ONLY with a valid JSON object.
+        No explanations, no markdown, no text outside JSON.
 
         You are a licensed mental health clinician scoring a patient's response to the Edinburgh Postnatal Depression Scale (EPDS).
 
         TASK:
-        - You will receive one EPDS question, the patient’s free-text response, and the official EPDS scoring guidelines for that question. 
-        - Your job is to evaluate the meaning of the patient’s response and map it to the closest guideline option. 
+        - You will receive one EPDS question, the patient’s free-text response, the official EPDS scoring guidelines for that question, and additional context from RAG.
+        - Your job is to evaluate the meaning of the patient’s response and map it to the closest guideline option.
         - Then return the corresponding score, along with a short explanation of your reasoning.
 
         IMPORTANT RULES:
         1. Use SEMANTIC matching, not exact word matching. For example:
-        - If patient says "I can still laugh but not as much as before", it matches "Not quite as much now".
-        - If patient says "I never enjoy things anymore", it matches "Hardly at all".
-        2. Return JSON with exactly three fields:
+        - If patient says "I don’t find anything fun anymore," it matches "Not at all" for Q1.
+        - If patient says "I’m always anxious," it matches "Yes, very often" for Q4.
+        2. Support multilingual responses, including Vietnamese (e.g., "I don't see anything funny." = "Not at all", "I always worry" = "Yes, very often").
+        3. Return JSON with exactly three fields:
         - score: Integer (0–3)
         - explanation: Short string (why the response matches the selected option)
         - warning: 
             - For Question 10, if score ≥ 1 → "Possible self-harm risk, alert clinician."
             - Otherwise → empty string "".
-        3. Do not invent new options. Only use the ones in EPDS Guidelines.
-        4. Do not include any other commentary, markdown, or formatting. 
+        4. Do not invent new options. Only use the ones in EPDS Guidelines.
+        5. Use RAG context to improve scoring accuracy if available.
+        6. Do not include any other commentary, markdown, or formatting.
         Output must be pure JSON only.
 
         DATA PROVIDED:
         EPDS Question: {self.questions[question_idx]}
         Patient Response: {response}
         EPDS Guidelines: {json.dumps(epds_guidelines[question_idx], ensure_ascii=False)}
-
-        VALID EXAMPLE OUTPUT:
-        {{
-        "score": 2,
-        "explanation": "Patient reports enjoying things less than before, which matches 'Definitely less than I used to'.",
-        "warning": ""
-        }}
+        RAG Context: {rag_context}
         """
-
 
         temp_conversation = [
             {"role": "system", "content": self.system_prompt},
             {"role": "user", "content": prompt}
         ]
-
         result = self.client.chat(self.model, temp_conversation)
         response_text = result['response']
-        
-        # Thêm phần clean JSON (copy từ extract_and_clean_json trong full_conversation_agent.py)
+
+        # Clean JSON (adapted from full_conversation_agent.py)
         cleaned_text = response_text.strip()
         cleaned_text = re.sub(r'^```json\s*', '', cleaned_text)
         cleaned_text = re.sub(r'^```\s*', '', cleaned_text)
         cleaned_text = re.sub(r'\s*```$', '', cleaned_text)
-        array_match = re.search(r'$$ .* $$', cleaned_text, re.DOTALL)  # Nếu cần, nhưng ở đây là object nên bỏ
-        if array_match:
-            cleaned_text = array_match.group(0)
         cleaned_text = re.sub(r'[\x00-\x1F\x7F]', '', cleaned_text)
         cleaned_text = cleaned_text.replace('\u201c', '"').replace('\u201d', '"')
         cleaned_text = cleaned_text.replace('\u2018', "'").replace('\u2019', "'")
         cleaned_text = re.sub(r'([{,])\s*\'([^\']+)\'\s*:', r'\1"\2":', cleaned_text)
         cleaned_text = re.sub(r':\s*\'([^\']+)\'\s*([,}])', r':"\1"\2', cleaned_text)
-        
-        # Giữ nguyên phần try-except parse
+
         try:
             result_json = json.loads(cleaned_text)
             if not isinstance(result_json, dict) or 'score' not in result_json:
                 raise ValueError("Invalid JSON structure: missing 'score' key")
-            print(f"[DEBUG] Successfully parsed score: {result_json['score']}")
-            return result_json['score']  # Nếu cần explanation/warning, return full dict
+            print(f"[DEBUG] Q{question_idx+1}: {self.questions[question_idx][:50]}... Response: {response[:50]}... Score: {result_json['score']}, Explanation: {result_json['explanation']}")
+            return result_json
         except (json.JSONDecodeError, ValueError) as e:
             print(f"[DEBUG] Failed to parse LLM response: {response_text}")
             print(f"[DEBUG] Parsing error: {str(e)}")
-            # Fallback: Extract score from text if possible
             score_match = re.search(r'"score"\s*:\s*(\d)', response_text)
             if score_match:
                 score = int(score_match.group(1))
                 print(f"[DEBUG] Extracted score {score} from text")
-                return score
+                return {
+                    "score": score,
+                    "explanation": "Fallback score from text",
+                    "warning": "" if question_idx != 9 else "Possible self-harm risk, alert clinician." if score >= 1 else ""
+                }
             print("[DEBUG] Using default score due to parsing failure")
-            return 1  # Default score
+            return {
+                "score": 1,
+                "explanation": "Default score due to parsing failure",
+                "warning": ""
+            }
 
-    def generate_diagnosis(self):
+    def _calculate_epds_score(self):
+        """Calculate the EPDS score from patient responses using LLM for mapping."""
+        if len(self.responses) != 10:
+            print(f"[DEBUG] Expected 10 responses, got {len(self.responses)}. Returning default.")
+            return {"total_score": 0, "suicidal_risk": False, "details": []}
+
+        total_score = 0
+        suicidal_risk = False
+        details = []  # Store score, explanation, warning for each question
+
+        for idx, (question, response) in enumerate(self.responses):
+            result = self._score_response(response, idx)
+            
+            total_score += result["score"]
+            if idx == 9 and result["score"] >= 1:  # Q10 (0-based index)
+                suicidal_risk = True
+            details.append({
+                "question": question,
+                "response": response,
+                "score": result["score"],
+                "explanation": result["explanation"],
+                "warning": result["warning"]
+            })
+
+        return {
+            "total_score": total_score,
+            "suicidal_risk": suicidal_risk,
+            "details": details
+        }
+
+    def generate_screening(self):
         """
-        Generate a diagnosis based on the patient's responses.
+        Generate a screening result based on the patient's responses for postpartum depression using EPDS.
         
         Returns:
-            dict: Diagnosis from the assistant with RAG usage information
+            dict: Screening result from the assistant with RAG usage information
         """
-        epds_score = 0
-        score_explanations = []
-        for idx, (question, response) in enumerate(self.responses):
-            score = self._score_response(response, idx)
-            epds_score += score
-            score_explanations.append(f"Q{idx+1}: {question}\nResponse: {response}\nScore: {score}\n")
-        
-        risk_level = "Low risk" if epds_score <= 9 else "Moderate risk" if epds_score <= 12 else "High risk"        
         observations = self._summarize_observations()
-        # print(f"[DEBUG] Generated clinical observations: {observations[:100]}...")
-        
-        # Create a prompt for diagnosis that includes the observations
+        epds_result = self._calculate_epds_score()
+
+        # Determine risk level based on EPDS guidelines
+        if epds_result["suicidal_risk"] or epds_result["total_score"] >= 14: # probable, urgent
+            risk_level = "Probable depression, urgent referral" 
+        elif epds_result["total_score"] >= 12: # high
+            risk_level = "High possibility of depression"
+        elif epds_result["total_score"] >= 9: # possible
+            risk_level = "Depression possible"
+        else: # low
+            risk_level = "Depression not likely"
+
+        # Format score explanations from details
+        score_explanations = "\n".join(
+            f"Q{idx+1}: {detail['question']}\n"
+            f"A{idx+1}: {detail['response']}\n"
+            f"Score: {detail['score']}\n"
+            f"Explanation: {detail['explanation']}\n"
+            f"Warning: {detail['warning']}\n"
+            for idx, detail in enumerate(epds_result["details"])
+        )
+
+        # Create a prompt for screening result
         diagnosis_prompt = f"""
         Respond ONLY with a valid JSON object. No other text, no explanations, no markdown.
-        
+
         Your JSON must have exactly these keys:
-        - "summary": string
-        - "screening_impression": string (include "Total EPDS Score: {epds_score}, Risk Level: {risk_level}, concerns...")
-        - "reasoning": string
-        - "next_steps": list of strings
+        - "summary": string (compassionate summary paragraph)
+        - "screening_impression": string (screening impression WITHOUT heading, e.g. "Total EPDS Score: {epds_result['total_score']}, Risk Level: {risk_level}, concerns include <sym>symptom1</sym>, <sym>symptom2</sym>")
+        - "reasoning": string (reasoning WITHOUT heading, just plain text)
+        - "next_steps": list of strings (each recommendation separately, no heading, no numbering)
         - "rag_info": object (can be empty)
 
         Questionnaire responses and scoring:
-        {''.join(score_explanations)}
-        
+        {score_explanations}
+
         Clinical observations and potential concerns:
         {observations}
-        
-        Total EPDS Score: {epds_score}
-        Risk Level: {risk_level}
-        
+
+        Total EPDS Score: {epds_result['total_score']}
+        Suicidal Risk: {epds_result['suicidal_risk']}
+
         IMPORTANT SCREENING CONSIDERATIONS:
-        - This is a screening tool, not a diagnostic evaluation
+        - This is a screening tool for <med>postpartum depression</med> using the Edinburgh Postnatal Depression Scale (EPDS), not a diagnostic evaluation
+        - EPDS Score Interpretation:
+        - <8: Depression not likely, continue support
+        - 9-11: Depression possible, support and re-screen in 2-4 weeks
+        - 12-13: High possibility of depression, monitor and refer to <med>primary care provider (PCP)</med>
+        - ≥14 or Q10 ≥1: Probable depression, urgent referral to <med>PCP</med> or <med>mental health specialist</med>
         - Identify potential levels of risk for <med>postpartum depression</med> or related concerns
         - Be open to a range of possibilities including <med>anxiety</med>, <med>adjustment difficulties</med>, and <med>stress-related symptoms</med>
         - Do not assign a formal diagnosis; instead describe screening impressions and level of concern
         - If responses are inconclusive, clearly indicate uncertainty and need for further evaluation
-        
+
         Please analyze these responses and observations and provide a professional screening assessment that MUST follow this EXACT structure:
 
-        1. First paragraph: Write a compassionate summary of what you've heard from the patient, showing empathy for their postpartum experience.
-        
-        2. After that, include a section with the heading "**Screening Impression:**" (exactly as shown, with the asterisks)
-        - On the same line, immediately after the heading, provide the screening impression in this format: "Total EPDS Score: {epds_score}, Risk Level: {risk_level} (e.g., concerns include <sym>symptom1</sym>, <sym>symptom2</sym>)"
-        - Do not add extra newlines between the heading and the impression
-        
-        3. Next, include a section with the heading "**Reasoning:**" (exactly as shown, with the asterisks)
-        - Immediately after this heading, explain your rationale for the screening impression, referencing symptoms and EPDS guidelines
-        - Do not add extra newlines between the heading and your explanation
-        
-        4. Finally, include a section with the heading "**Recommended Next Steps/Support Options:**" (exactly as shown, with the asterisks)
-        - List specific numbered recommendations (1., 2., 3., etc.)
-        - Make each recommendation clear, supportive, and actionable
-        
+        1. "summary": Write a compassionate summary of what you've heard from the patient, showing empathy for their postpartum experience.
+
+        2. "screening_impression": Provide the screening impression in this format: "Total EPDS Score: {epds_result['total_score']}, Risk Level: {risk_level} (e.g., concerns include <sym>symptom1</sym>, <sym>symptom2</sym>)"
+
+        3. "reasoning": Explain your rationale for the screening impression, referencing symptoms, EPDS guidelines, and <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>.
+
+        4. "next_steps": Provide a list of specific, clear, supportive, and actionable recommendations (e.g., "Arrange urgent appointment with <med>PCP</med>", "Encourage sleep hygiene practices"). Do not include numbering, headings, or markdown.
+
         When writing your screening assessment, use these special tags:
         - Wrap medical terms and conditions in <med>medical term</med> tags
         - Wrap symptoms in <sym>symptom</sym> tags
         - Wrap patient quotes or paraphrases in <quote>patient quote</quote> tags
-        
+
         EXTREMELY IMPORTANT:
-        1. Return a JSON object with keys: summary, screening_impression, reasoning, next_steps, rag_info (if applicable)
-        2. Do NOT include any introductory statements answering the prompt
-        3. Do NOT begin with phrases like "Okay, here's a clinical assessment..."
-        4. Start DIRECTLY with the compassionate summary paragraph without any preamble
+        1. Return a JSON object with keys: summary, screening_impression, reasoning, next_steps, rag_info
+        2. Do NOT include any markdown, headings, or asterisks in the JSON values
+        3. Do NOT include numbering in next_steps (just plain list items)
+        4. Start DIRECTLY with the JSON object, no preamble
         5. Never include meta-commentary about what you're about to write
-        6. Include all four components in the exact order specified
-        7. Format section headings consistently with double asterisks
-        8. Maintain proper spacing between sections (one blank line)
+        6. Ensure all values are plain strings or lists, no extra formatting
+        7. Include disclaimer at the end of reasoning: "This is a screening tool, not a diagnosis. Consult a doctor for medical advice."
+        8. Maintain proper use of <med>, <sym>, and <quote> tags as instructed
         9. Do not add extra newlines within sections
         10. Do not repeat any sections or include incomplete sentences
         11. Always wrap medical terms, symptoms, and quotes in the specified tags
+        12. Include disclaimer: "This is a screening tool, not a diagnosis. Consult a doctor for medical advice."
 
         Keep your tone professional but warm, showing empathy while maintaining clinical objectivity.
         """
-        
+
         # Initialize RAG usage information
         rag_usage = None
         if self.rag_engine:
             print("[DEBUG] Using RAG for screening...")
-            rag_query = f"postpartum depression screening impression for patient with EPDS score {epds_score}: {observations}"
+            rag_query = f"postpartum depression screening impression for patient with EPDS score {epds_result['total_score']}: {observations}"
             rag_result = self.rag_engine.retrieve(rag_query, top_k=5)
             
             if isinstance(rag_result, dict) and "content_list" in rag_result:
@@ -470,7 +511,7 @@ class MentalHealthAssistant:
                         newly_accessed_docs.append(doc)
                 
                 if filtered_content:
-                    print(f"[DEBUG] Found {len(filtered_content)} new relevant documents for diagnosis")
+                    print(f"[DEBUG] Found {len(filtered_content)} new relevant documents for screening")
                     self.conversation_history.append({
                         "role": "system", 
                         "content": f"Use this additional reference information to help inform your postpartum depression screening impression, but don't include raw reference text in your response: {' '.join(filtered_content)}"
@@ -485,10 +526,10 @@ class MentalHealthAssistant:
         
         result = self.client.chat(self.model, self.conversation_history)
         diagnosis = result['response']
-        self.context = result['context']
+        self.context = result.get('context')
         
         try:
-            # Làm sạch JSON
+            # Clean JSON
             cleaned_text = diagnosis.strip()
             cleaned_text = re.sub(r'^```json\s*', '', cleaned_text)
             cleaned_text = re.sub(r'^```\s*', '', cleaned_text)
@@ -499,31 +540,31 @@ class MentalHealthAssistant:
             cleaned_text = re.sub(r'([{,])\s*\'([^\']+)\'\s*:', r'\1"\2":', cleaned_text)
             cleaned_text = re.sub(r':\s*\'([^\']+)\'\s*([,}])', r':"\1"\2', cleaned_text)
             
-            # Thêm bước kiểm tra JSON hợp lệ
+            # Parse JSON
             try:
                 result_json = json.loads(cleaned_text, strict=False)
             except json.JSONDecodeError as e:
                 print(f"[DEBUG] Initial JSON parsing failed: {str(e)}")
-                # Thử làm sạch thêm nếu có lỗi liên quan đến next_steps
+                # Try cleaning further for next_steps
                 cleaned_text = re.sub(r'"\*\*Recommended Next Steps/Support Options:\*\*\n([\s\S]*?)"', r'[\1]', cleaned_text)
                 cleaned_text = re.sub(r'\n\d+\.\s*', '","', cleaned_text)
-                cleaned_text = re.sub(r'^$$ \s*"', '[', cleaned_text)
-                cleaned_text = re.sub(r'"\s* $$$', ']', cleaned_text)
+                cleaned_text = re.sub(r'^\[\s*"', '[', cleaned_text)
+                cleaned_text = re.sub(r'"\s*\]$', ']', cleaned_text)
                 result_json = json.loads(cleaned_text, strict=False)
             
-            # Kiểm tra cấu trúc JSON
+            # Validate JSON structure
             required_keys = {"summary", "screening_impression", "reasoning", "next_steps", "rag_info"}
             if not all(key in result_json for key in required_keys):
                 raise ValueError("Missing required keys in JSON response")
             
-            # Định dạng screening_impression
-            screening_impression = result_json['screening_impression']
-            if isinstance(screening_impression, dict) and "concerns" in screening_impression:
-                concerns_text = f"({', '.join(screening_impression['concerns'])})"
-            else:
-                concerns_text = f"Total EPDS Score: {epds_score}, Risk Level: {risk_level} ({screening_impression})"
+            # Format screening_impression
+            concerns = []
+            for detail in epds_result["details"]:
+                if detail["score"] >= 2:  # High severity responses
+                    concerns.append(detail["explanation"].split("matches ")[-1].strip("'"))
+            concerns_text = f"Total EPDS Score: {epds_result['total_score']}, Risk Level: {risk_level} (concerns include {', '.join(f'<sym>{concern}</sym>' for concern in concerns)})" if concerns else f"Total EPDS Score: {epds_result['total_score']}, Risk Level: {risk_level}"
             
-            # Định dạng next_steps
+            # Format next_steps
             next_steps = result_json['next_steps']
             if isinstance(next_steps, str):
                 next_steps = [step.strip() for step in next_steps.split('\n') if step.strip().startswith(('\d.', '**'))]
@@ -535,12 +576,13 @@ class MentalHealthAssistant:
                 f"**Reasoning:** {result_json['reasoning']}\n\n"
                 f"**Recommended Next Steps/Support Options:**\n"
                 f"{'\n'.join(f'{i+1}. {step}' for i, step in enumerate(next_steps))}\n"
+                f"\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n"
             )
             
             if result_json.get('rag_info'):
                 formatted_diagnosis += f"\nRAG Info: {json.dumps(result_json['rag_info'])}\n"
             
-            # Loại bỏ các dòng trùng lặp
+            # Remove duplicate lines
             lines = formatted_diagnosis.split('\n')
             seen_lines = set()
             cleaned_lines = []
@@ -557,14 +599,16 @@ class MentalHealthAssistant:
                 "rag_usage": rag_usage
             }
         except (json.JSONDecodeError, ValueError) as e:
-            print(f"[DEBUG] Failed to parse diagnosis: {diagnosis}")
+            print(f"[DEBUG] Failed to parse screening result: {diagnosis}")
             print(f"[DEBUG] Parsing error: {str(e)}")
             fallback_diagnosis = (
                 f"Failed to parse JSON response, but screening completed.\n\n"
-                f"**Screening Impression:** Total EPDS Score: {epds_score}, Risk Level: {risk_level}.\n\n"
+                f"**Screening Impression:** Total EPDS Score: {epds_result['total_score']}, Risk Level: {risk_level}.\n\n"
                 f"**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n"
                 f"**Recommended Next Steps/Support Options:**\n"
                 f"1. Consult a <med>mental health professional</med> for further evaluation.\n"
+                f"2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n"
+                f"\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n"
             )
             self.conversation_history.append({"role": "assistant", "content": fallback_diagnosis})
             return {
@@ -624,8 +668,7 @@ class MentalHealthAssistant:
         """Format the patient's responses for diagnosis."""
         formatted = ""
         for i, (question, response) in enumerate(self.responses, 1):
-            score = self._score_response(response, i-1)
-            formatted += f"Q{i}: {question}\nA{i}: {response}\nScore: {score}\n\n"
+            formatted += f"Q{i}: {question}\nA{i}: {response}\n\n"
         return formatted
 
     def respond(self, message, conversation_history=None):

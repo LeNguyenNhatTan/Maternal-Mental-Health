@@ -234,7 +234,7 @@ class ConversationHandler:
                                             print("[DEBUG] All questions asked. Generating diagnosis...")
                                         
                                         # Generate diagnosis
-                                        diagnosis = self.assistant.generate_diagnosis()
+                                        diagnosis = self.assistant.generate_screening()
                                         
                                         # Add diagnosis to conversation log
                                         if isinstance(diagnosis, dict) and "content" in diagnosis:
@@ -318,7 +318,7 @@ class ConversationHandler:
                                 print("[DEBUG] User requested to end conversation. Generating diagnosis...")
                             
                             # Generate diagnosis based on conversation so far
-                            diagnosis = self.assistant.generate_diagnosis()
+                            diagnosis = self.assistant.generate_screening()
                             
                             # Update state file with diagnosis
                             if isinstance(diagnosis, dict) and "content" in diagnosis:
@@ -383,7 +383,7 @@ class ConversationHandler:
                                         
                                         # If this was the last question, generate diagnosis
                                         if all_questions_asked:
-                                            diagnosis = self.assistant.generate_diagnosis()
+                                            diagnosis = self.assistant.generate_screening()
                                             
                                             # Update state file with diagnosis
                                             if isinstance(diagnosis, dict) and "content" in diagnosis:
@@ -435,7 +435,7 @@ class ConversationHandler:
                 if not disable_output:
                     print("[DEBUG] All questions have been asked. Requesting final diagnosis...")
                 # Force the assistant to generate a diagnosis
-                diagnosis = self.assistant.generate_diagnosis()
+                diagnosis = self.assistant.generate_screening()
                 
                 # Check if the diagnosis is a dictionary with RAG usage info
                 if isinstance(diagnosis, dict) and "content" in diagnosis:

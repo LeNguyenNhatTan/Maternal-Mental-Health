@@ -521,12 +521,12 @@ class FullConversationAgent:
             print("[DEBUG] Using default score due to parsing failure")
             return 1  # Default score
 
-    def generate_diagnosis(self):
+    def generate_screening(self):
         """
-        Generate a diagnosis based on the patient's responses.
+        Generate a screening based on the patient's responses.
         
         Returns:
-            dict: Diagnosis from the assistant with RAG usage information
+            dict: Screening from the assistant with RAG usage information
         """
         epds_score = 0
         score_explanations = []

@@ -120,7 +120,7 @@ class FullConversationHandler:
         # Generate diagnosis
         diagnosis_start = time.time()
         print("[ONESHOT] Starting diagnosis generation...")
-        diagnosis = self.agent.generate_diagnosis()
+        diagnosis = self.agent.generate_screening()
         diagnosis_end = time.time()
         self.timing_metrics["diagnosis_generation_time"] = diagnosis_end - diagnosis_start
         

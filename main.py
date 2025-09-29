@@ -28,6 +28,12 @@ DEFAULT_LOGS_DIR = os.path.join(
     "chat_logs"
 )
 
+DEFAULT_CACHE_DIR = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "cache"
+)
+DEFAULT_VECTOR_STORE = os.path.join(DEFAULT_CACHE_DIR, "vector_store")
+
 # Add global debug log function
 def debug_log(message):
     """Print debug message with timestamp"""
@@ -679,6 +685,8 @@ def main():
     parser.add_argument('--no-save', action='store_true', help="Don't save conversation logs")
     parser.add_argument('--logs-dir', type=str, default=DEFAULT_LOGS_DIR,
                        help=f"Directory to save conversation logs (default: {DEFAULT_LOGS_DIR})")
+    parser.add_argument('--vector-store-dir', type=str, default=DEFAULT_VECTOR_STORE,
+                       help=f"Directory to save vector store (default: {DEFAULT_VECTOR_STORE})")
     parser.add_argument('--disable-output', action='store_true',
                        help="Disable console output during conversation")  # Added line
     
@@ -747,7 +755,7 @@ def main():
             args.docs_dir, 
             questionnaire_dir=args.questionnaires_dir,
             refresh_cache=args.refresh_cache,  
-            cache_dir=args.logs_dir if args.logs_dir else None 
+            # cache_dir=args.logs_dir if args.logs_dir else None 
         )
 
         # Print cache info
