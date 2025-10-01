@@ -52,7 +52,7 @@ class Patient:
                     6. ALWAYS express the symptoms listed in your profile
                     7. ALWAYS stay consistent with your postpartum experiences and background
 
-                    You should express genuine emotional responses matching postpartum depression concerns and should appear to be seeking help.
+                    You should show genuine emotional reactions that match your profile and should appear as if you are looking for help.
                     """
 
         if self.profile:
@@ -103,7 +103,7 @@ class Patient:
     
     def respond_to_question(self, question):
         """
-        Generate a response to a question from the mental health professional.
+        Generate a response to a question from the postpartum mental health professional.
         
         Args:
             question (str): Question from the professional
@@ -112,10 +112,10 @@ class Patient:
             str: Patient's response
         """
         # Add the question to conversation history
-        self.conversation_history.append({"role": "user", "content": f"Mental Health Professional: {question}"})
+        self.conversation_history.append({"role": "user", "content": f"Postpartum Mental Health Professional: {question}"})
         
         # Generate short context reminder to stay in character
-        reminder = f"Remember to respond AS THE PATIENT with {self.profile_name or 'mental health issues'}. Express the symptoms in your profile. Answer directly as this patient, expressing your symptoms and experiences."
+        reminder = f"Remember to respond AS THE PATIENT OF POSTPARTUM DEPRESSION. Express the symptoms in your profile. Answer directly as this patient, expressing your symptoms and experiences."
         temp_history = self.conversation_history.copy()
         temp_history.append({"role": "system", "content": reminder})
         

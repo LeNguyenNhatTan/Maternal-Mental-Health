@@ -170,21 +170,21 @@ class MentalHealthAssistant:
             print(f"[DEBUG] Invalid question_idx {question_idx}, returning default score")
             return {"score": 0, "explanation": "Invalid question index", "warning": ""}
 
-        rag_context = ""
-        if self.rag_engine:
-            rag_query = f"Edinburgh Postnatal Depression Scale scoring guidelines for question: {self.questions[question_idx]}"
-            rag_result = self.rag_engine.retrieve(rag_query, top_k=3)
-            if isinstance(rag_result, dict) and "content_list" in rag_result:
-                documents = rag_result.get("documents", [])
-                filtered_content = []
-                for i, doc in enumerate(documents):
-                    doc_id = doc.get("title", "") + "|" + doc.get("highlight", "")[:50]
-                    if doc_id not in self.seen_documents:
-                        self.seen_documents.add(doc_id)
-                        if i < len(rag_result["content_list"]):
-                            filtered_content.append(rag_result["content_list"][i])
-                if filtered_content:
-                    rag_context = "\n\n".join(filtered_content)
+        # rag_context = ""
+        # if self.rag_engine:
+        #     rag_query = f"Edinburgh Postnatal Depression Scale scoring guidelines for question: {self.questions[question_idx]}"
+        #     rag_result = self.rag_engine.retrieve(rag_query, top_k=3)
+        #     if isinstance(rag_result, dict) and "content_list" in rag_result:
+        #         documents = rag_result.get("documents", [])
+        #         filtered_content = []
+        #         for i, doc in enumerate(documents):
+        #             doc_id = doc.get("title", "") + "|" + doc.get("highlight", "")[:50]
+        #             if doc_id not in self.seen_documents:
+        #                 self.seen_documents.add(doc_id)
+        #                 if i < len(rag_result["content_list"]):
+        #                     filtered_content.append(rag_result["content_list"][i])
+        #         if filtered_content:
+        #             rag_context = "\n\n".join(filtered_content)
 
         epds_guidelines = [
             {
@@ -320,8 +320,8 @@ class MentalHealthAssistant:
         EPDS Question: {self.questions[question_idx]}
         Patient Response: {response}
         EPDS Guidelines: {json.dumps(epds_guidelines[question_idx], ensure_ascii=False)}
-        RAG Context: {rag_context}
         """
+        # RAG Context: {rag_context}
 
         temp_conversation = [
             {"role": "system", "content": self.system_prompt},
