@@ -539,13 +539,28 @@ class MentalHealthAssistant:
             cleaned_text = cleaned_text.replace('\u2018', "'").replace('\u2019', "'")
             cleaned_text = re.sub(r'([{,])\s*\'([^\']+)\'\s*:', r'\1"\2":', cleaned_text)
             cleaned_text = re.sub(r':\s*\'([^\']+)\'\s*([,}])', r':"\1"\2', cleaned_text)
-            
+
+            # --- JSON fallback sanitizer (added) ---
+            try:
+                cleaned_text = cleaned_text.encode('utf-8', 'ignore').decode('utf-8')
+                cleaned_text = cleaned_text.replace("“", '"').replace("”", '"')
+                cleaned_text = cleaned_text.replace("‘", "'").replace("’", "'")
+                cleaned_text = cleaned_text.replace("—", "-").replace("–", "-")
+                cleaned_text = re.sub(
+                    r'("summary"\s*:\s*")([^"]*?)(?<!\\)"',
+                    lambda m: m.group(1) + m.group(2).replace('"', '\\"') + '"',
+                    cleaned_text
+                )
+                cleaned_text = re.sub(r'[\x00-\x1F\x7F]', '', cleaned_text)
+            except Exception as e:
+                print(f"[DEBUG] JSON pre-clean failed (non-critical): {e}")
+            # --- end of JSON fallback sanitizer ---
+
             # Parse JSON
             try:
                 result_json = json.loads(cleaned_text, strict=False)
             except json.JSONDecodeError as e:
                 print(f"[DEBUG] Initial JSON parsing failed: {str(e)}")
-                # Try cleaning further for next_steps
                 cleaned_text = re.sub(r'"\*\*Recommended Next Steps/Support Options:\*\*\n([\s\S]*?)"', r'[\1]', cleaned_text)
                 cleaned_text = re.sub(r'\n\d+\.\s*', '","', cleaned_text)
                 cleaned_text = re.sub(r'^\[\s*"', '[', cleaned_text)
@@ -615,6 +630,7 @@ class MentalHealthAssistant:
                 "content": fallback_diagnosis,
                 "rag_usage": rag_usage
             }
+
     
     def _summarize_observations(self) -> str:
         """
