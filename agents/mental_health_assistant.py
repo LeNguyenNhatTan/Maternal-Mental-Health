@@ -575,8 +575,8 @@ class MentalHealthAssistant:
                 f"**Screening Impression:** {concerns_text}\n\n"
                 f"**Reasoning:** {result_json['reasoning']}\n\n"
                 f"**Recommended Next Steps/Support Options:**\n"
-                f"{'\n'.join(f'{i+1}. {step}' for i, step in enumerate(next_steps))}\n"
-                f"\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n"
+                + "\n".join(f"{i+1}. {step}" for i, step in enumerate(next_steps))
+                + "\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n"
             )
             
             if result_json.get('rag_info'):

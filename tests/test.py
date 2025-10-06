@@ -5,7 +5,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from main import main
 
 # Set API key
-
+# os.environ['OPENAI_API_KEY'] = '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'
+# groq_api_key
+os.environ['GROQ_API_KEY'] = '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'
 # # groq_api_key
 
 if __name__ == "__main__":
