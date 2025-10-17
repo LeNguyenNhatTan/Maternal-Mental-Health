@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T08:27:50.086822",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Good morning, I\u2019m so glad you\u2019re here. I\u2019m Dr. Martinez, a perinatal mental-health clinician. Over the next few minutes I\u2019d like us to use a short, well-studied tool called the Edinburgh Postnatal Depression Scale\u2014EPDS for short. It simply helps us see how you\u2019ve been feeling since your baby arrived so we can be sure you\u2019re getting the support you deserve. Everything we discuss stays between us unless you tell me you\u2019re in danger; then we\u2019ll make a safety plan together. I\u2019ll ask ten questions about the past seven days\u2014no right or wrong answers, just whatever feels true for you. Ready to begin?\n\nIn the past week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve noticed I don\u2019t really laugh much anymore. Even when my partner tries to joke with me, it feels kind of forced if I crack a smile. It\u2019s like the things that used to feel funny just don\u2019t reach me right now."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2026 that hasn\u2019t happened for me. I might manage a little smile, but actually laughing\u2014like really laughing\u2014hasn\u2019t come easily at all this week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I used to get excited about little things\u2014coffee with a friend, a walk, even just watching a show I liked\u2014but lately it all feels flat. I still do them because I think I \u201cshould,\u201d but that spark of looking forward to something just isn\u2019t there."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I do that a lot. If the baby\u2019s fussy, I immediately think it\u2019s because I\u2019m not doing something right, or if I can\u2019t get her settled quickly I\u2019ll sit there replaying every little thing I did and convince myself it\u2019s my fault. Even when my partner says \u201cbabies just cry,\u201d I still feel like I\u2019m failing somehow."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Pretty much every day. I\u2019ll be feeding her and suddenly wonder if she\u2019s breathing okay, or I\u2019ll lie in bed hearing phantom cries even when she\u2019s asleep. There\u2019s this tight feeling in my chest that just shows up\u2014no real reason, but I can\u2019t shake it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes\u2026 it\u2019s happened a few times. Out of nowhere my heart starts racing and I feel like I can\u2019t catch my breath, even if the baby\u2019s fine and nothing\u2019s going on. It passes after a bit, but in the moment it\u2019s like my body thinks something terrible is about to happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes\u2026 most days feel like I\u2019m barely treading water. I\u2019ll finally get her down for a nap and the second I think I can breathe the laundry or dishes or a text I forgot to answer jumps out at me, and it\u2019s like the walls close in. I manage, but it\u2019s this constant sense of \u201chow am I going to keep up?\u201d"
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a few nights this week I\u2019d lie down exhausted, but my mind just kept spinning\u2014replaying every little thing I did wrong, worrying she\u2019ll wake up any second. Even when she\u2019s sleeping soundly, I can\u2019t drift off; I end up staring at the ceiling for hours."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, that\u2019s most days. There\u2019s this heavy sadness that just sits on me. I\u2019ll be holding the baby and tears start coming, and I can\u2019t always tell you why\u2014it just feels like I\u2019m stuck under a gray cloud that won\u2019t lift."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 it\u2019s happened a few times this week. Once was when she wouldn\u2019t stop crying and nothing I tried worked; I just sat in the rocker holding her, sobbing. Another time I was folding her tiny onesies and the tears started for no clear reason\u2014just this wave of sadness that overflowed."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2026 I haven\u2019t had any thoughts like that. I\u2019m tired and overwhelmed, but I\u2019ve never wanted to hurt myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 25, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0315,
+            "highlight": "Albert Akpalu, College of Health Sciences, University of Ghana   and Epilepsy Society of Ghana, Ghana; Sophia Achab*, WHO  Collaborating Centre, University of Geneva/H\u00f4pitaux Universitaires de Gen\u00e8ve (HUG), Geneva, Switzerland; Emiliano Albanese*,   WHO Collaborating Centre, University of Geneva/HUG, Geneva, Switzerland; Robert Ali*, Drug and Alcohol Services South Australia (DASSA), WHO Collaborating Centre for the Treatment of Drug and Alcohol Problems, University of Adelaide, Australia; Fredrick Altice, Yale University School of Medicine and School of Public Health, New Haven, USA; Jos\u00e9 Ayuso-Mateos, Universidad Autonoma de Madrid and CIBER, Spain; Corrado Barbui*, WHO Collaborating Centre for Research and Training in Mental Health and Service Evaluation, University of Verona, Italy; Gretchen Birbeck, Michigan State University, Michigan, USA; Anja Busse, United Nations Of\ufb01ce on Drugs and Crime, Vienna, Austria; Vladimir Carli*, National Centre.",
+            "excerpt": " Elise Paul, Charlotte Phillips,  \nPooja Pradeeb, Matthew Schreiber.Technical Reviewers\nInputs and f...",
+            "relevance_explanation": "Some relevance: Contains terms \"evaluation\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0311,
+            "highlight": "Interns Farnoosh Ali, Lakshmi Chandrasekaran, Paul Christiansen,   Anais Collin, Aislinne Freeman, Anna Fruehauf, Ali Haidar,   Huw Jarvis, Steven Ma, Emma Mew, Elise Paul, Charlotte Phillips,   Pooja Pradeeb, Matthew Schreiber.Technical Reviewers Inputs and feedback were received from the following international experts for the development of updated mhGAP.",
+            "excerpt": " Moller, Regional Of\ufb01ce for Europe; Maristela Goldnadel Monteiro, Regional Of\ufb01ce for Americas; Matth...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 25: Postpartum Depression / Anxiety Screening Note  \nDate: ______________________\n\nSymptoms / Behavioral Observations  \n- Persistent low mood, frequent tearfulness, inability to experience pleasure (anhedonia)  \n- Daily free-floating anxiety, episodic panic symptoms (racing heart, breathlessness)  \n- Pervasive self-blame and guilt re infant care, sense of maternal inadequacy  \n- Sleep disruption secondary to ruminative worry, not solely infant demands  \n- Overwhelmed by routine tasks, reports \u201ctreading water\u201d most days  \n\nPattern  \nConsistent endorsement of depressive and anxiety symptoms throughout 9/10 items; no self-harm ideation.\n\nRisk Factors Identified  \n- Postpartum onset within past 2\u20134 wks  \n- Moderate\u2013severe symptom intensity (multiple daily episodes)  \n- Functional impairment: difficulty completing basic household/self-care tasks  \n- Absence of protective factor: no enjoyment or support-seeking mentioned  \n- Suicidality: Denied (Q10); no plan or intent\n\nScreening Significance  \nHigh clinical concern for Major Depressive Episode with peripartum onset and comorbid anxiety; warrants immediate formal evaluation and safety planning.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0313
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.363635301589966,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3514997959136963,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3325002193450928,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 25, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_probable",
+    "question_count": 10,
+    "duration": 93884.4408493042,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0315,
+        "average_score": 0.0313,
+        "example_excerpt": " Elise Paul, Charlotte Phillips,  \nPooja Pradeeb, Matthew Schreiber.Technical Reviewers\nInputs and f...",
+        "relevance_explanation": "Some relevance: Contains terms \"evaluation\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

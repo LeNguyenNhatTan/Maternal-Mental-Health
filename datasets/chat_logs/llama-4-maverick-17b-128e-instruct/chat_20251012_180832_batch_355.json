@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-12T18:09:02.581304",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello, I'm so glad you're here. My name is [Name], and I'm a perinatal mental health specialist. I'm here to support you as you navigate this significant time in your life as a new mother. As part of our conversation today, I'd like to use the Edinburgh Postnatal Depression Scale, or EPDS, to better understand how you're feeling. This scale helps us identify any emotional changes or challenges you might be experiencing after giving birth. I want to assure you that our conversation is completely confidential and a safe space for you to share your feelings. The EPDS consists of 10 questions that I'll be asking you, and I'll be taking some notes to help me understand your responses. We'll go through these questions together, and I'll be here to support you throughout the process. Before we begin, I want to let you know that I'm here to listen and support you, not to judge. I'll be asking you about your feelings over the past 7 days. Are you ready to get started? Let's begin with our first question: How have you been feeling lately - have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "I've been able to laugh and enjoy things as usual. Being a new mom is a lot to take in, but when my baby smiles at me or makes those cute little coos, it just makes me happy and I find myself laughing. It's nice to still be able to enjoy the little things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "As much as I always could."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "As much as I ever did. I'm actually really looking forward to taking my baby on walks around the neighborhood and enjoying the nice weather that's coming up. It's nice to have something to anticipate."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not very often. I mean, I'm still adjusting to being a new mom, so sometimes I worry that I'm not doing things perfectly, but I try not to be too hard on myself. Occasionally, I might feel a twinge of guilt if I think I didn't respond to my baby's cry quickly enough, but it doesn't linger."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "A little. Sometimes I find myself worrying about my baby's health, even when everything seems fine. I know it's normal to worry as a new mom, but it's hard not to think about all the things that could go wrong. It's not overwhelming, but it's there in the back of my mind."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not very much. I mean, there was one night when my baby was crying a lot and I couldn't figure out what was wrong, and I did feel a bit panicked. But it passed once my partner helped calm the baby down. Generally, I haven't felt that way."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Not very often. To be honest, some days are tougher than others, but I generally feel like I'm managing okay. Caring for a new baby is a lot of work, but I'm getting into a routine, and my partner is really supportive, so that helps. There are moments when I feel a bit overwhelmed, but they don't last long."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No. Actually, I've been sleeping pretty well, considering the baby wakes me up a few times a night. When I do get to sleep, I'm able to fall asleep and stay asleep, which is a relief. The sleep I do get is helpful in keeping me going."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "No, not really. I mean, there are moments when I'm tired or feeling a bit overwhelmed, but overall, I'm feeling pretty good. Being a new mom is a big adjustment, but it's a happy time for me, and I'm enjoying getting to know my baby."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "No, not really. I mean, I've had a few moments where I've felt a bit teary-eyed, like when I was watching a sad movie or something, but it's not like I've been crying uncontrollably or anything. It's been pretty rare, actually."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, absolutely not. That thought has never crossed my mind. I'm just focused on taking care of my baby and adjusting to this new chapter in my life. I'm happy to be a mom, and I'm not feeling any negative thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "This new mother is adjusting to life with her baby, experiencing some mild anxiety and occasional feelings of guilt or being overwhelmed, but overall she is managing well and enjoying her new role.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>The patient admits to worrying sometimes, relating it to being a new mom, indicating 'Yes, sometimes' anxiety.</sym>)\n**Reasoning:** The patient's EPDS score of 6 indicates a low risk for <med>postpartum depression</med>. She reports being able to laugh and enjoy things as usual, looking forward to future events, and not experiencing persistent sadness or loss of pleasure. However, she does mention some <sym>anxiety</sym> about her baby's health and occasional feelings of guilt. These concerns are not severe and do not indicate a high risk for <med>postpartum depression</med>. The patient's overall positive adjustment to motherhood and lack of significant depressive symptoms support the screening impression. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue to monitor for signs of <sym>anxiety</sym> or <sym>depressive symptoms</sym>\n2. Encourage the patient to maintain a support network and seek help if concerns arise\n3. Recommend <med>postpartum support</med> resources for new mothers\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf",
+            "score": 0.8339,
+            "highlight": "Accuracy of the Edin- burgh Postnatal Depression Scale (EPDS) for screening to detect major depression among pregnant and postpartum women: sys- tematic review and meta-analysis of individual participant data.",
+            "excerpt": "Psychiatr\nRes 2021;30:e1860. doi: 10.1002/mpr.1860\n124. Wang L, Kroenke K, Stump TE, Monahan PO. Scr...",
+            "relevance_explanation": "High relevance: Contains key terms \"depression\", \"screening\", \"epds\", and 1 more that directly match your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 6: **Postpartum Depression Screening Summary**\n\n**Main Symptoms and Concerns:**\n\n* Occasional anxiety and worry about the baby's health (Q4)\n* Mild feelings of guilt when not responding quickly to the baby's needs (Q3)\n* Moments of feeling overwhelmed, but generally managing well with support (Q6)\n* Rare instances of feeling teary-eyed, but not uncontrollable crying (Q9)\n\n**Patterns Across Answers:**\n\n* The patient generally reports maintaining her usual level of enjoyment and looking forward to things (Q1, Q2)\n* She does not report persistent sadness, loss of pleasure, or difficulty sleeping due to unhappiness (Q7, Q8)\n* She expresses some anxiety and worry, but not to an overwhelming degree (Q4, Q5)\n\n**Areas of Screening Significance:**\n\n* Mild anxiety related to the baby's health and well-being\n* Occasional feelings of guilt and being overwhelmed\n\n**Risk Factors:**\n\n* None identified for severe postpartum depression or anxiety (no persistent sadness, loss of pleasure, or sleep difficulties linked to mood)\n* No indication of self-harm or suicidal thoughts (Q10)\n\n**Screening Observation Summary:**\n\nThe patient reports generally positive adjustment to motherhood, with some mild anxiety and occasional feelings of guilt or being overwhelmed. She denies persistent sadness, loss of pleasure, or difficulty sleeping due to unhappiness. There are no indications of self-harm or suicidal thoughts. The patient's responses suggest a low risk for postpartum depression, but mild anxiety related to the baby's health is noted. Continued monitoring and support are recommended.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.8339
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "threshold": 0.7,
+            "evaluation_time": 0.33704447746276855,
+            "error": "model 'qwen2.5:3b' not found (status code: 404)"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "threshold": 0.7,
+            "evaluation_time": 0.3460230827331543,
+            "error": "model 'qwen2.5:3b' not found (status code: 404)"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "threshold": 0.7,
+            "evaluation_time": 0.3572535514831543,
+            "error": "model 'qwen2.5:3b' not found (status code: 404)"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "This new mother is adjusting to life with her baby, experiencing some mild anxiety and occasional feelings of guilt or being overwhelmed, but overall she is managing well and enjoying her new role.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>The patient admits to worrying sometimes, relating it to being a new mom, indicating 'Yes, sometimes' anxiety.</sym>)\n**Reasoning:** The patient's EPDS score of 6 indicates a low risk for <med>postpartum depression</med>. She reports being able to laugh and enjoy things as usual, looking forward to future events, and not experiencing persistent sadness or loss of pleasure. However, she does mention some <sym>anxiety</sym> about her baby's health and occasional feelings of guilt. These concerns are not severe and do not indicate a high risk for <med>postpartum depression</med>. The patient's overall positive adjustment to motherhood and lack of significant depressive symptoms support the screening impression. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue to monitor for signs of <sym>anxiety</sym> or <sym>depressive symptoms</sym>\n2. Encourage the patient to maintain a support network and seek help if concerns arise\n3. Recommend <med>postpartum support</med> resources for new mothers\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "patient_model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 11377.853476524353,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf": {
+        "access_count": 1,
+        "highest_score": 0.8339,
+        "average_score": 0.8339,
+        "example_excerpt": "Psychiatr\nRes 2021;30:e1860. doi: 10.1002/mpr.1860\n124. Wang L, Kroenke K, Stump TE, Monahan PO. Scr...",
+        "relevance_explanation": "High relevance: Contains key terms \"depression\", \"screening\", \"epds\", and 1 more that directly match your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: model 'qwen2.5:3b' not found (status code: 404)",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

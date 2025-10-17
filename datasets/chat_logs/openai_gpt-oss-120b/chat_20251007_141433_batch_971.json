@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-07T14:15:26.106859",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nI\u2019d like to spend a few minutes with you today using the **Edinburgh Postnatal Depression Scale (EPDS)**. This short, ten\u2011item questionnaire helps us understand how you\u2019ve been feeling over the past week since your baby arrived. It\u2019s a routine part of postpartum care and is designed to spot signs of depression or anxiety early, so we can offer support right away if it\u2019s needed.\n\nEverything you share is completely confidential, and this is a safe, non\u2011judgmental space. My goal is simply to listen and learn about your experience, not to label or diagnose anything at this stage.\n\nWe\u2019ll go through the ten questions one by one, and you can answer as honestly as feels comfortable. If any question feels difficult, you can let me know, and we can pause or discuss it further.\n\nWhenever you\u2019re ready, we can start with the first question.\n\n**Question\u202f1:**  \n*In the past seven days, how often have you felt able to laugh and see the funny side of things?*"
+    },
+    {
+      "role": "patient",
+      "content": "In the past week I\u2019ve found that I\u2019m not laughing or seeing the funny side of things quite as often as I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I do manage to laugh sometimes, especially when my baby does something cute, but it\u2019s not as easy or as frequent as it used to be. It feels like I need a little extra push to see the humor in everyday things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I still look forward to a few things\u2014like feeding my baby or a short walk\u2014but it doesn\u2019t bring me the same excitement it used to. Most days I feel only a mild interest, and I\u2019m not as eager about other activities as I once was."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve found myself blaming myself at times when something doesn\u2019t go as planned\u2014like if the baby seems fussy or if I feel like I\u2019m not handling a feeding right. It feels unnecessary, but those thoughts do pop up occasionally."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt anxious or worried for no good reason a few times over the past week\u2014more than never, but not all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt scared or panicky a couple of times in the last week even though there wasn\u2019t an obvious reason\u2014just a sudden rush of worry that passes fairly quickly."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve definitely felt like things are getting on top of me a few times this week\u2014especially when the baby\u2019s routine gets disrupted\u2014but I\u2019m usually able to pull through and manage the stress."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt a bit down at times, but it hasn\u2019t really kept me from sleeping. I usually get a decent night\u2019s rest, though I do have occasional trouble falling asleep when my mind is racing. It\u2019s not severe enough that I\u2019m staying up all night because I\u2019m unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt sad or a little miserable at times during the past week\u2014usually when the baby\u2019s crying a lot or when I\u2019m exhausted\u2014but it\u2019s not constant. Most days I\u2019m able to get through it, and the feeling doesn\u2019t stay with me for very long."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve cried once or twice this past week\u2014usually when I felt especially overwhelmed or stressed, but it\u2019s not something that\u2019s happening all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts of harming myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf",
+            "score": 0.0414,
+            "highlight": "A sys- tematic review and meta-analysis estimated bipolar dis- order pooled prevalence at 2.6% (95% CI 1.2 \u20134.5%) and bipolar-spectrum mood episodes (including depressed, hypomanic or manic, and mixed) at 20.1% (95% CI 16.0 \u2013 24.5%) in perinatal individuals (4).",
+            "excerpt": "kely to be true\nC. Manic or high mood that can be associated with talking or thinking too quickly or...",
+            "relevance_explanation": "Some relevance: Contains terms \"depressed\", \"mood\", \"episodes\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 13: **Postpartum Mood & Anxiety Screening \u2013 Summary**\n\n**Identified Symptoms / Emotional\u2011Behavioral Concerns**  \n- **Reduced frequency of laughter / diminished sense of humor** (Q1)  \n- **Blunted anticipation / limited enjoyment** of activities (Q2)  \n- **Occasional self\u2011blame** for perceived parenting lapses (Q3)  \n- **Mild\u2011to\u2011moderate anxiety/worry** without clear trigger (Q4)  \n- **Brief episodes of fear or panic** without obvious cause (Q5)  \n- **Feeling overwhelmed** when infant routine is disrupted (Q6)  \n- **Sleep:** generally adequate; occasional difficulty falling asleep due to racing thoughts (Q7)  \n- **Sadness / low mood** noted intermittently, especially when infant is distressed or mother is fatigued (Q8)  \n- **Crying spells** 1\u20132 times in the past week, linked to stress/overwhelm (Q9)  \n- **No suicidal ideation** (Q10)\n\n**Consistent Patterns Across Responses**  \n- Persistent low\u2011level mood disturbance (sadness, reduced pleasure)  \n- Mild anxiety and occasional panic\u2011type sensations  \n- Cognitive\u2011behavioral pattern of self\u2011critical thoughts/guilt  \n- Ability to function and obtain sleep most nights, but stress\u2011related sleep onset difficulty reported  \n- Emotional reactivity (crying) limited to high\u2011stress moments  \n\n**Screening Significance \u2013 Areas Relevant to Post\u2011partum Depression & Anxiety**  \n1. **Anhedonia / loss of interest** \u2013 noted in Q1 & Q2.  \n2. **Depressed mood** \u2013 intermittent sadness (Q8) and crying (Q9).  \n3. **Guilt/self\u2011blame** \u2013 occasional unnecessary self\u2011criticism (Q3).  \n4. **Anxiety symptoms** \u2013 worry (Q4), fear/panic (Q5), feeling overwhelmed (Q6).  \n5. **Sleep disturbance** \u2013 occasional difficulty falling asleep related to rumination (Q7).  \n6. **Functional impact** \u2013 reports of being able to manage most stressors, but feeling \u201con top of\u201d herself at times.\n\n**Risk Factors Noted**  \n- **Persistent low mood** (sadness, reduced enjoyment).  \n- **Crying episodes** linked to stress.  \n- **Self\u2011critical thoughts** (guilt).  \n- **Anxiety/panic symptoms** (worry, fear).  \n- **Sleep onset difficulty** when mind races.  \n- **No reported suicidal ideation** (Q10) \u2013 safety concern currently absent.\n\n**Safety Concern**  \n- **Self\u2011harm thoughts:** Denied. No immediate safety risk identified.\n\n**Overall Screening Observation**  \nThe client reports a constellation of mild depressive symptoms (diminished pleasure, intermittent sadness, occasional crying) combined with anxiety\u2011related experiences (worry, brief panic sensations, feeling overwhelmed) and occasional self\u2011blame. Sleep is generally preserved, with only occasional difficulty initiating sleep due to racing thoughts. No suicidal ideation is present. The presentation is consistent with sub\u2011threshold postpartum mood disturbance that warrants continued monitoring and further assessment to determine the need for intervention.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0414
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3552699089050293,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.369574785232544,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3425276279449463,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 52514.88346576691,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0414,
+        "average_score": 0.0414,
+        "example_excerpt": "kely to be true\nC. Manic or high mood that can be associated with talking or thinking too quickly or...",
+        "relevance_explanation": "Some relevance: Contains terms \"depressed\", \"mood\", \"episodes\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-07T02:41:04.759564",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nWe\u2019re going to complete a brief, well\u2011validated screening tool called the **EPDS (Edinburgh Postnatal Depression Scale)**. This questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of depression or anxiety that can arise after birth.  \n\nEverything you share is completely confidential, and this is a safe, supportive space\u2014my goal is simply to listen and learn about your experience so we can provide the right care for you and your baby.  \n\nThe EPDS consists of **10 short questions**. I\u2019ll ask them one at a time and you can answer as honestly as you feel comfortable. There are no right or wrong answers; just tell me what feels true for you.\n\nIf you\u2019re ready, let\u2019s begin with the first question.\n\n**1. Over the past week, how often have you felt able to laugh and see the funny side of things?**"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been able to laugh and see the funny side of things quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m ready for the next question."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been looking forward to things and enjoying them most of the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really blamed myself unnecessarily when things went wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt a little anxious or worried at times, but it\u2019s not something that happens a lot."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt scared or panicky without a reason; any nervousness I\u2019ve had has been mild and related to my baby."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I don\u2019t feel like things are getting on top of me; most days I\u2019m able to manage what comes up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t been that unhappy, and I\u2019ve been sleeping pretty well most nights."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt sad or miserable; my mood has been fairly stable."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t been that unhappy, and I haven\u2019t been crying."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts of harming myself."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling mostly stable and able to enjoy daily moments with your baby, with only occasional mild worry that feels related to caring for your infant. It sounds like you are managing well, sleeping okay, and haven't experienced persistent sadness, loss of interest, or thoughts of self\u2011harm. I appreciate you sharing openly about how you've been feeling during this early postpartum period.\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely (concerns include <sym>The patient reports occasional anxiety, indicating it occurs sometimes but not frequently, matching the 'Yes, sometimes' option.</sym>, <sym>Patient reports no unhappiness or crying, matching 'No, never' option, which is reverse\u2011scored to 3</sym>)\n**Reasoning:** Your responses indicate preserved pleasure (<quote>I've been looking forward to things and enjoying them most of the time.</quote>), stable mood (<quote>I haven't really felt sad or miserable; my mood has been fairly stable.</quote>), adequate sleep, and no self\u2011critical or hopeless thoughts. The only notable symptom is occasional anxiety (<quote>I've felt a little anxious or worried at times, but it's not something that happens a lot.</quote>), which is mild and situational. According to EPDS guidelines, a total score of 5 falls well below the threshold for probable postpartum depression (<8 suggests depression not likely). The DSM\u20115 criteria for <med>Major Depressive Disorder with Peripartum Onset</med> require at least five depressive symptoms, including depressed mood or loss of interest, present most of the day for at least two weeks, which are not met in your case. Therefore, the screening impression reflects low risk for postpartum depression, with mild anxiety as a point for ongoing monitoring. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum follow\u2011up and monitoring of mood and anxiety\n2. Encourage regular sleep hygiene and rest when possible, such as arranging support for nighttime feeds\n3. Share any increase in anxiety or new mood changes with a trusted support person or provider\n4. Provide information about local <med>postpartum support groups</med> or online resources\n5. If anxiety worsens or depressive symptoms emerge, schedule an appointment with your <med>primary care provider</med> or a <med>mental health specialist</med>\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf",
+            "score": 0.0487,
+            "highlight": "Due to the potential for preventive efforts to improve outcomes, the comprehensive prenatal intake assess- ment should include questions about personal medical and mental health history, obstetric and perinatal mental health history, psychosocial history, and family history of mood and anxiety disorders, as well.",
+            "excerpt": "n pregnancy; therefore, continuation of effective phar-\nmacotherapy for those with bipolar disorder ...",
+            "relevance_explanation": "Some relevance: Contains terms \"mental\", \"well\", \"anxiety\", and 3 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 5: **Postpartum Depression / Anxiety Screening Summary**\n\n**Client Identifier:** (redacted)  \n**Date of Screening:** (date)  \n**Clinician:** (licensed mental health professional)\n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Client\u2019s Response | Symptom Category |\n|------|-------------------|------------------|\n| Q1 \u2013 Ability to laugh / see humor | \u201cI\u2019m ready for the next question.\u201d (no report of loss of humor) | No anhedonia reported |\n| Q2 \u2013 Looking forward / enjoyment | \u201cI\u2019ve been looking forward to things and enjoying them most of the time.\u201d | Preserved pleasure/interest |\n| Q3 \u2013 Unnecessary self\u2011blame | \u201cI haven\u2019t really blamed myself unnecessarily when things went wrong.\u201d | No excessive guilt |\n| Q4 \u2013 Unwarranted anxiety/worry | \u201cI\u2019ve felt a little anxious or worried at times, but it\u2019s not something that happens a lot.\u201d | Mild, intermittent anxiety |\n| Q5 \u2013 Unexplained fear/panic | \u201cI haven\u2019t really felt scared or panicky without a reason; any nervousness I\u2019ve had has been mild and related to my baby.\u201d | No panic symptoms |\n| Q6 \u2013 Feeling overwhelmed | \u201cI don\u2019t feel like things are getting on top of me; most days I\u2019m able to manage what comes up.\u201d | Adequate coping |\n| Q7 \u2013 Mood\u2011related sleep disturbance | \u201cNo, I haven\u2019t been that unhappy, and I\u2019ve been sleeping pretty well most nights.\u201d | Normal sleep |\n| Q8 \u2013 Sadness / misery | \u201cI haven\u2019t really felt sad or miserable; my mood has been fairly stable.\u201d | No persistent sadness |\n| Q9 \u2013 Crying due to unhappiness | \u201cI haven\u2019t been that unhappy, and I haven\u2019t been crying.\u201d | No crying spells |\n| Q10 \u2013 Thoughts of self\u2011harm | \u201cNo, I haven\u2019t had any thoughts of harming myself.\u201d | No suicidal ideation |\n\n---\n\n### 2. Consistent Patterns Across Answers\n- **Mood:** Stable, no reported persistent sadness, low mood, or anhedonia.  \n- **Anxiety:** Mild, occasional worry that is situational (related to infant). No panic or pervasive anxiety.  \n- **Coping/Functioning:** Reports ability to manage daily demands; no sense of being overwhelmed.  \n- **Sleep:** Adequate, not disrupted by mood.  \n- **Self\u2011Worth/Guilt:** No unnecessary self\u2011blame or feelings of worthlessness.  \n- **Safety:** No suicidal or self\u2011harm thoughts.\n\n---\n\n### 3. Areas of Screening Significance (Post\u2011partum Context)\n- **Anxiety:** Mild, situational worry\u2014monitor for escalation.  \n- **Maternal\u2011infant bonding:** No concerns expressed, but ongoing observation recommended.  \n- **Sleep quality:** Currently adequate; continue routine assessment as sleep disturbances can emerge later.  \n- **Mood stability:** No current indicators of depressive symptomatology; maintain routine follow\u2011up.  \n\n---\n\n### 4. Highlighted Risk Factors (Screened)\n- **Persistent sadness / loss of pleasure:** **Absent**.  \n- **Crying spells / marked unhappiness:** **Absent**.  \n- **Sleep disturbances linked to mood:** **Absent**.  \n- **Excessive guilt or self\u2011blame:** **Absent**.  \n- **Significant anxiety, panic, feeling overwhelmed:** **Mild, situational anxiety only**; no panic or feeling \u201con top of me.\u201d  \n- **Self\u2011harm or suicidal ideation:** **Absent** \u2013 **no safety concern identified** at this time.\n\n---\n\n### 5. Screening Observation Summary\nThe client reports a generally stable mood, preserved ability to experience pleasure, and adequate sleep. Mild, situational anxiety related to infant care is present but not pervasive or impairing. There is no evidence of excessive guilt, feeling overwhelmed, depressive symptoms (sadness, crying, anhedonia), or suicidal ideation. Current presentation does not raise immediate safety concerns. Ongoing monitoring of mood, anxiety levels, sleep, and infant bonding is recommended as part of routine postpartum follow\u2011up.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0487
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.341263771057129,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3441321849823,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3345839977264404,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "I hear that you are feeling mostly stable and able to enjoy daily moments with your baby, with only occasional mild worry that feels related to caring for your infant. It sounds like you are managing well, sleeping okay, and haven't experienced persistent sadness, loss of interest, or thoughts of self\u2011harm. I appreciate you sharing openly about how you've been feeling during this early postpartum period.\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely (concerns include <sym>The patient reports occasional anxiety, indicating it occurs sometimes but not frequently, matching the 'Yes, sometimes' option.</sym>, <sym>Patient reports no unhappiness or crying, matching 'No, never' option, which is reverse\u2011scored to 3</sym>)\n**Reasoning:** Your responses indicate preserved pleasure (<quote>I've been looking forward to things and enjoying them most of the time.</quote>), stable mood (<quote>I haven't really felt sad or miserable; my mood has been fairly stable.</quote>), adequate sleep, and no self\u2011critical or hopeless thoughts. The only notable symptom is occasional anxiety (<quote>I've felt a little anxious or worried at times, but it's not something that happens a lot.</quote>), which is mild and situational. According to EPDS guidelines, a total score of 5 falls well below the threshold for probable postpartum depression (<8 suggests depression not likely). The DSM\u20115 criteria for <med>Major Depressive Disorder with Peripartum Onset</med> require at least five depressive symptoms, including depressed mood or loss of interest, present most of the day for at least two weeks, which are not met in your case. Therefore, the screening impression reflects low risk for postpartum depression, with mild anxiety as a point for ongoing monitoring. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum follow\u2011up and monitoring of mood and anxiety\n2. Encourage regular sleep hygiene and rest when possible, such as arranging support for nighttime feeds\n3. Share any increase in anxiety or new mood changes with a trusted support person or provider\n4. Provide information about local <med>postpartum support groups</med> or online resources\n5. If anxiety worsens or depressive symptoms emerge, schedule an appointment with your <med>primary care provider</med> or a <med>mental health specialist</med>\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 10853.536170959473,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0487,
+        "average_score": 0.0487,
+        "example_excerpt": "n pregnancy; therefore, continuation of effective phar-\nmacotherapy for those with bipolar disorder ...",
+        "relevance_explanation": "Some relevance: Contains terms \"mental\", \"well\", \"anxiety\", and 3 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

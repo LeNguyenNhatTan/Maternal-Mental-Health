@@ -1,0 +1,240 @@
+{
+  "timestamp": "2025-10-08T07:56:37.790786",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014thank you for coming in today. My name is Sarah, and I\u2019m a perinatal mental-health clinician. I specialize in helping new moms navigate the emotional ups and downs that can come after childbirth.  \n\nRight now I\u2019d like to complete the EPDS (Edinburgh Postnatal Depression Scale) with you. It\u2019s a quick, 10-item questionnaire that asks how you\u2019ve been feeling over the past seven days. It helps us spot signs of depression, anxiety, and thoughts that might feel overwhelming, so we can make sure you get the right support.  \n\nEverything you share stays confidential within the clinical team, and this is a judgment-free space. We\u2019ll go through each question together; just answer as honestly as you can. There are no right or wrong answers\u2014only what\u2019s true for you.  \n\nReady to begin?  \n\nHere\u2019s the first question:  \nOver the past week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "I can still laugh sometimes\u2014like when my sister sent me that silly video yesterday\u2014but it\u2019s definitely harder than it used to be. Most days I just feel kind of flat, so when something funny happens I\u2019ll smile, but it fades pretty fast."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Most of the time I can still laugh, but it takes more effort than before the baby. I\u2019ll chuckle if something\u2019s really funny, yet I don\u2019t find myself naturally amused the way I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I still look forward to some things\u2014like my morning coffee or when my mom brings dinner\u2014but the excitement isn\u2019t as strong as it used to be. I\u2019ll think \u201cthat\u2019ll be nice,\u201d but it feels kind of dulled."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I catch myself doing that. Yesterday the baby wouldn\u2019t settle and I immediately thought, \u201cI must be doing something wrong\u2014other moms seem to handle this fine.\u201d I know, rationally, babies just fuss, but the thought still pops up that I\u2019m falling short somehow."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I\u2019ll just feel this little wave of worry out of nowhere\u2014like my heart speeds up and I start wondering if the baby\u2019s breathing okay even though she\u2019s right beside me and perfectly fine. It usually passes pretty quickly, but it keeps catching me off guard."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not really panicked, but I do get these quick little scares\u2014like if I hear an unexpected noise I\u2019ll jump and my stomach flips. It\u2019s more on edge than truly scared."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Some days, yeah. Like when the laundry piles up and the baby\u2019s fussy, I\u2019ll feel this tightness in my chest and think, \u201cHow am I supposed to keep up with everything?\u201d I usually manage, but it feels heavier than it should."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my mood hasn\u2019t really messed with my sleep. I get to bed pretty easily most nights; it\u2019s just sometimes I lie there for a bit thinking over the day, but I still drift off without much trouble."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I do feel sad some of the time\u2014maybe every couple of days I\u2019ll just get this heavy feeling, especially in the evenings when the baby\u2019s finally down and the house is quiet. It\u2019s not all day, but it lingers for a while when it comes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I\u2019ve cried a couple of times this week. Once was when the baby wouldn\u2019t nurse and I just felt overwhelmed; the tears came for a few minutes, but I calmed myself down pretty quickly."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts like that. I feel low sometimes, but never anything about hurting myself."
+    },
+    {
+      "role": "assistant",
+      "content": "You've shared that while you can still find moments of enjoyment, they feel dulled and take more effort since your baby arrived. You notice waves of worry that come out of nowhere, evenings of lingering sadness, and self-blaming thoughts when your little one fusses. You're managing daily tasks, but everything feels heavier and you sometimes wonder how you'll keep up. You've cried a couple of times this week, yet you're sleeping reasonably well and have no thoughts of harming yourself.\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression (concerns include <sym>Patient reports noticeably reduced enjoyment and excitement, matching \"Definitely less than I used to\"</sym>, <sym>Fallback score from text</sym>, <sym>Patient describes recurring, sudden waves of worry with physical symptoms that occur \"sometimes\" and pass quickly, matching \"Yes, sometimes\"</sym>, <sym>Response describes intermittent struggles with specific stressors, matching \"sometimes I haven't been coping as well as usual\"</sym>, <sym>Patient reports sadness every few days that lingers; this frequency aligns with \"quite often.\"</sym>)\n**Reasoning:** A score of 13 places you above the 12-point threshold where the EPDS indicates a high likelihood of a <med>depressive or anxiety disorder</med>. You endorse diminished enjoyment (<sym>anhedonia</sym>), frequent guilt, several crying episodes, and recurrent worry with somatic signs such as heart racing and startle responses, aligning with core mood and anxiety criteria for <med>Major Depressive Disorder with Peripartum Onset</med>. Good sleep and absence of self-harm thoughts lower immediate risk, but the combination of emotional and physical symptoms warrants prompt follow-up. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an appointment with your <med>primary care provider</med> or <med>obstetrician</med> within the next week to review these results and consider treatment options\n2. Ask about referral to a <med>perinatal mental health therapist</med> for evidence-based therapy such as <med>CBT</med> or <med>interpersonal therapy</med>\n3. Plan brief daily mood-boosting activities you can do while the baby naps-listening to upbeat music, stepping outside for sunlight, or chatting with a supportive friend\n4. Practice grounding techniques when worry spikes: slow breathing in for 4 counts, out for 6; name 5 things you can see to shift focus from racing thoughts\n5. Share these findings with a trusted partner or family member so they can help monitor changes and support appointments\n6. Schedule a re-screen in 2 weeks to track symptom trends and intervention effects\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0216,
+            "highlight": "nsider vitamin de\ufb01ciency   or electrolyte abnormality Have the symptoms been present and slowly   progressing for at least 6 months?  Does the person have moderate   to severe DEPRESSION? Go to  DEP.",
+            "excerpt": "nsider vitamin de\ufb01ciency  \nor electrolyte abnormality\nHave the symptoms been present and slowly  \npr...",
+            "relevance_explanation": "Some relevance: Contains terms \"symptoms\", \"depression\" that have contextual connection to your query."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf",
+            "score": 0.0216,
+            "highlight": "Changes to the Bereavement Exclusion The diagnostic criteria proposed for the manual\u2019s next edition includes language in the criteria for Major Depressive Disorder (MDD) to help differentiate between normal bereavement associated with   2 \u2022 Major Depressive Disorder and the \u201cBereavement Exclusion\u201da significant loss and a diagnosis of a mental disorde r.",
+            "excerpt": "epression co-\nexist, the grief is more severe and prolonged than grief without major depression. Des...",
+            "relevance_explanation": "Some relevance: Contains terms \"major\", \"criteria\" that have contextual connection to your query."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+            "score": 0.0216,
+            "highlight": "Changes to the Bereavement Exclusion The diagnostic criteria proposed for the manual\u2019s next edition includes language in the criteria for Major Depressive Disorder (MDD) to help differentiate between normal bereavement associated with   2 \u2022 Major Depressive Disorder and the \u201cBereavement Exclusion\u201da significant loss and a diagnosis of a mental disorde r.",
+            "excerpt": "epression co-\nexist, the grief is more severe and prolonged than grief without major depression. Des...",
+            "relevance_explanation": "Some relevance: Contains terms \"major\", \"criteria\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 13: Postpartum Depression / Anxiety Screening Note  \nDate: [today\u2019s date]  Weeks postpartum: ___   Source: self-report\n\nSymptoms endorsed  \n- Anhedonia: diminished ability to laugh/look forward (\u201cdulled,\u201d \u201ctakes more effort\u201d)  \n- Excessive guilt/self-blame when baby fussy  \n- Intermittent low mood with tearfulness (\u2248 2\u00d7 this week)  \n- Unprompted worry and somatic anxiety (heart racing, startle response, \u201con edge\u201d)  \n- Subjective sense of being overwhelmed by routine tasks  \n\nFrequency / severity  \n- Mood episodes every couple of days, brief (evening), no sustained insomnia  \n- No panic attacks, no self-harm ideation  \n\nObstetric / psychosocial risk factors  \n- First-time mother, early postpartum period, high self-expectations (\u201cother moms handle this\u201d)  \n\nScreening significance  \n- Meets partial criteria for minor/ subsyndromal depression and anxiety; does not currently meet high-risk threshold for major depression (sleep intact, no self-harm).  \n- Continue to monitor for escalation of mood symptoms, functional impairment, or emergence of self-harm thoughts.",
+          "results_count": 3,
+          "requested_count": 5,
+          "avg_score": 0.0216
+        },
+        "count": 3,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.36892032623291,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3797738552093506,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3709874153137207,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You've shared that while you can still find moments of enjoyment, they feel dulled and take more effort since your baby arrived. You notice waves of worry that come out of nowhere, evenings of lingering sadness, and self-blaming thoughts when your little one fusses. You're managing daily tasks, but everything feels heavier and you sometimes wonder how you'll keep up. You've cried a couple of times this week, yet you're sleeping reasonably well and have no thoughts of harming yourself.\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression (concerns include <sym>Patient reports noticeably reduced enjoyment and excitement, matching \"Definitely less than I used to\"</sym>, <sym>Fallback score from text</sym>, <sym>Patient describes recurring, sudden waves of worry with physical symptoms that occur \"sometimes\" and pass quickly, matching \"Yes, sometimes\"</sym>, <sym>Response describes intermittent struggles with specific stressors, matching \"sometimes I haven't been coping as well as usual\"</sym>, <sym>Patient reports sadness every few days that lingers; this frequency aligns with \"quite often.\"</sym>)\n**Reasoning:** A score of 13 places you above the 12-point threshold where the EPDS indicates a high likelihood of a <med>depressive or anxiety disorder</med>. You endorse diminished enjoyment (<sym>anhedonia</sym>), frequent guilt, several crying episodes, and recurrent worry with somatic signs such as heart racing and startle responses, aligning with core mood and anxiety criteria for <med>Major Depressive Disorder with Peripartum Onset</med>. Good sleep and absence of self-harm thoughts lower immediate risk, but the combination of emotional and physical symptoms warrants prompt follow-up. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an appointment with your <med>primary care provider</med> or <med>obstetrician</med> within the next week to review these results and consider treatment options\n2. Ask about referral to a <med>perinatal mental health therapist</med> for evidence-based therapy such as <med>CBT</med> or <med>interpersonal therapy</med>\n3. Plan brief daily mood-boosting activities you can do while the baby naps-listening to upbeat music, stepping outside for sunlight, or chatting with a supportive friend\n4. Practice grounding techniques when worry spikes: slow breathing in for 4 counts, out for 6; name 5 things you can see to shift focus from racing thoughts\n5. Share these findings with a trusted partner or family member so they can help monitor changes and support appointments\n6. Schedule a re-screen in 2 weeks to track symptom trends and intervention effects\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 5612.145814657211,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 3,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0216,
+        "average_score": 0.0216,
+        "example_excerpt": "nsider vitamin de\ufb01ciency  \nor electrolyte abnormality\nHave the symptoms been present and slowly  \npr...",
+        "relevance_explanation": "Some relevance: Contains terms \"symptoms\", \"depression\" that have contextual connection to your query."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0216,
+        "average_score": 0.0216,
+        "example_excerpt": "epression co-\nexist, the grief is more severe and prolonged than grief without major depression. Des...",
+        "relevance_explanation": "Some relevance: Contains terms \"major\", \"criteria\" that have contextual connection to your query."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0216,
+        "average_score": 0.0216,
+        "example_excerpt": "epression co-\nexist, the grief is more severe and prolonged than grief without major depression. Des...",
+        "relevance_explanation": "Some relevance: Contains terms \"major\", \"criteria\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

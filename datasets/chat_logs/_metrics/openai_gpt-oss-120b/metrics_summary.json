@@ -1,0 +1,88 @@
+{
+  "model": "openai_gpt-oss-120b",
+  "total_rows_in_batch": 2001,
+  "evaluated_pairs": 2000,
+  "skipped": 1,
+  "label_order": [
+    "Depression not likely",
+    "Depression possible",
+    "High possibility of depression",
+    "Probable depression, urgent referral"
+  ],
+  "overall": {
+    "accuracy": 0.5855,
+    "f1_macro": 0.48880563413076894,
+    "f1_micro": 0.5855
+  },
+  "per_class": {
+    "Depression not likely": {
+      "precision": 1.0,
+      "recall": 0.5035460992907801,
+      "f1-score": 0.6698113207547169,
+      "support": 423.0
+    },
+    "Depression possible": {
+      "precision": 0.03954802259887006,
+      "recall": 0.01715686274509804,
+      "f1-score": 0.023931623931623933,
+      "support": 408.0
+    },
+    "High possibility of depression": {
+      "precision": 0.6366906474820144,
+      "recall": 0.44923857868020306,
+      "f1-score": 0.5267857142857143,
+      "support": 394.0
+    },
+    "Probable depression, urgent referral": {
+      "precision": 0.581081081081081,
+      "recall": 0.9987096774193548,
+      "f1-score": 0.7346938775510204,
+      "support": 775.0
+    },
+    "accuracy": 0.5855,
+    "macro avg": {
+      "precision": 0.5643299377904913,
+      "recall": 0.49216280453385897,
+      "f1-score": 0.48880563413076894,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.5701647730830453,
+      "recall": 0.5855,
+      "f1-score": 0.5350178088869801,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      213,
+      146,
+      26,
+      38
+    ],
+    [
+      0,
+      7,
+      74,
+      327
+    ],
+    [
+      0,
+      24,
+      177,
+      193
+    ],
+    [
+      0,
+      0,
+      1,
+      774
+    ]
+  ],
+  "support_per_class": {
+    "Depression not likely": 423,
+    "Depression possible": 408,
+    "High possibility of depression": 394,
+    "Probable depression, urgent referral": 775
+  }
+}

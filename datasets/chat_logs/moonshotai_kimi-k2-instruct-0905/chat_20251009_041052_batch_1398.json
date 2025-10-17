@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-09T04:11:38.361662",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019ve been feeling since your baby arrived. We\u2019ll be using a quick, well-studied questionnaire called the Edinburgh Postnatal Depression Scale, or EPDS for short. It\u2019s simply ten questions about your mood and thoughts over the past seven days, and your answers help us understand what kind of support might be most helpful right now. Everything you share stays between you and the care team, and there are no right or wrong answers\u2014just whatever feels true for you. We\u2019ll go one question at a time, and you can answer in your own words. Ready to begin?\n\nQuestion 1: In the past week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I\u2019ve still been able to laugh\u2014like when my little guy lets out a big baby sneeze or when my husband tries to swaddle him and ends up with a blanket cape. It might not be as effortless as before, but the giggles still come."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Most of the time, yeah\u2014I still find things funny and can laugh when something\u2019s genuinely silly."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I do look forward to stuff\u2014like taking the baby for walks or my weekly coffee with a friend. It\u2019s not every single moment, but I still get that little spark of \u201coh, that\u2019ll be nice\u201d most days."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. If the baby\u2019s fussy or I\u2019m running late, I might think \u201cugh, I should\u2019ve planned better,\u201d but I don\u2019t stay stuck on it. I figure I\u2019m learning as I go and tomorrow\u2019s a new day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, yeah. Like, I\u2019ll suddenly wonder if the baby\u2019s breathing when he\u2019s napping, even though I just checked. It\u2019s not all day or anything\u2014just quick little flashes of worry that pop up and then fade."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had that kind of sudden scared or panicky feeling."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Now and then\u2014like when the laundry pile looks like a mountain or the baby won\u2019t settle\u2014but mostly I feel I\u2019m keeping up. A little frazzled, sure, but not drowning."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, that hasn\u2019t happened. I\u2019ve been sleeping okay once I get the chance to lie down."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve had a couple of weepy moments\u2014usually when I\u2019m extra tired\u2014but they pass quickly. I wouldn\u2019t say I feel sad or miserable most of the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t felt that level of unhappiness. I might get a little teary when I\u2019m overtired, but it\u2019s not the kind of crying that takes over."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, that hasn\u2019t crossed my mind at all."
+    },
+    {
+      "role": "assistant",
+      "content": "You're navigating new parenthood with resilience and a healthy dose of humor, still finding moments to laugh at baby sneezes and coffee dates with friends. Occasional worries about your little one's breathing and brief bouts of feeling frazzled are common adjustments, and you've shared that these flashes pass quickly without lingering sadness or loss of enjoyment.\n**Screening Impression:** Total EPDS Score: 4, Risk Level: Depression not likely (concerns include <sym>Patient describes occasional intrusive worries about baby's safety that arise without cause and resolve quickly, matching \"Yes, sometimes\"</sym>)\n**Reasoning:** Your score of 4 falls well below the EPDS cut-off of 9, placing you in the minimal-risk category. You endorse only mild, situational <sym>anxiety</sym> and brief weepiness when tired, while denying sustained <sym>low mood</sym>, <sym>anhedonia</sym>, sleep disruption from mood, guilt, or self-harm thoughts. These findings do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>, which require at least five symptoms (including depressed mood or loss of interest) most days for two weeks. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum care and pediatric follow-ups\n2. Practice stress-management techniques such as deep breathing or short walks\n3. Maintain social connections like your weekly coffee meet-up\n4. Re-screen with EPDS at your six-week postpartum visit or sooner if mood worsens\n5. Reach out promptly if you notice persistent sadness, panic, or thoughts of self-harm\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf",
+            "score": 0.052,
+            "highlight": "Recurrent thoughts of death (not just fear of dying); recurrent suicidal ideation without a specific plan; a specific suicide plan; or a suicide attempt B.",
+            "excerpt": ", can be irritable mood.)\n2. Markedly diminished interest or pleasure in all, or almost all, activit...",
+            "relevance_explanation": "Some relevance: Contains terms \"without\", \"plan\", \"ideation\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 4: Postpartum Depression / Anxiety Screening Note  \nDate: [today]\n\nResponses to EPDS-10 items indicate:\n\nSymptoms endorsed  \n- Fleeting, situational worry (baby\u2019s breathing, daily hassles)  \n- Occasional \u201cfrazzled\u201d or \u201cgetting on top of me\u201d moments; denies persistent overwhelm  \n- Brief, fatigue-related tearfulness; denies sustained low mood, loss of pleasure, or pervasive crying\n\nSymptoms denied  \n- Persistent sadness, hopelessness, or anhedonia  \n- Sleep disruption secondary to mood (sleep problems only when infant wakes)  \n- Guilt, self-blame, panic episodes, or self-harm ideation\n\nPattern  \nMild, transient anxiety symptoms without clear depressive or safety indicators.\n\nScreening significance  \nCurrent score \u2264 5 (well below conventional cut-off) \u2192 low risk for postpartum depression.  \nNo red-flag items (items 9\u201310) endorsed; no safety concerns identified.\n\nPlan  \nContinue routine postpartum care; educate on normative adjustment, stress management, and when to re-contact if symptoms worsen or persist.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.052
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.338125705718994,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3235435485839844,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.333573341369629,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You're navigating new parenthood with resilience and a healthy dose of humor, still finding moments to laugh at baby sneezes and coffee dates with friends. Occasional worries about your little one's breathing and brief bouts of feeling frazzled are common adjustments, and you've shared that these flashes pass quickly without lingering sadness or loss of enjoyment.\n**Screening Impression:** Total EPDS Score: 4, Risk Level: Depression not likely (concerns include <sym>Patient describes occasional intrusive worries about baby's safety that arise without cause and resolve quickly, matching \"Yes, sometimes\"</sym>)\n**Reasoning:** Your score of 4 falls well below the EPDS cut-off of 9, placing you in the minimal-risk category. You endorse only mild, situational <sym>anxiety</sym> and brief weepiness when tired, while denying sustained <sym>low mood</sym>, <sym>anhedonia</sym>, sleep disruption from mood, guilt, or self-harm thoughts. These findings do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>, which require at least five symptoms (including depressed mood or loss of interest) most days for two weeks. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum care and pediatric follow-ups\n2. Practice stress-management techniques such as deep breathing or short walks\n3. Maintain social connections like your weekly coffee meet-up\n4. Re-screen with EPDS at your six-week postpartum visit or sooner if mood worsens\n5. Reach out promptly if you notice persistent sadness, panic, or thoughts of self-harm\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 78512.71669125557,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum.pdf": {
+        "access_count": 1,
+        "highest_score": 0.052,
+        "average_score": 0.052,
+        "example_excerpt": ", can be irritable mood.)\n2. Markedly diminished interest or pleasure in all, or almost all, activit...",
+        "relevance_explanation": "Some relevance: Contains terms \"without\", \"plan\", \"ideation\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

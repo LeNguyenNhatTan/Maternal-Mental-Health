@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>Classification Report</title>
+<style>
+table {border-collapse: collapse; font-family: Arial, sans-serif;}
+th, td {border: 1px solid #ddd; padding: 6px 10px; font-size: 13px;}
+th {background: #f2f2f2;}
+tr:nth-child(even) {background: #fafafa;}
+caption {text-align:left; font-weight:600; margin: 8px 0;}
+</style></head><body>
+<h2>Classification Report — llama-4-maverick-17b-128e-instruct</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>class</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Depression not likely</td>
+      <td>0.960</td>
+      <td>0.998</td>
+      <td>0.978</td>
+      <td>408.0</td>
+    </tr>
+    <tr>
+      <td>Depression possible</td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>399.0</td>
+    </tr>
+    <tr>
+      <td>High possibility of depression</td>
+      <td>0.834</td>
+      <td>0.303</td>
+      <td>0.445</td>
+      <td>399.0</td>
+    </tr>
+    <tr>
+      <td>Probable depression, urgent referral</td>
+      <td>0.676</td>
+      <td>0.989</td>
+      <td>0.803</td>
+      <td>794.0</td>
+    </tr>
+    <tr>
+      <td>macro avg</td>
+      <td>0.619</td>
+      <td>0.573</td>
+      <td>0.557</td>
+      <td>2000.0</td>
+    </tr>
+    <tr>
+      <td>weighted avg</td>
+      <td>0.631</td>
+      <td>0.657</td>
+      <td>0.608</td>
+      <td>2000.0</td>
+    </tr>
+    <tr>
+      <td>accuracy</td>
+      <td></td>
+      <td></td>
+      <td>0.657</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<p><em>Note:</em> 'accuracy' nằm ở cột f1-score do format từ sklearn.</p>
+</body></html>

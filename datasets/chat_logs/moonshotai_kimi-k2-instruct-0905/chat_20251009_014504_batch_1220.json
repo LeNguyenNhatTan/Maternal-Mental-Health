@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T01:45:56.527106",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019ll be guiding you through the Edinburgh Postnatal Depression Scale, or EPDS. It\u2019s a brief, well-studied questionnaire that helps us understand how moms are feeling emotionally in the first weeks and months after birth.  \n\nEverything you share stays confidential within our care team, and there\u2019s no right or wrong answer\u2014just whatever is true for you. We\u2019ll go through ten questions about how you\u2019ve felt over the past seven days; each one usually only takes a moment to answer.  \n\nWhenever you\u2019re ready, we can begin.  \n\nTo start: Over the past seven days, have you been able to laugh and see the funny side of things, or has that felt difficult lately?"
+    },
+    {
+      "role": "patient",
+      "content": "I can still laugh sometimes\u2014like when my sister sent me that silly video yesterday\u2014but I do notice it takes more effort. Things that used to crack me up right away feel kind of muted now."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, yes, but it\u2019s definitely harder than it used to be."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I still get little sparks of excitement\u2014like when I think about taking the baby for his check-up\u2014but they fade fast. Mostly I\u2019m just tired and hoping I\u2019ll feel like myself again soon."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a couple of times this week. Like when he wouldn\u2019t settle after his midnight feed, I kept thinking maybe I\u2019m not burping him right or I ate something that bothered him. Rationally I know babies just fuss, but the thought still pops in that I must\u2019ve messed up somehow."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "A few nights I\u2019ve lain in bed with my heart racing, sure something tiny\u2014like a hiccup or a funny breathing sound\u2014means he\u2019s sick, even though he\u2019s fine. Nothing huge, but the worry just shows up and hangs around longer than it should."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not full-on panic, but sometimes, like when the house is quiet and I\u2019m finally alone with him, this sudden knot of fear hits\u2014like I\u2019m not safe or something bad\u2019s about to happen. It passes after a minute, but it\u2019s unsettling."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Most days I manage\u2014get the bottles washed, fold the tiny laundry\u2014but by late afternoon it feels like the to-do pile is taller than I am. I\u2019ll rock him with one foot while scrolling \u201chow to soothe a fussy baby\u201d articles and think, \u201cI can\u2019t keep all these plates spinning.\u201d So yeah, sometimes it feels like I\u2019m barely treading water."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I wouldn\u2019t call it \u201cso unhappy,\u201d but I do stare at the ceiling a lot after his 3 a.m. feed. My mind just keeps looping\u2014did I swaddle him tight enough, will he wake again in an hour\u2014so it takes forever to drift back off, even though I\u2019m exhausted."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I get waves of that a few times a week. Yesterday I cried a little when I couldn\u2019t get him to latch\u2014nothing major, just this heavy \u201cblah\u201d feeling that sits on my chest for a while and then lifts."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Not \u201cso unhappy\u201d that I can\u2019t stop\u2014I\u2019ve only teared up twice this week. Once when the diaper leaked all over the last clean outfit at 2 a.m., and once when my mom left after visiting. It\u2019s more like the tears just slip out before I realize I\u2019m feeling low."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, never. I\u2019m tired and overwhelmed sometimes, but I\u2019ve never thought about hurting myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0398,
+            "highlight": "ment or \ufb01ts/seizures    During the convulsion: loss of consciousness or impaired consciousness, stiffness,   rigidity, tongue bite, injury, incontinence of urine or faeces   After the convulsion: fatigue, drowsiness, sleepiness, confusion, abnormal behaviour,   headache, muscle aches, or weakness on one side of the body 17  Decline or problems with memory (severe forgetfulness) and orientation (awareness of time, place and person)   Mood or behavioural problems such as apathy (appearing uninterested) or irritability    Loss of emotional control (easily upset, irritable or tearful)    Dif\ufb01culties in carrying out usual work, domestic or social activities DISORDERS DUE  TO SUBSTANCE USE (SUB)CHILD & ADOLESCENT   MENTAL & BEHAVIOURAL   DISORDERS (CMH) Common presentations of emotional, behavioral   and developmental disorders vary by age in   children and adolescents.",
+            "excerpt": "ment or \ufb01ts/seizures \n  During the convulsion: loss of consciousness or impaired consciousness, stif...",
+            "relevance_explanation": "Some relevance: Contains terms \"mental\", \"fatigue\", \"mood\", and 1 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0386,
+            "highlight": "In order to  bridge the gap between available resources and the significant need for services, the  World Health Organization launched the Mental Health Gap Action Programme (mhGAP).",
+            "excerpt": "l dysfunction caused by \nfocal ischemia of the brain or retina, without demonstrated acute infarctio...",
+            "relevance_explanation": "Some relevance: Contains terms \"mental\", \"health\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 16: **Postpartum Depression / Anxiety Screening Note**\n\n**Identified Symptoms / Concerns**  \n- Anhedonia: diminished ability to enjoy activities; pleasure \u201cfades fast\u201d  \n- Low mood: episodic sadness, \u201cheavy blah feeling\u201d several times per week  \n- Tearfulness: twice this week under minor stressors  \n- Excessive guilt / self-blame re infant care (\u201cmust\u2019ve messed up\u201d)  \n- Unwarranted anxiety about infant health, heart racing, intrusive worry  \n- Brief fear/panic episodes with no clear trigger, resolves in minutes  \n- Subjective overwhelm: feels tasks \u201ctaller than I am,\u201d difficulty coping by late afternoon  \n- Sleep disruption: difficulty returning to sleep after night feeds related to looping worries  \n- Fatigue and hope to \u201cfeel like myself again\u201d\n\n**Pattern Summary**  \nPersistent low mood with anhedonia, frequent guilt, and anxiety dominate the clinical picture; functional impact evident in coping and sleep. No self-harm ideation reported.\n\n**Screening Significance**  \nMeets partial clinical threshold for probable **postpartum depression** with prominent **anxiety features**; further evaluation recommended to rule out Major Depressive Disorder with Peripartum Onset and/or Postpartum Anxiety Disorder.\n\n**Risk Factors Present**  \n- \u2265 2-week duration of mood and anxiety symptoms  \n- Sleep impairment tied to mood/worry  \n- Feelings of inadequacy and guilt  \n- Overwhelm impacting daily functioning  \n- Absence of suicidal ideation (documented)\n\n**Plan**  \nProvide education, supportive listening, and arrange formal assessment (PHQ-9, GAD-7, EPDS) at next contact; consider expedited referral to perinatal mental health specialty if symptoms persist or worsen.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0392
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.330653429031372,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.342336654663086,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.323765754699707,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_possible",
+    "question_count": 10,
+    "duration": 69770.8821349144,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0398,
+        "average_score": 0.0392,
+        "example_excerpt": "ment or \ufb01ts/seizures \n  During the convulsion: loss of consciousness or impaired consciousness, stif...",
+        "relevance_explanation": "Some relevance: Contains terms \"mental\", \"fatigue\", \"mood\", and 1 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

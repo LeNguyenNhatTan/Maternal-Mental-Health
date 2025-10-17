@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-07T18:59:17.995557",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nI\u2019m here today to talk with you about how you\u2019ve been feeling since your baby arrived. To help us understand your experience, we\u2019ll be using the **Edinburgh Postnatal Depression Scale (EPDS)**\u2014a short, ten\u2011question screening tool that\u2019s specifically designed for new mothers.  \n\nThe purpose of the EPDS is simply to give us a clear picture of any depressive or anxiety\u2011related symptoms you might be experiencing, as well as to check on your overall emotional wellbeing. This information helps us decide together what kind of support might be most helpful for you right now.\n\nEverything you share is completely confidential, and this is a safe, judgment\u2011free space. My role is to listen, to validate what you\u2019re going through, and to work with you toward the best possible care.\n\nWe\u2019ll go through the ten questions one at a time, focusing on how you\u2019ve felt over the past\u202fseven\u202fdays. There are no right or wrong answers\u2014just your honest experience. After each question, you can tell me the response that feels most accurate for you.\n\n**Let\u2019s begin with the first question:**  \n\n> *\u201cIn the past week, how often have you felt able to laugh and see the funny side of things?\u201d*  \n\nYou can answer with \u201cas much as I always could,\u201d \u201crather often,\u201d \u201conly sometimes,\u201d or \u201chardly ever.\u201d Whenever you\u2019re ready, please share what feels most true for you."
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve noticed that I\u2019m not laughing as much as I used to. I can still find things funny now and then, but it\u2019s only sometimes rather than all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Only sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Hardly ever."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "Never."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 15, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "edinburgh_perinatal_postnatal_depression_scale_epds_.pdf",
+            "score": 0.0192,
+            "highlight": "I have been able to laugh and see the funny side  of things 0 As much as I always could 1 Not quite so much now  2 Definitely not so much now  3 Not at all  2.",
+            "excerpt": "Edinburgh Perinatal/Postnatal Depression Scale (EPDS)\nSCORING GUIDE\n1 . I have been able to laugh an...",
+            "relevance_explanation": "Some relevance: Contains terms \"things\", \"much\", \"funny\", and 2 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 15: **Postpartum Mood & Anxiety Screening Summary**\n\n**Client Identifier:** [Redacted]  \n**Date of Screening:** [Insert Date]  \n**Screening Tool:** Structured self\u2011report (10\u2011item mood\u2011anxiety checklist) \u2013 postpartum context  \n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Domain | Client\u2019s Response | Clinical Interpretation |\n|------|--------|-------------------|--------------------------|\n| Q1 \u2013 Laughter / humor | Anhedonia (loss of pleasure) | \u201cNot laughing as much as before; can find things funny only sometimes.\u201d | Mild reduction in positive affect. |\n| Q2 \u2013 Looking forward / enjoyment | Anticipatory pleasure | \u201cOnly sometimes.\u201d | Intermittent loss of interest/anticipation. |\n| Q3 \u2013 Unnecessary self\u2011blame | Guilt / self\u2011criticism | \u201cOnly sometimes.\u201d | Occasional guilt; not pervasive. |\n| Q4 \u2013 Unwarranted anxiety/worry | Generalized anxiety | \u201cOnly sometimes.\u201d | Sporadic anxiety symptoms. |\n| Q5 \u2013 Scared or panicky for no reason | Panic\u2011type anxiety | \u201cOnly sometimes.\u201d | Infrequent panic\u2011like sensations. |\n| Q6 \u2013 Feeling overwhelmed / \u201cgetting on top of me\u201d | Stress / coping difficulty | \u201cOnly sometimes.\u201d | Occasional feeling of being overwhelmed. |\n| Q7 \u2013 Unhappy with sleep difficulty | Mood\u2011related insomnia | \u201cOnly sometimes.\u201d | Intermittent sleep disturbance linked to mood. |\n| Q8 \u2013 Sad or miserable | Depressed mood | \u201cOnly sometimes.\u201d | Low\u2011level persistent sadness. |\n| Q9 \u2013 Crying | Emotional dysregulation | \u201cHardly ever.\u201d | Minimal crying episodes. |\n| Q10 \u2013 Thoughts of self\u2011harm | Suicidal ideation | \u201cNever.\u201d | No self\u2011harm ideation reported. |\n\n---\n\n### 2. Consistent Patterns Across Answers\n- **Low\u2011to\u2011moderate frequency** of depressive symptoms (reduced laughter, occasional sadness, limited enjoyment).  \n- **Intermittent anxiety symptoms** (worry, panic, feeling overwhelmed) reported \u201conly sometimes.\u201d  \n- **Sleep disturbance** appears only occasionally and is directly tied to mood (\u201cunhappy \u2192 difficulty sleeping\u201d).  \n- **Absence of frequent crying** and **no self\u2011harm thoughts**.  \n\nOverall, the client\u2019s presentation suggests **sub\u2011threshold depressive and anxiety features** rather than a clear, pervasive syndrome.\n\n---\n\n### 3. Screening Significance (Postpartum Context)\n- **Depressive Indicators:** Diminished pleasure, occasional sadness, mild sleep disruption.  \n- **Anxiety Indicators:** Sporadic worry, occasional panic\u2011type sensations, feeling overwhelmed.  \n- **Functional Impact:** Not explicitly reported; however, intermittent symptoms may affect daily caregiving and bonding.  \n- **Safety:** No suicidal ideation or self\u2011harm thoughts reported.\n\n---\n\n### 4. Risk Factor Highlights\n- **Persistent Sadness / Loss of Pleasure:** Present at low frequency; warrants monitoring.  \n- **Sleep Difficulties:** Reported intermittently; could exacerbate mood symptoms.  \n- **Guilt / Self\u2011Blame:** Occurs occasionally; should be assessed for escalation.  \n- **Anxiety / Feeling Overwhelmed:** Intermittent; may impact coping with infant care.  \n- **Self\u2011Harm / Suicidal Ideation:** **Absent** \u2013 no immediate safety concern.\n\n---\n\n### 5. Clinical Observation Summary\nThe client reports **occasional reductions in positive affect**, **intermittent sadness**, **mild sleep disturbance**, and **sporadic anxiety\u2011related symptoms** (worry, feeling overwhelmed, occasional panic sensations). These findings are **consistent with sub\u2011threshold postpartum depressive and anxiety features**. No suicidal ideation or self\u2011harm thoughts are present. Continued observation and routine postpartum mental\u2011health screening are recommended to monitor symptom trajectory and functional impact, with prompt follow\u2011up if frequency or intensity increases.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0192
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3657350540161133,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.37673020362854,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3377022743225098,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 15, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_possible",
+    "question_count": 10,
+    "duration": 69546.77116394043,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "edinburgh_perinatal_postnatal_depression_scale_epds_.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0192,
+        "average_score": 0.0192,
+        "example_excerpt": "Edinburgh Perinatal/Postnatal Depression Scale (EPDS)\nSCORING GUIDE\n1 . I have been able to laugh an...",
+        "relevance_explanation": "Some relevance: Contains terms \"things\", \"much\", \"funny\", and 2 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

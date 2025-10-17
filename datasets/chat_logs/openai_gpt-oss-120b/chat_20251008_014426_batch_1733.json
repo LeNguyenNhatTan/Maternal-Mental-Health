@@ -1,0 +1,128 @@
+{
+  "timestamp": "2025-10-08T01:45:10.314013",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \n\nI\u2019d like to spend a few minutes with you today completing the **EPDS** (Edinburgh Postnatal Depression Scale). This short questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of postpartum depression or anxiety so we can provide the right support.\n\nEverything you share is completely confidential, and this is a safe, non\u2011judgmental space. My goal is simply to listen and learn about your experience as a new mother. The EPDS consists of ten brief questions, and I\u2019ll ask them one at a time, giving you the chance to answer in your own words.\n\nIf at any point you feel uncomfortable or have any questions, please let me know.\n\n**Let\u2019s begin with the first question:**  \n\n*In the past week, how often have you felt able to laugh and see the funny side of things?*"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been able to laugh and see the funny side of things most days this past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been able to laugh and see the funny side of things most days.\n\n**Next question:** *In the past week, have you been able to enjoy things you used to enjoy?*"
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve still been looking forward to and enjoying the things I usually like."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really been blaming myself unnecessarily when things go wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt a bit anxious at times, mostly worrying about my baby\u2019s health and how I\u2019m doing as a new mom, but it hasn\u2019t been the kind of worry that feels completely without reason."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt scared or panicky for no good reason."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t felt like things are getting on top of me; I\u2019m managing the daily tasks and caring for my baby okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t been that unhappy, and I\u2019m still sleeping pretty well most nights."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt sad or miserable. Most of the time my mood feels pretty stable, and I only notice a little bit of low mood here and there, but it isn\u2019t enough to make me feel down."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t been that unhappy, and I\u2019ve only cried rarely\u2014so far I haven\u2019t been crying a lot."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts of harming myself."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you've been able to laugh, enjoy your usual activities, and manage daily tasks while caring for your baby. You mentioned some occasional worry about your infant's health and a few brief low\u2011mood moments, but overall you're sleeping well and haven't experienced panic, overwhelming stress, or thoughts of self\u2011harm.\n**Screening Impression:** Total EPDS Score: 7, Risk Level: Depression not likely (concerns include <sym>Patient states they have not been blaming themselves, matching the 'No, never' option; reversed scoring gives 3.</sym>, <sym>The mother reports only occasional low mood, matching 'Not very often', which under reverse scoring yields a score of 2.</sym>)\n**Reasoning:** The EPDS total of 7 falls below the threshold for probable postpartum depression, indicating low risk. Scores on items related to anhedonia, sadness, sleep disturbance, and self\u2011harm are minimal, while the only elevated scores reflect mild, situational anxiety (Q4=1) and occasional low mood (Q8=2). According to EPDS guidelines, scores under 8 suggest depression is unlikely. DSM\u20115 criteria for Major Depressive Disorder with Peripartum Onset require at least five symptoms including depressed mood or loss of interest, lasting most of the day for at least two weeks, which are not met here. The patient's mood appears stable, with preserved pleasure and adequate sleep, and there is no evidence of pervasive sadness, guilt, or suicidal ideation. This pattern aligns more with mild anxiety rather than depressive disorder. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum follow\u2011up and monitor mood over the coming weeks\n2. Encourage sleep hygiene practices such as consistent bedtime routine and safe infant sleep arrangements\n3. Validate the anxiety about infant health and discuss coping strategies, including relaxation techniques and realistic reassurance\n4. Provide information about local postpartum support groups or peer\u2011support programs\n5. If anxiety intensifies or new depressive symptoms appear, repeat the EPDS in 2-4 weeks\n6. If any thoughts of self\u2011harm emerge, seek immediate help from a crisis line or emergency services\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": null
+    }
+  ],
+  "diagnosis": "I hear that you've been able to laugh, enjoy your usual activities, and manage daily tasks while caring for your baby. You mentioned some occasional worry about your infant's health and a few brief low\u2011mood moments, but overall you're sleeping well and haven't experienced panic, overwhelming stress, or thoughts of self\u2011harm.\n**Screening Impression:** Total EPDS Score: 7, Risk Level: Depression not likely (concerns include <sym>Patient states they have not been blaming themselves, matching the 'No, never' option; reversed scoring gives 3.</sym>, <sym>The mother reports only occasional low mood, matching 'Not very often', which under reverse scoring yields a score of 2.</sym>)\n**Reasoning:** The EPDS total of 7 falls below the threshold for probable postpartum depression, indicating low risk. Scores on items related to anhedonia, sadness, sleep disturbance, and self\u2011harm are minimal, while the only elevated scores reflect mild, situational anxiety (Q4=1) and occasional low mood (Q8=2). According to EPDS guidelines, scores under 8 suggest depression is unlikely. DSM\u20115 criteria for Major Depressive Disorder with Peripartum Onset require at least five symptoms including depressed mood or loss of interest, lasting most of the day for at least two weeks, which are not met here. The patient's mood appears stable, with preserved pleasure and adequate sleep, and there is no evidence of pervasive sadness, guilt, or suicidal ideation. This pattern aligns more with mild anxiety rather than depressive disorder. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum follow\u2011up and monitor mood over the coming weeks\n2. Encourage sleep hygiene practices such as consistent bedtime routine and safe infant sleep arrangements\n3. Validate the anxiety about infant health and discuss coping strategies, including relaxation techniques and realistic reassurance\n4. Provide information about local postpartum support groups or peer\u2011support programs\n5. If anxiety intensifies or new depressive symptoms appear, repeat the EPDS in 2-4 weeks\n6. If any thoughts of self\u2011harm emerge, seek immediate help from a crisis line or emergency services\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 93899.09061956406,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 0,
+    "total_documents_accessed": 0,
+    "documents_accessed": {},
+    "rag_disabled": true,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "average_score": null
+      },
+      "faithfulness": {
+        "average_score": null
+      },
+      "answer_relevancy": {
+        "average_score": null
+      },
+      "overall": {
+        "average_score": null
+      }
+    }
+  }
+}

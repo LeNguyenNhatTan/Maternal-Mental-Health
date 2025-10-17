@@ -30,10 +30,6 @@ def risk_from_profile_name(profile: str) -> Optional[str]:
     return PROFILE_TO_RISK.get(profile.strip().lower())
 
 def extract_risk_after_risklevel(diagnosis_field: str) -> Optional[str]:
-    """
-    Chỉ parse CHÍNH XÁC phần sau 'Risk Level:' (đến hết dòng).
-    Cho phép có dấu câu cuối (.,;,:). So khớp case-insensitive với 4 nhãn chuẩn.
-    """
     if not diagnosis_field:
         return None
     m = RISK_LINE_RE.search(diagnosis_field)
@@ -41,12 +37,19 @@ def extract_risk_after_risklevel(diagnosis_field: str) -> Optional[str]:
         return None
 
     raw = m.group(1).strip()
-    # Chuẩn hoá khoảng trắng
+    # chuẩn hoá khoảng trắng
     risk_text = " ".join(raw.split())
-    # Cắt dấu câu cuối
+
+    # cắt phần chú thích/suffix sau nhãn (ngoặc, dấu gạch, pipe, thẻ markup)
+    # ví dụ: "Depression not likely (concerns ...)" -> "Depression not likely"
+    for sep in [" (", " —", " –", " - ", " |", "<", "["]:
+        idx = risk_text.find(sep)
+        if idx != -1:
+            risk_text = risk_text[:idx].rstrip()
+
+    # bỏ dấu câu cuối nếu còn
     while risk_text and risk_text[-1] in ".;:,":
         risk_text = risk_text[:-1].rstrip()
 
-    # So khớp case-insensitive, trả về dạng canonical
-    lower = risk_text.lower()
-    return _CANON_BY_LOWER.get(lower)
+    # so khớp case-insensitive và trả canonical
+    return _CANON_BY_LOWER.get(risk_text.lower())

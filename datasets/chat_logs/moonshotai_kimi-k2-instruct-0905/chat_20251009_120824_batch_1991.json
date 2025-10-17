@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T12:09:11.753601",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello, I\u2019m Dr. Rivera, a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019re feeling since your baby arrived\u2014something we do with every new parent. We\u2019ll use a quick questionnaire called the Edinburgh Postpartum Depression Scale, or EPDS. It\u2019s simply 10 questions about the past seven days; it helps us see if you might benefit from a little extra emotional support right now. Everything you share stays between us unless you tell me someone is in danger. There are no right or wrong answers, and many mothers find it a relief to talk openly. Ready to begin?\n\nFirst question: Over the past seven days, how often have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "I can laugh sometimes, but it doesn\u2019t come as easily as it used to. Maybe once or twice in the past week something struck me as funny, but mostly I\u2019m just going through the motions."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, but not as much as I used to. I\u2019ll smile if something\u2019s really funny, yet the joy feels kind of muted\u2014like I have to remind myself it\u2019s okay to laugh."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve looked forward to a couple of things\u2014like taking the baby for a short walk yesterday\u2014but the excitement is pretty mild. Mostly I just plan the next feeding or diaper change and hope I have enough energy to get through it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a few times. If the baby fussed for a long stretch, I caught myself thinking maybe I\u2019m not doing something right or I\u2019m not enough. I know it\u2019s probably not true, but the thought still pops in."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "A little. Like, sometimes I\u2019ll suddenly wonder if the baby\u2019s breathing okay in the crib, even though I just checked. The worry flares up, but I can usually calm myself down pretty quickly."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not really panicky\u2014just a brief \u201cwhat-if\u201d feeling once or twice when the house got really quiet. It passes in seconds, so I wouldn\u2019t call it scared, more like a quick jolt of nerves."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Some days, yeah. It\u2019s like the dishes, laundry, and feedings pile up faster than I can handle, and I feel a knot in my chest. I usually get through it, but it\u2019s stressful while it\u2019s happening."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my mood hasn\u2019t messed with my sleep. I fall asleep fine once the baby\u2019s settled; it\u2019s just the usual new-mom wake-ups that break my night."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve had a couple of moments when I just felt kind of down\u2014like yesterday evening when everyone else seemed cheerful and I couldn\u2019t really join in. It\u2019s not constant, but yes, I\u2019ve felt sad off and on this week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I cried twice\u2014once when the baby wouldn\u2019t latch and once when my partner asked how my day was and I just felt overwhelmed. The tears came, lasted a few minutes, then I pulled myself together."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "You've shared that laughter, excitement and a sense of ease feel muted since your baby arrived. While you can still enjoy brief moments like a short walk, you also notice <sym>self-doubt</sym> when the baby fusses, <sym>intermittent sadness</sym> that keeps you from joining in family cheerfulness, and <sym>occasional tears</sym> when feeding doesn't go smoothly. You described <quote>the dishes, laundry, and feedings piling up faster than I can handle</quote>, leaving a knot of stress in your chest, yet you've been able to calm brief <sym>anxiety spikes</sym> and you're sleeping whenever your little one allows.\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression (concerns include <sym>Patient reports noticeably reduced ability to enjoy humour and describes joy as \"muted\", aligning with \"Definitely not so much now\".</sym>, <sym>Patient shows markedly reduced enjoyment\u2014only \"mild\" excitement for a walk and otherwise focused on basic survival tasks\u2014matching \"Definitely less than I used to.\"</sym>, <sym>Patient acknowledges self-blame \"a few times\" with specific examples, aligning with \"Yes, some of the time\"</sym>, <sym>Patient reports recurring, brief anxiety spikes about baby's safety without objective cause, then self-soothes\u2014semantic match to \"Yes, sometimes\"</sym>, <sym>Patient reports frequent but not constant difficulty coping (\"some days\") with identifiable stressors (household tasks) and physical anxiety (knot in chest), matching \"sometimes I haven't been coping as well as usual\"</sym>)\n**Reasoning:** An EPDS total of 13 places you above the 12-point threshold indicating a high likelihood of a <med>major depressive episode with peripartum onset</med>. You endorse five items at level 2 and one at level 1, meeting core <med>DSM-5</med> criteria: depressed mood most days, diminished interest/pleasure, feelings of worthlessness, psychomotor agitation related to anxiety, and difficulty coping with routine tasks. These symptoms have persisted for at least the past week and cause noticeable distress, though you deny self-harm ideation. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an appointment with your <med>primary care provider</med> or <med>obstetrician</med> within the next week to discuss mood and possible treatment options\n2. Ask about referral to a <med>perinatal mental-health therapist</med> for cognitive-behavioural or interpersonal therapy, proven to help <med>postpartum depression</med>\n3. Continue checking in with supportive family or friends daily; share your feelings openly and accept help with housework or night feeds\n4. Practice 5-minute breathing or mindfulness breaks when the baby naps; consistent micro-relaxation can ease <sym>anxiety</sym> and <sym>tension</sym>\n5. Keep a simple log of mood, sleep hours and crying spells to review with your provider at your next visit\n6. Return for repeat EPDS in 2 weeks or sooner if mood worsens, you feel unable to function, or any thoughts of self-harm emerge\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0349,
+            "highlight": "Antidepressants in special populations   ADOLESCENTS 12 YEARS OF AGE OR OLDER    If symptoms persist or worsen despite psychosocial inter-ventions, consider \ufb02uoxetine (but no other selective serotonin   reuptake inhibitor (SSRI) or tricyclic antidepressant (TCA)).",
+            "excerpt": " prescribe amitriptyline. \n ADULTS WITH THOUGHTS OR PLANS OF SUICIDE\n    SSRIs are the \ufb01rst choice. ...",
+            "relevance_explanation": "Some relevance: Contains terms \"persist\", \"consider\", \"symptoms\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0312,
+            "highlight": "Look for:  \u2013  Recurrent requests for psychoactive   medications including analgesics  \u2013    Injuries  \u2013  Infections associated with intravenous drug   use (HIV/AIDS, Hepatitis C) 18 EMERGENCY  PRESENTATION CONDITION TO CONSIDER GO TO       Act of self-harm with signs of poisoning or intoxication,   bleeding from self-in\ufb02icted wound, loss of consciousness   and/or extreme lethargy            Current thoughts, plan, or act of self-harm or suicide, or   history of thoughts, plan, or act of self-harm or suicide in a   person who is now extremely agitated, violent, distressed   or lacks communicationMEDICALLY SERIOUS ACT OF SELF-HARM IMMINENT RISK OF SELF-HARM/SUICIDE                                                       SUI       Acute convulsion with loss of consciousness or impaired   consciousness       C.",
+            "excerpt": "vements, and nystagmus  Incidental \ufb01ndings: macrocytic anaemia, low  \nplatelet count, elevated mean ...",
+            "relevance_explanation": "Some relevance: Contains terms \"self\", \"consider\", \"harm\", and 2 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 13: Postpartum Depression Screening \u2013 Brief Summary  \nDate: [today]\n\nPatient: 0\u20133 mo postpartum, self-report on 10-item EPDS-style questionnaire.\n\nKey endorsed items  \n- A2, A8, A9: diminished enjoyment, intermittent sadness, two crying spells this week  \n- A3: self-blame when baby fussy  \n- A4, A5, A6: mild episodic anxiety (\u201cwhat-ifs\u201d), brief nervous jolts, feeling overwhelmed by daily tasks  \n- A1: reduced ability to experience joy/humor  \n- A7: sleep fragmentation due to infant care, not mood-related insomnia  \n- A10: no self-harm ideation\n\nPattern  \nMild-to-moderate depressive and anxiety symptoms present several days per week; functional impact limited to emotional coping, no safety concerns identified at this time.\n\nScreening significance  \nScore suggests probable minor-moderate postpartum distress; does not meet high-risk cutoff. Continue monitoring for worsening mood, anxiety, or self-harm thoughts; consider formal assessment if symptoms persist >2 wk or intensify.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.033
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3710031509399414,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3645200729370117,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3642613887786865,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You've shared that laughter, excitement and a sense of ease feel muted since your baby arrived. While you can still enjoy brief moments like a short walk, you also notice <sym>self-doubt</sym> when the baby fusses, <sym>intermittent sadness</sym> that keeps you from joining in family cheerfulness, and <sym>occasional tears</sym> when feeding doesn't go smoothly. You described <quote>the dishes, laundry, and feedings piling up faster than I can handle</quote>, leaving a knot of stress in your chest, yet you've been able to calm brief <sym>anxiety spikes</sym> and you're sleeping whenever your little one allows.\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression (concerns include <sym>Patient reports noticeably reduced ability to enjoy humour and describes joy as \"muted\", aligning with \"Definitely not so much now\".</sym>, <sym>Patient shows markedly reduced enjoyment\u2014only \"mild\" excitement for a walk and otherwise focused on basic survival tasks\u2014matching \"Definitely less than I used to.\"</sym>, <sym>Patient acknowledges self-blame \"a few times\" with specific examples, aligning with \"Yes, some of the time\"</sym>, <sym>Patient reports recurring, brief anxiety spikes about baby's safety without objective cause, then self-soothes\u2014semantic match to \"Yes, sometimes\"</sym>, <sym>Patient reports frequent but not constant difficulty coping (\"some days\") with identifiable stressors (household tasks) and physical anxiety (knot in chest), matching \"sometimes I haven't been coping as well as usual\"</sym>)\n**Reasoning:** An EPDS total of 13 places you above the 12-point threshold indicating a high likelihood of a <med>major depressive episode with peripartum onset</med>. You endorse five items at level 2 and one at level 1, meeting core <med>DSM-5</med> criteria: depressed mood most days, diminished interest/pleasure, feelings of worthlessness, psychomotor agitation related to anxiety, and difficulty coping with routine tasks. These symptoms have persisted for at least the past week and cause noticeable distress, though you deny self-harm ideation. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an appointment with your <med>primary care provider</med> or <med>obstetrician</med> within the next week to discuss mood and possible treatment options\n2. Ask about referral to a <med>perinatal mental-health therapist</med> for cognitive-behavioural or interpersonal therapy, proven to help <med>postpartum depression</med>\n3. Continue checking in with supportive family or friends daily; share your feelings openly and accept help with housework or night feeds\n4. Practice 5-minute breathing or mindfulness breaks when the baby naps; consistent micro-relaxation can ease <sym>anxiety</sym> and <sym>tension</sym>\n5. Keep a simple log of mood, sleep hours and crying spells to review with your provider at your next visit\n6. Return for repeat EPDS in 2 weeks or sooner if mood worsens, you feel unable to function, or any thoughts of self-harm emerge\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 107166.10862994194,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0349,
+        "average_score": 0.033,
+        "example_excerpt": " prescribe amitriptyline. \n ADULTS WITH THOUGHTS OR PLANS OF SUICIDE\n    SSRIs are the \ufb01rst choice. ...",
+        "relevance_explanation": "Some relevance: Contains terms \"persist\", \"consider\", \"symptoms\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

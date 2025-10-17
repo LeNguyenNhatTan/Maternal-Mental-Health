@@ -1,0 +1,88 @@
+{
+  "model": "moonshotai_kimi-k2-instruct-0905",
+  "total_rows_in_batch": 2000,
+  "evaluated_pairs": 2000,
+  "skipped": 0,
+  "label_order": [
+    "Depression not likely",
+    "Depression possible",
+    "High possibility of depression",
+    "Probable depression, urgent referral"
+  ],
+  "overall": {
+    "accuracy": 0.68,
+    "f1_macro": 0.5707608344761719,
+    "f1_micro": 0.68
+  },
+  "per_class": {
+    "Depression not likely": {
+      "precision": 0.9974554707379135,
+      "recall": 0.9311163895486936,
+      "f1-score": 0.9631449631449631,
+      "support": 421.0
+    },
+    "Depression possible": {
+      "precision": 0.05555555555555555,
+      "recall": 0.007751937984496124,
+      "f1-score": 0.013605442176870748,
+      "support": 387.0
+    },
+    "High possibility of depression": {
+      "precision": 0.9190751445086706,
+      "recall": 0.4119170984455959,
+      "f1-score": 0.5688729874776386,
+      "support": 386.0
+    },
+    "Probable depression, urgent referral": {
+      "precision": 0.5840579710144927,
+      "recall": 1.0,
+      "f1-score": 0.737419945105215,
+      "support": 806.0
+    },
+    "accuracy": 0.68,
+    "macro avg": {
+      "precision": 0.6390360354541581,
+      "recall": 0.5876963564946964,
+      "f1-score": 0.5707608344761719,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6334712417993449,
+      "recall": 0.68,
+      "f1-score": 0.6123473922638252,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      392,
+      27,
+      0,
+      2
+    ],
+    [
+      0,
+      3,
+      14,
+      370
+    ],
+    [
+      1,
+      24,
+      159,
+      202
+    ],
+    [
+      0,
+      0,
+      0,
+      806
+    ]
+  ],
+  "support_per_class": {
+    "Depression not likely": 421,
+    "Depression possible": 387,
+    "High possibility of depression": 386,
+    "Probable depression, urgent referral": 806
+  }
+}

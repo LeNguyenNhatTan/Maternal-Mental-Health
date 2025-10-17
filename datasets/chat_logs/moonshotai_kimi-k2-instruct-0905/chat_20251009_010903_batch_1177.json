@@ -1,0 +1,226 @@
+{
+  "timestamp": "2025-10-09T01:09:49.996100",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Good morning, I\u2019m so glad you were able to come in today. I\u2019m Dr. Martinez, a perinatal mental-health clinician\u2014I specialize in the emotional changes that can happen during pregnancy and after birth. In front of us we have the Edinburgh Postpartum Depression Scale (EPDS), a short, well-studied questionnaire that helps us understand how you\u2019ve been feeling in the past seven days. It isn\u2019t a test of your parenting; it\u2019s simply a way to check in on your mood, anxiety, and overall well-being so we can offer the right support.\n\nEverything you share is confidential, and our goal is to create a safe, non-judgmental space. There are ten questions total, and I\u2019ll ask each one conversationally\u2014no need to memorize any numbers or categories. When you\u2019re ready, we can begin.\n\nLet\u2019s start: In the past week, have you been able to laugh and see the funny side of things, or has that felt difficult for you?"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve still been able to laugh\u2014like when my husband made that silly face at 3 a.m. while we were both fumbling with diaper changes. It hasn\u2019t felt hard to find the funny side of things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I can still laugh\u2014like yesterday when the baby let out a burp so loud it startled the dog. It felt good to chuckle."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I do look forward to things\u2014like my morning coffee once the baby settles, or taking her for a walk later. I still enjoy little plans."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really\u2014if she spits up a ton or won\u2019t settle, I figure it\u2019s just part of having a newborn, not something I did wrong. I don\u2019t dwell on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "A little, yeah. Like I\u2019ll suddenly wonder if her breathing sounds normal or if she\u2019s warm enough, even when everything seems fine. It\u2019s not constant, just quick moments that pass once I check on her."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any of those panicky feelings\u2014just the normal new-mom jitters, nothing that feels like real fear."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, sure\u2014like when she cluster-feeds and I can\u2019t get a shower or the dishes pile up. It feels hectic for a bit, but once she naps I can catch up and it passes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, I\u2019ve actually been sleeping pretty well\u2014she gives me one four-hour stretch most nights, and I drift right off once she\u2019s down."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I\u2019m tired, but I wouldn\u2019t call it sad\u2014just normal post-birth fatigue."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t cried at all this week\u2014maybe just one teary moment when a lullaby made me sentimental, but it passed in seconds."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, that hasn\u2019t crossed my mind at all."
+    },
+    {
+      "role": "assistant",
+      "content": "You describe the normal ups and downs of new motherhood-brief worries when you check your daughter's breathing and moments of feeling overwhelmed by dishes or cluster-feeding-but you still laugh easily, look forward to small pleasures like coffee and walks, sleep when you can, and never feel persistently sad or panicky. You clearly feel well supported and have good coping strategies.\n**Screening Impression:** Total EPDS Score: 3, Risk Level: Depression not likely (concerns include <sym>Patient reports intermittent, unwarranted worries several times, matching \"Yes, sometimes\"</sym>)\n**Reasoning:** EPDS items endorsing <sym>anxiety</sym> (Q4) and occasional overwhelm (Q6) are limited, situation-specific, and resolve quickly. All core mood items (Q1-3, 5, 7-10) scored 0, indicating preserved enjoyment, no excessive guilt, no sleep or appetite disruption from mood, no persistent crying, sadness, or self-harm thoughts. Total score falls well below the 8-point threshold suggesting further evaluation for <med>postpartum depression</med> or <med>anxiety disorders</med>. This pattern is consistent with normal postpartum adjustment rather than <med>Major Depressive Disorder with Peripartum Onset</med> per <med>DSM-5</med> criteria. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Offer reassurance and routine postpartum education about normal adjustment and common worries\n2. Re-screen with EPDS at the six-week postpartum visit or sooner if mood, worry, sleep, or enjoyment worsen\n3. Encourage continuation of current self-care: accepting help, napping when baby sleeps, brief outdoor walks, balanced meals\n4. Provide written resources on postpartum emotional health and local support groups\n5. Remind to contact the office immediately if persistent sadness, panic, guilt, or thoughts of self-harm emerge\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf",
+            "score": 0.0339,
+            "highlight": "Using DSM-IV, clinicians were advised to refrain from diagnosing major depression in individuals within  the first two months following the death of a loved one in what has been referred to as the \u201cbereave- ment exclusion.\u201d By advising clinicians not to diagnose depression in recently bereaved individuals, the  DSM-IV bereavement exclusion suggested that grief somehow protected someone from major depres-sion.",
+            "excerpt": "    Major Depressive Disorder and the  \n    \u201cBereavement Exclusion\u201d\nMajor Depressive Disorder (MDD) ...",
+            "relevance_explanation": "Some relevance: Contains terms \"not\", \"depression\" that have contextual connection to your query."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+            "score": 0.0339,
+            "highlight": "Using DSM-IV, clinicians were advised to refrain from diagnosing major depression in individuals within  the first two months following the death of a loved one in what has been referred to as the \u201cbereave- ment exclusion.\u201d By advising clinicians not to diagnose depression in recently bereaved individuals, the  DSM-IV bereavement exclusion suggested that grief somehow protected someone from major depres-sion.",
+            "excerpt": "    Major Depressive Disorder and the  \n    \u201cBereavement Exclusion\u201d\nMajor Depressive Disorder (MDD) ...",
+            "relevance_explanation": "Some relevance: Contains terms \"not\", \"depression\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 3: Postpartum Depression / Anxiety Screening Note  \nDate: [today\u2019s date]  \nSource: Patient self-report via EPDS-style questions\n\nSymptoms endorsed  \n- Transient, situational worry about infant well-being (Q4)  \n- Mild, intermittent sense of being overwhelmed with household tasks (Q6)\n\nSymptoms denied  \nPersistent low mood, anhedonia, excessive guilt, sleep disruption secondary to mood, crying spells, panic attacks, self-harm ideation (Q3,5,7,8,9,10)\n\nPattern  \nOverall euthymic affect; maintains capacity for pleasure, humor, and future-oriented enjoyment. Anxiety limited to brief, reality-based infant concerns and quickly resolves with reassurance. No functional impairment or safety risk identified.\n\nScreening significance  \nCurrent responses do not indicate clinically significant depressive or anxiety symptoms. Continue routine postpartum monitoring; educate on normative adjustment and when to re-contact services if mood, worry, or coping deteriorate.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0339
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3281478881835938,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3700079917907715,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3286356925964355,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You describe the normal ups and downs of new motherhood-brief worries when you check your daughter's breathing and moments of feeling overwhelmed by dishes or cluster-feeding-but you still laugh easily, look forward to small pleasures like coffee and walks, sleep when you can, and never feel persistently sad or panicky. You clearly feel well supported and have good coping strategies.\n**Screening Impression:** Total EPDS Score: 3, Risk Level: Depression not likely (concerns include <sym>Patient reports intermittent, unwarranted worries several times, matching \"Yes, sometimes\"</sym>)\n**Reasoning:** EPDS items endorsing <sym>anxiety</sym> (Q4) and occasional overwhelm (Q6) are limited, situation-specific, and resolve quickly. All core mood items (Q1-3, 5, 7-10) scored 0, indicating preserved enjoyment, no excessive guilt, no sleep or appetite disruption from mood, no persistent crying, sadness, or self-harm thoughts. Total score falls well below the 8-point threshold suggesting further evaluation for <med>postpartum depression</med> or <med>anxiety disorders</med>. This pattern is consistent with normal postpartum adjustment rather than <med>Major Depressive Disorder with Peripartum Onset</med> per <med>DSM-5</med> criteria. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Offer reassurance and routine postpartum education about normal adjustment and common worries\n2. Re-screen with EPDS at the six-week postpartum visit or sooner if mood, worry, sleep, or enjoyment worsen\n3. Encourage continuation of current self-care: accepting help, napping when baby sleeps, brief outdoor walks, balanced meals\n4. Provide written resources on postpartum emotional health and local support groups\n5. Remind to contact the office immediately if persistent sadness, panic, guilt, or thoughts of self-harm emerge\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 67604.35112953186,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0339,
+        "average_score": 0.0339,
+        "example_excerpt": "    Major Depressive Disorder and the  \n    \u201cBereavement Exclusion\u201d\nMajor Depressive Disorder (MDD) ...",
+        "relevance_explanation": "Some relevance: Contains terms \"not\", \"depression\" that have contextual connection to your query."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0339,
+        "average_score": 0.0339,
+        "example_excerpt": "    Major Depressive Disorder and the  \n    \u201cBereavement Exclusion\u201d\nMajor Depressive Disorder (MDD) ...",
+        "relevance_explanation": "Some relevance: Contains terms \"not\", \"depression\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

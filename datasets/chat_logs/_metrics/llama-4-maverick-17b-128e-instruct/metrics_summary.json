@@ -1,0 +1,88 @@
+{
+  "model": "llama-4-maverick-17b-128e-instruct",
+  "total_rows_in_batch": 2000,
+  "evaluated_pairs": 2000,
+  "skipped": 0,
+  "label_order": [
+    "Depression not likely",
+    "Depression possible",
+    "High possibility of depression",
+    "Probable depression, urgent referral"
+  ],
+  "overall": {
+    "accuracy": 0.657,
+    "f1_macro": 0.5573192290305298,
+    "f1_micro": 0.657
+  },
+  "per_class": {
+    "Depression not likely": {
+      "precision": 0.9599056603773585,
+      "recall": 0.9975490196078431,
+      "f1-score": 0.9783653846153846,
+      "support": 408.0
+    },
+    "Depression possible": {
+      "precision": 0.003703703703703704,
+      "recall": 0.002506265664160401,
+      "f1-score": 0.0029895366218236174,
+      "support": 399.0
+    },
+    "High possibility of depression": {
+      "precision": 0.8344827586206897,
+      "recall": 0.3032581453634085,
+      "f1-score": 0.44485294117647056,
+      "support": 399.0
+    },
+    "Probable depression, urgent referral": {
+      "precision": 0.6761412575366064,
+      "recall": 0.9886649874055415,
+      "f1-score": 0.80306905370844,
+      "support": 794.0
+    },
+    "accuracy": 0.657,
+    "macro avg": {
+      "precision": 0.6185583450595895,
+      "recall": 0.5729946045102383,
+      "f1-score": 0.5573192290305298,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6314670331927302,
+      "recall": 0.657,
+      "f1-score": 0.6077495271045489,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      407,
+      1,
+      0,
+      0
+    ],
+    [
+      6,
+      1,
+      24,
+      368
+    ],
+    [
+      2,
+      268,
+      121,
+      8
+    ],
+    [
+      9,
+      0,
+      0,
+      785
+    ]
+  ],
+  "support_per_class": {
+    "Depression not likely": 408,
+    "Depression possible": 399,
+    "High possibility of depression": 399,
+    "Probable depression, urgent referral": 794
+  }
+}

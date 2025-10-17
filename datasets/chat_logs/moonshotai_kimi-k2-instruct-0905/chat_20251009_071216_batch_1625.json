@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-09T07:13:04.452228",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Claire, and I\u2019m a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019re feeling since your baby arrived. We\u2019ll use a short, well-trusted questionnaire called the Edinburgh Postnatal Depression Scale (EPDS). It\u2019s simply 10 questions about the past seven days, and it helps us spot anything from normal new-mom ups-and-downs to signs of depression or anxiety that might need extra support. Everything you share stays between you, me, and the clinical team unless you tell us someone is in danger. There are no right or wrong answers\u2014just whatever is true for you today. Ready to start?\n\n1. Over the last seven days, how often have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "Most of the time I can still laugh\u2014maybe not quite as easily as before I had the baby, but usually once a day something will make me chuckle."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, like I said, most of the time I can still laugh\u2014maybe not quite as easily as before I had the baby, but usually once a day something will make me chuckle."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes\u2026 I still look forward to little things\u2014like my morning coffee or when my mom comes over\u2014but it\u2019s not the same excitement I used to feel. It\u2019s kind of dulled, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a couple of times this week. Like when the baby wouldn\u2019t settle and I kept thinking maybe I\u2019m just not doing something right, or when I dropped a bottle and spilled pumped milk\u2014I felt pretty lousy about that, even though rationally I know accidents happen."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I do get little spurts of worry\u2014like I\u2019ll suddenly think, \u201cIs she breathing?\u201d even when she\u2019s right next to me in the bassinet. It passes pretty quickly once I check on her, but yeah, it pops up a few times a day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not really panicky, more like a quick flutter of \u201cwhat if something\u2019s wrong?\u201d\u2014but it\u2019s gone as fast as it comes. No full-on scares or anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Some days, yeah. Like yesterday\u2014she wouldn\u2019t nap unless I held her, laundry was piling up, and I felt as if I was barely treading water. I managed, but it felt stressful for a bit."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my mood hasn\u2019t really messed with sleep. I drift off pretty easily once she\u2019s down\u2014only trouble is if she wakes a lot, then it\u2019s hard to fall back asleep, but it\u2019s not because I\u2019m unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve had a couple of teary moments\u2014like yesterday when I couldn\u2019t get her to latch and I just felt this wave of sadness\u2014but it\u2019s not an all-day thing. It comes and goes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I\u2019ve cried maybe twice this week. Once was after that rough feeding session, and once when my partner found me folding laundry at midnight and asked if I was okay\u2014something about being seen just made the tears spill over."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, never. I want to be here for my baby, and I\u2019d never do anything like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 12, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "DSM-5-Summary-PSI.pdf",
+            "score": 0.0382,
+            "highlight": "\u201d  II 1968  182 diagnoses   similar structure to DSM -I  III 1980  265 diagnoses   Strove to be a theoretical; introduced the explicit diagnostic criteria  for each disorder; introduced a multi -axial system that included  specificatio n of disorder as well as ratings of physical conditions,  severity of stressors and ratings of functioning   III-R 1987  Removed the hierarchical criteria so that comorbid disorders could  each be recognized   IV 1994  297 diagnoses   Reorganized disorders in terms of axis   Changed rating of severity of stressor to a checklist   IV-TR 2000  365 diagnoses   Minor changes to descriptions of some disorders   Figure 1:  DSM -I to DSM -IV-TR            Postpartum Support International   www.postpartum.net    June 2013  Page 3   Depression in DSM   As indicated in Figure.",
+            "excerpt": "cant portion of the text was identical. Since the first edition in \n1952, the DSM has been extensive...",
+            "relevance_explanation": "Some relevance: Contains terms \"changes\", \"criteria\", \"functioning\", and 4 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 12: Postpartum Depression / Anxiety Screening Note  \nPatient: Postpartum mother, <2 wks after delivery  \n\n1. Positive findings (frequency/intensity)  \n- Anhedonia: diminished enjoyment (\u201cdulled\u201d excitement)  \n- Labile mood: 2 crying spells this week, brief waves of sadness  \n- Excessive guilt: self-blame over routine infant-care events  \n- Anxiety: 3\u20134\u00d7 daily intrusive \u201cis she breathing?\u201d worries; no full panic attacks  \n- Overwhelm: reports \u201ctreading water\u201d on difficult days  \n\n2. Negative / low-level findings  \n- Laughing retained (daily)  \n- No sleep-onset problems (wake-ups infant-related)  \n- No self-harm ideation  \n\n3. Risk factors relevant to perinatal mood disorders  \n- Mild anhedonia + tearfulness  \n- Heightened, though brief, anxiety  \n- Self-criticism/guilt  \n- Acute situational stress (infant care, household tasks)  \n\n4. Safety  \n- Denies any thoughts of harming self; no suicidal ideation voiced.  \n\n5. Screening impression  \nMeets some criteria suggesting possible perinatal depression/anxiety; symptoms sub-clinical to mild, no impairment in basic functioning, no safety concerns at present. Continue monitoring; consider formal EPDS and follow-up within 1\u20132 wks or sooner if symptoms worsen or safety changes.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0382
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.337368965148926,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3731515407562256,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3271050453186035,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 12, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 89398.80725741386,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "DSM-5-Summary-PSI.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0382,
+        "average_score": 0.0382,
+        "example_excerpt": "cant portion of the text was identical. Since the first edition in \n1952, the DSM has been extensive...",
+        "relevance_explanation": "Some relevance: Contains terms \"changes\", \"criteria\", \"functioning\", and 4 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

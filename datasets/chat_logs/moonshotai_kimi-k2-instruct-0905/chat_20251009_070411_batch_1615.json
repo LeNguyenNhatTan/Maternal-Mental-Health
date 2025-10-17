@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T07:04:58.822714",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health specialist. I\u2019m here to check in on how you\u2019re feeling now that your baby has arrived. We\u2019ll use a short, well-studied tool called the **Edinburgh Postnatal Depression Scale** (the EPDS). It\u2019s simply ten questions about the past seven days; there are no right or wrong answers, and everything you share stays between us. My goal is to understand how you\u2019re coping so we can make sure you get whatever support you need. Ready to start?\n\n1. Over the last week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "*small sigh*  \nI guess I can still laugh sometimes\u2014like when my partner makes a silly face at the baby\u2014but it feels kind of forced. Most of the time I\u2019m just so tired that even the littlest thing doesn\u2019t seem that funny anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "*shrugging slightly*  \nYeah\u2026 I can laugh, but it doesn\u2019t come as easily. I have to remind myself to chuckle, and even then it feels kind of flat\u2014like I\u2019m doing it because I\u2019m supposed to, not because I really feel it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "*pauses, eyes on the floor*  \nI still look forward to some things\u2014like my mom bringing dinner or a quiet cup of coffee while the baby naps\u2014but it\u2019s not the same excitement I used to have. Mostly I\u2019m just hoping I\u2019ll have the energy to enjoy them when they happen."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "*quietly*  \nSometimes, yeah. Like if the baby won\u2019t settle, I catch myself thinking maybe I\u2019m not doing something right\u2014maybe I missed a cue or didn\u2019t swaddle tight enough. I know it\u2019s probably not fair, but those thoughts still pop in."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "*nods slowly*  \nYeah\u2026 a lot of the time I\u2019ll just lie there during a feeding and suddenly worry that the baby\u2019s breathing sounds different, or that the little rash on her cheek is actually something awful. Nothing\u2019s really wrong, but my mind races anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "*twisting the edge of my blanket*  \nIt\u2019s happened a couple of nights\u2014like I\u2019ll hear her stir and my heart starts pounding, and for a second I feel like something terrible is about to happen, even though nothing\u2019s going on. It passes pretty quick, but I hate that shaky feeling."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "*exhales*  \nSome days, yeah. The laundry piles up, the bottles need washing, and every time I think I\u2019ve got a minute to breathe she wakes up again. It\u2019s not all the time, but when it hits I feel like I\u2019m drowning a little."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "*rubbing my eyes*  \nA few nights this week I couldn\u2019t fall asleep even when the baby was out. I just lie there replaying everything\u2014did I burp her long enough, am I doing this all wrong\u2014and the next thing I know it\u2019s two a.m. and I\u2019m still wide-awake."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "*shrugs, voice low*  \nI do feel sad some days\u2014like yesterday I just sat on the couch crying for a minute because everything felt heavy. It\u2019s not every moment, but the low waves hit out of nowhere and then pass."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "*shakes head slowly*  \nNot really \u201cso unhappy\u201d that I break down. I mean, I teared up once when she wouldn\u2019t latch and my nipples were on fire, but it was more pain and frustration than this deep sadness."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "*looks up quickly*  \nNo\u2014never. I get tired and overwhelmed, but I would never want to hurt myself. I just want to feel like me again so I can take care of her."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 18, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0359,
+            "highlight": "ehavior, unsteady gait Anxiety, insomnia, tremors, shaking, nausea/vomiting, increased heart rate and blood pressure, seizures, agitation, confusion, hallucinationsCan be life-threateningMemory impariment, increased risk of falls in the elderly, risk of fatal sedative overdose Opioids Pinpoint pupils, drowsiness and falling asleep, decreased awareness, slow speechDilated pupils, anxiety, nausea/vomiting/diarrhea, abdominal cramps, muscle aches and pains, headaches, runny eyes and nose, yawning, hair standing up on arms, increased heart rate and blood pressureConstipation, risk of fatal sedative overdose, hypogonadism, adaptations in reward, learning and stress responses Tobacco Arousal, increased attention, concentration and memory; decreased anxiety and appetite; stimulant-like effectsIrritibility, hostility, anxiety, dysphoria, depresed mood, increased heart rate, increased appetiteLung disease (in tobacco smokers), cardiovascular disease, risk of cancers and other health effects  Cocaine, Methamphetamines & Amphetamine-type stimulantsDilated pupils, increased blood pressure and heart rate, excited, euphoric, hyperactivity, rapid speech, racing thoughts, disordered thinking, para.",
+            "excerpt": "ehavior, unsteady gait Anxiety, insomnia, tremors, shaking, nausea/vomiting, increased heart rate an...",
+            "relevance_explanation": "Some relevance: Contains terms \"asleep\", \"anxiety\", \"mood\", and 2 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0351,
+            "highlight": "\u2013  Neuroleptic malignant syndrome (NMS):  a rare,   potentially life-threatening disorder characterized by muscular  rigidity, elevated temperature, and high blood pressure.",
+            "excerpt": "cts (EPS): akathisia, acute \ndystonic reactions, tremor, cog- wheeling, muscular rigidity, and tardi...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 18: Screening Note \u2013 Postpartum Visit (Day ?)\n\nPatient-reported symptoms:\n- Diminished ability to experience pleasure/joy (laughing \u201cflat,\u201d anticipatory enjoyment reduced)\n- Intermittent low mood with tearfulness, \u201cwaves\u201d of sadness\n- Unwarranted self-blame regarding infant care\n- Marked, unprovoked anxiety and occasional nocturnal panic sensations\n- Frequent rumination interfering with sleep even when infant asleep\n- Feeling overwhelmed by daily tasks; \u201cdrowning\u201d sensation\n\nKey patterns:\nAnhedonia, episodic tearfulness, excessive guilt, anxiety with mild panic features, and sleep-onset insomnia linked to intrusive worries.\n\nSafety screen:\nDenies any thoughts of self-harm; no suicidal ideation voiced.\n\nScreening significance:\nFindings consistent with probable postpartum depression \u00b1 comorbid anxiety; insomnia and distress impairing daily functioning. Continue monitoring, consider formal assessment with Edinburgh or clinical interview to determine severity and intervention needs.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0355
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.362969160079956,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3538174629211426,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3547699451446533,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 18, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_possible",
+    "question_count": 10,
+    "duration": 88913.17774319649,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0359,
+        "average_score": 0.0355,
+        "example_excerpt": "ehavior, unsteady gait Anxiety, insomnia, tremors, shaking, nausea/vomiting, increased heart rate an...",
+        "relevance_explanation": "Some relevance: Contains terms \"asleep\", \"anxiety\", \"mood\", and 2 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

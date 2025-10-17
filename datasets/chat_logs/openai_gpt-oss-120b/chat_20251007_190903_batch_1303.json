@@ -1,0 +1,240 @@
+{
+  "timestamp": "2025-10-07T19:09:57.034199",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \n\nI\u2019d like to invite you to complete a brief, validated screening tool called the **Edinburgh Postnatal Depression Scale (EPDS)**. This questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of depression, anxiety, or thoughts of self\u2011harm that can sometimes arise after childbirth.  \n\nEverything you share is completely confidential, and my goal is to create a safe, supportive space where you can speak openly about your experience. The EPDS consists of **10 short questions**; we\u2019ll go through them one at a time, and you can answer as honestly as feels comfortable for you.  \n\nWhenever you\u2019re ready, we can begin.  \n\n**First question:**  \n*In the past seven days, how often have you felt able to laugh and see the funny side of things?*   (You can answer with \u201cnot at all,\u201d \u201chardly ever,\u201d \u201csometimes,\u201d or \u201cquite often.\u201d)  "
+    },
+    {
+      "role": "patient",
+      "content": "Hardly ever."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m actually finding it hard to laugh these days\u2014I\u2019ve hardly ever felt like I can see the funny side of things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Hardly ever."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "Hardly ever."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you've been struggling with little joy, frequent worry, feeling overwhelmed, trouble sleeping, and occasional thoughts of self\u2011harm. It sounds very hard, and I want you to know you're not alone and it's understandable to feel this way after giving birth.\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral (concerns include <sym>Patient reports hardly ever laughing or seeing the funny side, matching 'Not at all' option</sym>, <sym>The patient says 'Hardly ever,' indicating minimal enjoyment, which aligns with the option 'Hardly at all' (score 3).</sym>, <sym>the 'Yes, very often' option.</sym>, <sym>The patient says 'Quite often', indicating frequent panic, which aligns with the option 'Yes, quite a lot</sym>, <sym>Patient says \"Yes, quite often,\" indicating frequent feeling overwhelmed, matching the option \"Yes, most of the time I haven't been able to cope at all\"</sym>, <sym>Patient says 'Quite often', indicating frequent difficulty sleeping, matching 'Yes, most of the time' option.</sym>, <sym>The response \"Sometimes\" aligns with the option \"Only occasionally\"; because this item is reverse\u2011scored, the score is 2.</sym>)\n**Reasoning:** Based on the EPDS responses the total score is 23, which exceeds the threshold of 14 indicating probable postpartum depression and triggers an urgent referral per EPDS guidelines. The patient reports <sym>anhedonia</sym> (hardly ever laughing or looking forward to things), persistent <sym>sadness</sym> and <sym>crying</sym>, frequent <sym>anxiety</sym> and <sym>panic</sym>, feeling overwhelmed, and <sym>sleep disturbance</sym>. These symptoms align with several <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>, including depressed mood, loss of interest, insomnia, fatigue, feelings of worthlessness, and impaired concentration. The presence of occasional self\u2011harm thoughts (<sym>suicidal ideation</sym>) warrants immediate safety assessment. This pattern reflects a moderate\u2011to\u2011high risk postpartum mood disorder. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an urgent appointment with a <med>primary care provider</med> or <med>mental health specialist</med> for comprehensive evaluation\n2. Conduct a detailed safety assessment and develop a safety plan addressing <sym>suicidal thoughts</sym>\n3. Provide information about local postpartum support groups and crisis hotlines\n4. Encourage regular sleep hygiene practices, such as establishing a bedtime routine and seeking help with nighttime infant care\n5. Discuss possible referral for psychotherapy (e.g., cognitive\u2011behavioral therapy or interpersonal therapy) and evaluation for pharmacologic treatment if indicated\n6. Offer resources for partner/family support and practical assistance with daily tasks\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0217,
+            "highlight": "\u00bb   Assess the severity of dependence and, if appropriate, provide or refer the person for   opioid agonist maintenance treatment, also known as opioid substitution therapy (OST),  after detoxi\ufb01cation.",
+            "excerpt": "ULATIONS.\nHarmful Use1PROTOCOLSUB 2     Management\nDISORDERS DUE TO SUBSTANCE USE 119\nIF THE PERSON ...",
+            "relevance_explanation": "Some relevance: Contains terms \"severity\", \"appropriate\", \"assess\" that have contextual connection to your query."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf",
+            "score": 0.0209,
+            "highlight": "more than 3 7,000  physician members specialize in the diagnosis, treat - ment, prevention and research of mental illnesses, including substance use disorders.",
+            "excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+            "score": 0.0209,
+            "highlight": "more than 3 7,000  physician members specialize in the diagnosis, treat - ment, prevention and research of mental illnesses, including substance use disorders.",
+            "excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 23: **Screening Summary \u2013 Postpartum Mood & Anxiety Evaluation**\n\n**Client Identifiers:**  \n- Mother, postpartum (time since delivery not specified)  \n- Screening conducted via self\u2011report questionnaire  \n\n**1. Reported Symptoms / Emotional\u2011Behavioral Concerns**  \n| Item | Client\u2019s Response | Clinical Interpretation |\n|------|-------------------|--------------------------|\n| **Anhedonia / Low Positive Affect** (Q1, Q2) | \u201cHardly ever\u201d able to laugh; \u201cHardly ever\u201d looks forward to things with enjoyment. | Marked reduction in pleasure and anticipation. |\n| **Guilt / Self\u2011Blame** (Q3) | \u201cSometimes\u201d blames herself unnecessarily when things go wrong. | Intermittent self\u2011critical cognitions. |\n| **Anxiety / Worry** (Q4) | \u201cQuite often\u201d feels anxious or worried for no good reason. | Frequent nonspecific anxiety. |\n| **Panic / Fear** (Q5) | \u201cQuite often\u201d feels scared or panicky without clear trigger. | Recurrent panic\u2011type symptoms. |\n| **Feeling Overwhelmed** (Q6) | \u201cYes, quite often\u201d that things are getting on top of her. | Perceived inability to manage daily demands. |\n| **Sleep Disturbance** (Q7) | \u201cQuite often\u201d difficulty sleeping due to unhappiness. | Mood\u2011related insomnia. |\n| **Sadness / Dysphoria** (Q8) | \u201cQuite often\u201d feels sad or miserable. | Persistent low mood. |\n| **Crying Episodes** (Q9) | \u201cSometimes\u201d experiences crying. | Episodic tearfulness. |\n| **Suicidal Ideation** (Q10) | \u201cHardly ever\u201d thoughts of self\u2011harm. | Low frequency; however, any presence warrants safety monitoring. |\n\n**2. Consistent Patterns Across Responses**  \n- **Low mood & loss of pleasure** (Q1, Q2, Q8, Q9)  \n- **Elevated anxiety/panic** (Q4, Q5)  \n- **Feelings of being overwhelmed** (Q6)  \n- **Sleep difficulty linked to mood** (Q7)  \n- **Intermittent self\u2011blame** (Q3)  \n- **Rare but present suicidal thoughts** (Q10)  \n\n**3. Areas of Screening Significance (Postpartum Depression / Anxiety)**  \n- **Depressive symptom cluster:** anhedonia, persistent sadness, crying, sleep disruption.  \n- **Anxiety/panic cluster:** frequent worry, panic\u2011type fear, feeling overwhelmed.  \n- **Cognitive\u2011affective component:** occasional self\u2011blame/guilt.  \n- **Safety/ suicidality:** low\u2011frequency self\u2011harm thoughts\u2014requires ongoing risk assessment.  \n\n**4. Highlighted Risk Factors**  \n- **Persistent sadness & loss of pleasure** \u2013 notable across multiple items.  \n- **Sleep difficulties** \u2013 reported as mood\u2011related insomnia.  \n- **Crying spells** \u2013 present intermittently.  \n- **Anxiety & panic symptoms** \u2013 frequent and distressing.  \n- **Feeling overwhelmed** \u2013 suggests reduced coping capacity.  \n- **Self\u2011harm ideation** \u2013 \u201chardly ever\u201d but any occurrence is a safety flag; requires monitoring and safety planning.  \n\n**5. Safety Concern Flag**  \n- **Suicidal Ideation:** Low\u2011frequency thoughts of self\u2011harm reported. **Action:** Immediate safety assessment recommended; ensure a safety plan is in place and assess for any escalation.  \n\n**6. Overall Screening Observation**  \nThe client demonstrates a constellation of depressive and anxiety symptoms consistent with a moderate\u2011to\u2011high risk presentation for postpartum mood disorder. Core features include marked anhedonia, frequent sadness, sleep disturbance, pervasive anxiety/panic, and intermittent self\u2011blame. Although suicidal thoughts are infrequent, they warrant vigilant safety monitoring. Further comprehensive assessment (e.g., EPDS, GAD\u20117, full risk evaluation) is indicated to delineate severity and guide appropriate clinical follow\u2011up.",
+          "results_count": 3,
+          "requested_count": 5,
+          "avg_score": 0.0212
+        },
+        "count": 3,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.4011707305908203,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3649728298187256,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3608975410461426,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "I hear that you've been struggling with little joy, frequent worry, feeling overwhelmed, trouble sleeping, and occasional thoughts of self\u2011harm. It sounds very hard, and I want you to know you're not alone and it's understandable to feel this way after giving birth.\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral (concerns include <sym>Patient reports hardly ever laughing or seeing the funny side, matching 'Not at all' option</sym>, <sym>The patient says 'Hardly ever,' indicating minimal enjoyment, which aligns with the option 'Hardly at all' (score 3).</sym>, <sym>the 'Yes, very often' option.</sym>, <sym>The patient says 'Quite often', indicating frequent panic, which aligns with the option 'Yes, quite a lot</sym>, <sym>Patient says \"Yes, quite often,\" indicating frequent feeling overwhelmed, matching the option \"Yes, most of the time I haven't been able to cope at all\"</sym>, <sym>Patient says 'Quite often', indicating frequent difficulty sleeping, matching 'Yes, most of the time' option.</sym>, <sym>The response \"Sometimes\" aligns with the option \"Only occasionally\"; because this item is reverse\u2011scored, the score is 2.</sym>)\n**Reasoning:** Based on the EPDS responses the total score is 23, which exceeds the threshold of 14 indicating probable postpartum depression and triggers an urgent referral per EPDS guidelines. The patient reports <sym>anhedonia</sym> (hardly ever laughing or looking forward to things), persistent <sym>sadness</sym> and <sym>crying</sym>, frequent <sym>anxiety</sym> and <sym>panic</sym>, feeling overwhelmed, and <sym>sleep disturbance</sym>. These symptoms align with several <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>, including depressed mood, loss of interest, insomnia, fatigue, feelings of worthlessness, and impaired concentration. The presence of occasional self\u2011harm thoughts (<sym>suicidal ideation</sym>) warrants immediate safety assessment. This pattern reflects a moderate\u2011to\u2011high risk postpartum mood disorder. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an urgent appointment with a <med>primary care provider</med> or <med>mental health specialist</med> for comprehensive evaluation\n2. Conduct a detailed safety assessment and develop a safety plan addressing <sym>suicidal thoughts</sym>\n3. Provide information about local postpartum support groups and crisis hotlines\n4. Encourage regular sleep hygiene practices, such as establishing a bedtime routine and seeking help with nighttime infant care\n5. Discuss possible referral for psychotherapy (e.g., cognitive\u2011behavioral therapy or interpersonal therapy) and evaluation for pharmacologic treatment if indicated\n6. Offer resources for partner/family support and practical assistance with daily tasks\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_urgent",
+    "question_count": 10,
+    "duration": 70185.81080579758,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 3,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0217,
+        "average_score": 0.0217,
+        "example_excerpt": "ULATIONS.\nHarmful Use1PROTOCOLSUB 2     Management\nDISORDERS DUE TO SUBSTANCE USE 119\nIF THE PERSON ...",
+        "relevance_explanation": "Some relevance: Contains terms \"severity\", \"appropriate\", \"assess\" that have contextual connection to your query."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0209,
+        "average_score": 0.0209,
+        "example_excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0209,
+        "average_score": 0.0209,
+        "example_excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

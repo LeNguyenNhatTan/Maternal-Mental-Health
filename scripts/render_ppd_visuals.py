@@ -34,10 +34,12 @@ def load_metrics_json(path: str) -> Dict:
 
 
 def plot_confusion_matrix(cm: np.ndarray, labels: List[str], title: str, out_png: str):
-    """Vẽ CM đơn giản, rõ ràng, có số ở từng ô."""
     fig = plt.figure(figsize=(6.5, 5.5))
     ax = plt.gca()
-    im = ax.imshow(cm, interpolation="nearest")
+
+    # Dùng colormap "Blues" để có tông xanh dịu
+    im = ax.imshow(cm, interpolation="nearest", cmap="Blues")
+
     ax.set_title(title)
     ax.set_xticks(np.arange(len(labels)))
     ax.set_yticks(np.arange(len(labels)))
@@ -49,14 +51,16 @@ def plot_confusion_matrix(cm: np.ndarray, labels: List[str], title: str, out_png
         for j in range(cm.shape[1]):
             ax.text(
                 j, i, int(cm[i, j]),
-                ha="center", va="center"
+                ha="center", va="center", color="black"
             )
 
     ax.set_ylabel("True label")
     ax.set_xlabel("Predicted label")
+    fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)  # thêm thanh màu bên phải
     fig.tight_layout()
     plt.savefig(out_png, dpi=180, bbox_inches="tight")
     plt.close(fig)
+
 
 
 def report_dict_to_dataframe(rep: Dict, label_order: List[str]) -> pd.DataFrame:
