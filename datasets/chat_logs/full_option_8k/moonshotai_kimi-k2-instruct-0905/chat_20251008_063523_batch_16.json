@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T06:36:10.633910",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019ll be guiding you through a short screening called the Edinburgh Postnatal Depression Scale, or EPDS. It\u2019s simply a way to check in on how you\u2019ve been feeling since your baby arrived, because mood changes are incredibly common and very treatable. Everything you share stays confidential, and this is a judgment-free space. We\u2019ll go through ten gentle questions about the past seven days; there are no right or wrong answers\u2014just whatever feels true for you. Ready to start?\n\nIn the past week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "Oh, yeah, I\u2019ve still been laughing\u2014maybe not as much as before the baby, but when my husband makes goofy faces at her or when she gets that milk-drunk look, I can\u2019t help but chuckle."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I\u2019ve still been able to laugh\u2014like when my little one does those tiny baby sneezes or when the dog tries to \u201chelp\u201d during tummy-time. It\u2019s not quite as spontaneous as before, but the funny moments are still there."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Most days I do find myself looking forward to little things\u2014like our morning walk to the mailbox or my favorite podcast during her nap. They\u2019re small, but they still feel nice to anticipate."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I mean, if she\u2019s fussy and I can\u2019t figure out why, I might think \u201cmaybe I missed something,\u201d but it\u2019s just a quick thought\u2014I don\u2019t stay stuck on it or beat myself up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I\u2019ll catch myself worrying that her breathing sounds different or that she\u2019s not eating enough, even when everything looks fine. It doesn\u2019t last long and I can usually settle once I check on her, but yeah, it pops up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t felt that kind of sudden fear or panic\u2014nothing like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Now and then, when she\u2019s had a couple of rough nights in a row or the laundry piles up, I\u2019ll think \u201cugh, how am I going to get through all this?\u201d But it\u2019s more like a passing wave than feeling totally swamped."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my sleep\u2019s actually been okay. Once she settles for the night I can usually fall back asleep pretty easily\u2014I\u2019m tired, but not because I\u2019m feeling unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt sad or miserable. Tired, sure, but not down or weepy\u2014overall I still feel pretty steady."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any of those \u201ccan\u2019t-stop-crying\u201d moments. I might get a little teary when a song comes on that reminds me of her growing so fast, but it\u2019s brief and not from feeling unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014nothing like that has crossed my mind at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0399,
+            "highlight": "DISORDERS DUE TO SUBSTANCE USE Person has used stimulants in the  last few days: Dilated pupils, excited, racing thoughts, disordered thinking, strange behaviour, recent use of psychoactive substances, raised pulse and blood pressure, aggressive, erratic, or violent behaviour.",
+            "excerpt": "ohol  \nwithdrawal (tremors, sweating, vital signs changes) \n \u2013 Treat with diazepam 10-20 mg p.o.\n \u2013 ...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0386,
+            "highlight": "Consider consultation with a specialist for the use of clozapine in those who have not responded to other antipsychotic medications  at adequate doses and durations.",
+            "excerpt": "ntipsychotic medication, using one medicine at a time,  then antipsychotic combination treatment may...",
+            "relevance_explanation": "Some relevance: Contains terms \"not\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 5: **Postpartum Depression / Anxiety Screening Summary**\n\n**Positive findings**  \n- Intermittent, mild worry about infant\u2019s health (breathing, feeding) without objective cause; resolves quickly after reassurance  \n- Occasional sense of \u201cgetting on top of me\u201d during clustered infant-care demands; described as \u201cpassing wave,\u201d not persistent overwhelm  \n\n**Absences / Negative findings**  \n- No low mood, tearfulness, or anhedonia; enjoyment of baby and daily activities preserved  \n- No inappropriate guilt or self-blame  \n- No sleep disruption secondary to mood (sleep loss solely situational to infant needs)  \n- No panic episodes, hopelessness, or self-harm ideation  \n\n**Clinical impression**  \nResponses indicate normal postpartum adjustment with mild situational anxiety. Patient retains capacity for pleasure, adaptive coping, and appropriate reality testing. No red-flag symptoms for major postpartum depression or anxiety disorder identified at this time. Continue routine postpartum follow-up and educate on signs warranting re-screening.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0392
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3635942935943604,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3452184200286865,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.340564489364624,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 784.9889395236969,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0399,
+        "average_score": 0.0393,
+        "example_excerpt": "ohol  \nwithdrawal (tremors, sweating, vital signs changes) \n \u2013 Treat with diazepam 10-20 mg p.o.\n \u2013 ...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

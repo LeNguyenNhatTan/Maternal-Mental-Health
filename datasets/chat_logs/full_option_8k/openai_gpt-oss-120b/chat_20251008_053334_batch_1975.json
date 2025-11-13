@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-08T05:34:29.448757",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nI\u2019d like to invite you to complete a brief, validated screening tool called the **Edinburgh Postnatal Depression Scale (EPDS)**. This questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of depression, anxiety, or thoughts of self\u2011harm that can sometimes arise after giving birth.  \n\nEverything you share is completely confidential, and my goal is to create a safe, supportive space where you can speak openly about your experience. The EPDS consists of **10 short questions** that focus on your mood, anxiety, and overall wellbeing during the last seven days. I\u2019ll ask each question one at a time, and you can answer in the way that feels most accurate for you.  \n\nIf at any point a question feels uncomfortable or you\u2019d rather skip it, just let me know\u2014that\u2019s absolutely fine.  \n\n**Are you ready to begin?**  \n\n**First question:**  \n*In the past week, how often have you felt able to laugh or enjoy things as you normally would?*   (You can answer with \u201cnot at all,\u201d \u201chardly ever,\u201d \u201csometimes,\u201d or \u201cmost of the time.\u201d)  "
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve felt able to laugh or enjoy things only **sometimes** over the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I hear you, and I do try to find the funny side when I can, but most days it feels like a small effort. I only manage to laugh or feel genuinely amused a few times in the week, and even then it\u2019s brief. The rest of the time I\u2019m just feeling tired, worried about the baby, and a bit down."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve **hardly ever** looked forward to things with enjoyment during the past week. It\u2019s been hard to feel that anticipation, even for activities I used to like."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve **sometimes** blamed myself unnecessarily when things went wrong. It happens more than I\u2019d like, but it\u2019s not every moment."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve felt **most of the time** anxious or worried for no good reason."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve felt scared or panicky for no very good reason **most of the time**."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say that\u2019s been happening **sometimes**."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve felt that **sometimes** over the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve felt sad or miserable **most of the time** over the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say I\u2019ve been crying **sometimes** in the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say that\u2019s happened **sometimes** in the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 19, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "DSM-5-Summary-PSI.pdf",
+            "score": 0.0203,
+            "highlight": "It is to  be distinguished f rom involutional melancholia and manic depressive illness   DSM -III Affective Disorders: Major Depressive Disorder   The essential feature is a dysphoric mood, unusual depression, or loss of interest or pleasure  in all or almost all usual activities and pasti mes.",
+            "excerpt": "e patient, and is o ften associated with a feeling of guilt for past failures or \ndeeds. The degree ...",
+            "relevance_explanation": "Some relevance: Contains terms \"depression\", \"pleasure\", \"loss\", and 3 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 19: **Screening Summary \u2013 Postpartum Mood & Anxiety Check\u2011In**\n\n**Client Identifier:** [Redacted]  \n**Date of Screening:** 2025\u201110\u201107  \n**Clinician:** [Name, LCSW / LMFT]  \n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Frequency (Client\u2019s wording) | Core Symptom |\n|------|------------------------------|--------------|\n| Ability to laugh / see funny side (Q1) | \u201csmall effort\u2026 only a few times a week, brief\u201d | Diminished positive affect |\n| Looking forward with enjoyment (Q2) | \u201chardly ever\u201d | Anhedonia / loss of pleasure |\n| Unnecessary self\u2011blame (Q3) | \u201csometimes\u201d | Guilt/self\u2011criticism |\n| Anxiety/worry for no good reason (Q4) | \u201cmost of the time\u201d | Persistent anxiety |\n| Fear/panic for no good reason (Q5) | \u201cmost of the time\u201d | Panic\u2011type anxiety |\n| Feeling overwhelmed (Q6) | \u201csometimes\u201d | Perceived inability to cope |\n| Mood\u2011related sleep difficulty (Q7) | \u201csometimes\u201d | Insomnia linked to dysphoria |\n| Sadness/misery (Q8) | \u201cmost of the time\u201d | Persistent low mood |\n| Crying episodes (Q9) | \u201csometimes\u201d | Mood\u2011congruent crying |\n| Thoughts of self\u2011harm (Q10) | \u201csometimes\u201d | Suicidal ideation (safety concern) |\n\n---\n\n### 2. Consistent Patterns Across Responses\n- **Low mood & anhedonia:** Frequent sadness, minimal enjoyment, limited laughter.  \n- **Anxiety spectrum:** High\u2011frequency worry and panic symptoms, often \u201cfor no good reason.\u201d  \n- **Guilt/self\u2011blame:** Present, though not pervasive.  \n- **Functional impact:** Intermittent sleep disturbance; occasional feeling \u201coverwhelmed.\u201d  \n- **Safety signal:** Occasional thoughts of self\u2011harm.\n\n---\n\n### 3. Areas of Screening Significance (Postpartum Depression / Anxiety)\n- **Depressive indicators:** Anhedonia, persistent sadness, crying, sleep disruption.  \n- **Anxious indicators:** Generalized worry, panic\u2011type fear, feeling overwhelmed.  \n- **Cognitive\u2011affective:** Unnecessary self\u2011blame, guilt.  \n- **Suicidality:** Any frequency of self\u2011harm thoughts warrants immediate safety assessment.  \n\n---\n\n### 4. Highlighted Risk Factors\n- **Persistent sadness & loss of pleasure** (Q2, Q8) \u2013 core depressive features.  \n- **Crying spells** (Q9) \u2013 mood\u2011related dysregulation.  \n- **Sleep difficulty linked to mood** (Q7) \u2013 may exacerbate mood and anxiety.  \n- **Guilt/self\u2011blame** (Q3) \u2013 contributes to depressive cognitions.  \n- **High\u2011frequency anxiety & panic** (Q4, Q5) \u2013 risk for worsening functional impairment.  \n- **Self\u2011harm thoughts** (Q10, \u201csometimes\u201d) \u2013 **flagged as a safety concern**; requires risk assessment and safety planning.\n\n---\n\n### 5. Screening Observation (Objective Note)\nThe client reports a predominance of low mood symptoms over the past week, including frequent sadness, limited ability to experience pleasure, and intermittent crying. Positive affect is markedly reduced, with only brief moments of laughter. Anxiety is prominent, with worry and panic sensations occurring \u201cmost of the time.\u201d The client acknowledges occasional self\u2011critical thoughts and feels overwhelmed at times. Sleep is disrupted on some nights, related to mood disturbances. Notably, the client reports occasional thoughts of self\u2011harm, which constitutes a safety concern and warrants immediate further assessment and appropriate safety planning.\n\n**Safety Flag:** Presence of suicidal ideation (even intermittent) \u2192 immediate risk assessment recommended.  \n\n--- \n\n*Prepared for clinical review and follow\u2011up planning. No diagnostic conclusions drawn at this screening stage.*",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0203
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.339374542236328,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3797390460968018,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.334831476211548,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 19, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_urgent",
+    "question_count": 10,
+    "duration": 107658.22536325455,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "DSM-5-Summary-PSI.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0203,
+        "average_score": 0.0203,
+        "example_excerpt": "e patient, and is o ften associated with a feeling of guilt for past failures or \ndeeds. The degree ...",
+        "relevance_explanation": "Some relevance: Contains terms \"depression\", \"pleasure\", \"loss\", and 3 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T07:44:25.257186",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019re feeling now that your little one has arrived. We\u2019ll use a short, well-studied questionnaire called the **Edinburgh Postnatal Depression Scale**\u2014or EPDS for short. It\u2019s simply ten questions about your mood and thoughts over the past seven days. Your answers are confidential, and there are no right or wrong responses; we just want to understand how best to support you. When you\u2019re ready, I\u2019ll ask the questions conversationally, and we\u2019ll go at your pace.\n\nLet\u2019s start:  \nOver the last week, have you been able to laugh and see the funny side of things, or has that felt difficult?"
+    },
+    {
+      "role": "patient",
+      "content": "Oh, I\u2019ve definitely still been able to laugh\u2014my husband and I were giggling just yesterday at the faces the baby makes when he\u2019s trying to poop. It\u2019s one of the bright spots in the day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I\u2019ve still been able to laugh\u2014like when the baby let out that tiny dinosaur squeak during tummy time. My partner and I cracked up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I do look forward to little things\u2014like my morning coffee once the baby settles for his first nap, or taking him out in the stroller when the weather\u2019s nice. They feel like nice rewards in the day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really\u2014if he spits up a ton or won\u2019t settle, I figure it\u2019s just part of the baby deal. I might shrug and try the next trick, but I don\u2019t sit there thinking it\u2019s my fault."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I\u2019ll suddenly wonder if he\u2019s breathing okay when he\u2019s napping, even though I can see his chest moving. It passes pretty fast\u2014like thirty seconds later I\u2019m fine\u2014but yeah, those random little spikes of worry do pop up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t felt that kind of sudden panic\u2014just the quick \u201cis he breathing?\u201d check every now and then, but it\u2019s over in a blink."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Only a little. Some days the feeding-laundry-burp-repeat cycle feels never-ending, but if I tick off even one chore I give myself a mental high-five and it lightens up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my sleep\u2019s actually been okay\u2014once I\u2019m down, I\u2019m out for a decent stretch, and I haven\u2019t felt so upset that it kept me awake."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t felt truly sad\u2014just tired when he\u2019s up at 3 a.m., but that fades once he\u2019s back asleep and I see his little milk-drunk smile."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t had any of those \u201ccan\u2019t-stop\u201d crying spells\u2014maybe just one quick tear when a lullaby hit me weird, but it passed in a minute."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014nothing like that has ever crossed my mind."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds as though you're navigating the early weeks of motherhood with warmth and resilience, still finding moments of genuine laughter and small pleasures even amid the endless feed-laundry-burp loop. You shared brief, passing worries about your baby's breathing and mild, task-related overwhelm that quickly lifts once you accomplish a chore-experiences that are common and generally self-limited in the postpartum period.\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely (concerns include <sym>Patient describes recurring, brief episodes of sudden worry about the baby's breathing that occur without a clear trigger, aligning with \"Yes, sometimes.\"</sym>)\n**Reasoning:** Your EPDS total of 5 falls below the 8-point threshold for minimal concern on this screening tool. You endorse only two items above the lowest score: transient, situational <sym>anxiety</sym> and mild <sym>feeling overwhelmed</sym>, both resolving quickly and without functional impairment. Core features of <med>Major Depressive Disorder with Peripartum Onset</med>-persistent low mood, anhedonia, guilt, sleep disruption from sadness, or suicidal ideation-are explicitly denied. This pattern is consistent with normal postpartum adjustment rather than clinically significant <med>postpartum depression</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine paediatric and primary-care follow-ups\n2. Re-screen with EPDS if mood, worry, or coping worsen\n3. Practice consistent sleep-wake windows when baby sleeps\n4. Share feelings with partner, friends, or a new-parent group\n5. Consider brief mindfulness or breathing exercises for the 30-second worry spikes\n6. Contact your midwife, family doctor, or local perinatal mental-health resource promptly if sadness, panic, or hopelessness intensify\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0441,
+            "highlight": "ntial medicines are determined by: (i) a rational selection of medicines; (ii) making prices affordable; (iii) ensuring sustainable \ufb01nancing; and (iv) availability of reliable health and supply systems.",
+            "excerpt": "ntial medicines are determined by: (i) a rational selection of medicines; (ii) making prices afforda...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0388,
+            "highlight": "checking WHO Mental Health Atlas Country Pro\ufb01le, the WHO Assessment Instrument for Mental Health Systems (AIMS) report or already existing assessments, and interviews and group discussions with multiple stakeholders to answer the following questions:     What kind of needs and resource assessments must be done  \ufb01rst? What is already known?.",
+            "excerpt": "m all of them could be a solution. \n \n  Members of the implementation team should include at least o...",
+            "relevance_explanation": "Some relevance: Contains terms \"report\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 5: Postpartum Depression / Anxiety Screening Note  \nDate: [today]\n\nSource: Patient self-report on 10-item Edinburgh-based questionnaire (0-30 scale not applied; responses reviewed qualitatively).\n\nAreas endorsed (present, but mild/intermittent):\n- Transient, situational worry about infant safety while sleeping (Q4) \u2013 resolves in <1 min, no avoidance behaviors\n- Occasional feeling that daily baby-care tasks are \u201cnever-ending,\u201d relieved by completing a single chore (Q6)\n\nAreas denied:\n- Persistent low mood, anhedonia, crying spells, sleep disruption secondary to mood, guilt/self-blame, panic, or self-harm ideation (Q3, Q5, Q7\u2013Q10)\n\nRisk factors:\n- No current evidence of moderate\u2013severe depressive or anxiety symptoms\n- No safety concerns (no suicidal/homicidal ideation, no self-harm thoughts)\n\nOverall screening impression:  \nPatient does not, at this time, report clinically significant symptoms consistent with major postpartum depression or anxiety disorder. Occasional, short-lived worries and mild task-related stress appear within normative postpartum adjustment. Continue routine paediatric/primary-care follow-up; re-screen if mood, anxiety, or coping deteriorate.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0415
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3572213649749756,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3474764823913574,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.335635185241699,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "It sounds as though you're navigating the early weeks of motherhood with warmth and resilience, still finding moments of genuine laughter and small pleasures even amid the endless feed-laundry-burp loop. You shared brief, passing worries about your baby's breathing and mild, task-related overwhelm that quickly lifts once you accomplish a chore-experiences that are common and generally self-limited in the postpartum period.\n**Screening Impression:** Total EPDS Score: 5, Risk Level: Depression not likely (concerns include <sym>Patient describes recurring, brief episodes of sudden worry about the baby's breathing that occur without a clear trigger, aligning with \"Yes, sometimes.\"</sym>)\n**Reasoning:** Your EPDS total of 5 falls below the 8-point threshold for minimal concern on this screening tool. You endorse only two items above the lowest score: transient, situational <sym>anxiety</sym> and mild <sym>feeling overwhelmed</sym>, both resolving quickly and without functional impairment. Core features of <med>Major Depressive Disorder with Peripartum Onset</med>-persistent low mood, anhedonia, guilt, sleep disruption from sadness, or suicidal ideation-are explicitly denied. This pattern is consistent with normal postpartum adjustment rather than clinically significant <med>postpartum depression</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine paediatric and primary-care follow-ups\n2. Re-screen with EPDS if mood, worry, or coping worsen\n3. Practice consistent sleep-wake windows when baby sleeps\n4. Share feelings with partner, friends, or a new-parent group\n5. Consider brief mindfulness or breathing exercises for the 30-second worry spikes\n6. Contact your midwife, family doctor, or local perinatal mental-health resource promptly if sadness, panic, or hopelessness intensify\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 91279.61221456528,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0441,
+        "average_score": 0.0415,
+        "example_excerpt": "ntial medicines are determined by: (i) a rational selection of medicines; (ii) making prices afforda...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

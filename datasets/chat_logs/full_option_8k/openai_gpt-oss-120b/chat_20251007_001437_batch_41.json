@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-07T00:15:30.485193",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \n\nI\u2019d like to spend a few minutes with you today to complete the **Edinburgh Postnatal Depression Scale (EPDS)**. This brief, ten\u2011question screening tool helps us understand how you\u2019ve been feeling over the past week as you adjust to life with your new baby.  \n\nEverything you share is completely confidential, and my goal is to create a safe, supportive space where you can speak openly about any thoughts or emotions you\u2019ve experienced. The EPDS is simply a series of ten questions; I\u2019ll ask them one at a time and we\u2019ll discuss each answer together.  \n\nIf at any point a question feels uncomfortable or you\u2019d like to pause, just let me know.  \n\n**Whenever you\u2019re ready, we can begin with the first question:**  \n\n> **\u201cOver the past week, have you been able to laugh and see the funny side of things?\u201d**  \n\nYou can answer with how often that has been true for you (for example, \u201cnot at all,\u201d \u201chardly ever,\u201d \u201csometimes,\u201d or \u201cmost of the time\u201d). Whenever you\u2019re ready, please share your response."
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say it\u2019s been \u201csometimes.\u201d I still find a few moments that make me smile, but there are also days when it feels harder to see the funny side."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I hear you. For me, it\u2019s still \u201csometimes.\u201d I have a few moments where I can laugh or find something funny, but there are also days when it feels harder to see the humor."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "It\u2019s more like \u201csometimes.\u201d I still enjoy a few things, but there are many moments when I don\u2019t feel that same excitement or anticipation."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say that\u2019s \u201csometimes.\u201d I do catch myself blaming or feeling inadequate when something doesn\u2019t go the way I hoped, but it isn\u2019t a constant feeling."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say \u201csometimes.\u201d I do get worried now and then, even when there isn\u2019t an obvious reason, but it\u2019s not all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say that\u2019s \u201csometimes.\u201d I do get moments where I feel scared or a bit panicky without a clear reason, but it isn\u2019t happening all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say that\u2019s \u201csometimes.\u201d I have moments when everything feels a bit overwhelming, but I\u2019m usually able to manage."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say \u201csometimes.\u201d I\u2019ve felt unhappy at times, and on those days it\u2019s a bit harder for me to fall asleep, but most nights I\u2019m able to sleep okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say \u201csometimes.\u201d I\u2019ve felt sad or miserable on a few days, but most of the time my mood is okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019d say \u201csometimes.\u201d I\u2019ve had a couple of moments this week where I felt really unhappy and ended up crying, but it\u2019s not happening all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t had any thoughts of harming myself at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 12, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0297,
+            "highlight": "These actions must always be undertaken with the person\u2019s informed consent.Assessment of Physical Health      Take a detailed history and ask about risk factors.",
+            "excerpt": "ensive evaluation. Be sure to take a proper history, including both physical health and MNS history,...",
+            "relevance_explanation": "Some relevance: Contains terms \"health\", \"these\", \"risk\", and 1 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0244,
+            "highlight": "DO NOT PUT ANYTHING IN THE MOUTH   FOR A PERSON WITH POSSIBLE HEAD INJURY, NEUROINFECTION (FEVER) OR FOCAL DEFICITS,    REFER URGENTLY TO HOSPITAL  CLINICAL TIP :   Assessment and management  should occur simultaneously .EPI   EMERGENCY 54EPIEPILEPSY  Emergency  GIVE MEDICATION TO STOP CONVULSIONS IF NO I.V.",
+            "excerpt": "  DO NOT PUT ANYTHING IN THE MOUTH\n  FOR A PERSON WITH POSSIBLE HEAD INJURY, NEUROINFECTION (FEVER) ...",
+            "relevance_explanation": "Some relevance: Contains terms \"not\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 12: **Postpartum Depression Screening \u2013 Summary Note**\n\n**Client ID:** ___  \n**Date:** ___  \n**Clinician:** ___, Licensed Mental Health Professional  \n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Client\u2019s Rating | Symptom/Concern |\n|------|----------------|-----------------|\n| Q1 \u2013 Ability to laugh / see humor | \u201csometimes\u201d | Reduced capacity for positive affect |\n| Q2 \u2013 Anticipation/Enjoyment of activities | \u201csometimes\u201d | Diminished pleasure/interest |\n| Q3 \u2013 Unnecessary self\u2011blame | \u201csometimes\u201d | Guilt/self\u2011critical thoughts |\n| Q4 \u2013 Anxiety/worry without clear reason | \u201csometimes\u201d | Nonspecific anxiety |\n| Q5 \u2013 Fear/panic without clear reason | \u201csometimes\u201d | Occasional panic\u2011type symptoms |\n| Q6 \u2013 Feeling overwhelmed | \u201csometimes\u201d | Perceived stress, coping strain |\n| Q7 \u2013 Unhappiness affecting sleep | \u201csometimes\u201d | Mood\u2011related sleep disturbance |\n| Q8 \u2013 Sadness/misery | \u201csometimes\u201d | Low mood |\n| Q9 \u2013 Crying due to unhappiness | \u201csometimes\u201d | Episodic crying spells |\n| Q10 \u2013 Thoughts of self\u2011harm | **None** | No suicidal ideation |\n\n---\n\n### 2. Consistent Patterns Across Answers\n- **Low mood / anhedonia:** Reported \u201csometimes\u201d for laughing, enjoyment, sadness, and crying.\n- **Anxiety symptoms:** \u201cSometimes\u201d for worry, fear, and feeling panicky.\n- **Guilt/self\u2011criticism:** Intermittent self\u2011blame.\n- **Stress/overwhelm:** Occasional feeling that \u201cthings are getting on top of me.\u201d\n- **Sleep impact:** Unhappiness occasionally interferes with sleep.\n\nOverall, the client indicates **intermittent but not pervasive** depressive and anxiety\u2011related symptoms.\n\n---\n\n### 3. Areas of Screening Significance (Postpartum Context)\n- **Depressive features:** Anhedonia, low mood, crying, sleep difficulty.\n- **Anxiety features:** Unexplained worry, fear/panic, feeling overwhelmed.\n- **Cognitive\u2011affective features:** Self\u2011blame/guilt.\n- **Safety:** No current self\u2011harm thoughts; self\u2011harm ideation absent.\n\n---\n\n### 4. Highlighted Risk Factors\n- **Persistent sadness / loss of pleasure:** Present at \u201csometimes\u201d level; not continuous.\n- **Crying spells:** Reported intermittently.\n- **Sleep disturbance linked to mood:** Noted on some nights.\n- **Feelings of guilt/self\u2011blame:** Intermittent.\n- **Anxiety / feeling overwhelmed:** Present intermittently.\n- **Self\u2011harm / suicidal ideation:** **Absent** (no safety concern at this time).\n\n---\n\n### 5. Screening Observation Summary\nThe client reports **intermittent depressive symptoms** (reduced enjoyment, occasional sadness, crying, and mood\u2011related sleep difficulty) and **intermittent anxiety symptoms** (worry, fear/panic, feeling overwhelmed). Guilt/self\u2011blame is also present but not constant. No suicidal ideation or self\u2011harm thoughts are reported.\n\nThese findings suggest **mild to moderate symptomatology** consistent with postpartum mood disturbance but do not meet criteria for a formal diagnosis at this screening point. Ongoing monitoring of mood, anxiety, sleep, and coping capacity is warranted, with particular attention to any escalation in frequency or intensity of symptoms or emergence of self\u2011harm thoughts.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.027
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.347153425216675,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.361660957336426,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3139193058013916,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 12, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 2119.2617993354797,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0297,
+        "average_score": 0.0271,
+        "example_excerpt": "ensive evaluation. Be sure to take a proper history, including both physical health and MNS history,...",
+        "relevance_explanation": "Some relevance: Contains terms \"health\", \"these\", \"risk\", and 1 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

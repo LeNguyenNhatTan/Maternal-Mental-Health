@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-10-07T12:10:32.358120",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nWe\u2019re going to work together on a brief, validated screening called the **Edinburgh Postnatal Depression Scale (EPDS)**. This questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of postpartum depression or anxiety early, so we can provide the support you deserve.\n\nEverything you share is completely confidential, and this is a safe, non\u2011judgmental space. My goal is simply to listen and learn about your experience as a new mother.\n\nThe EPDS consists of **10 short questions** that refer to how you\u2019ve felt during the last seven days. I\u2019ll ask each one in a conversational way, and you can answer as honestly as you feel comfortable. There are no right or wrong answers\u2014just what\u2019s true for you.\n\nWhenever you\u2019re ready, we can begin.  \n\n**First question:**  \n*In the past week, how often have you felt able to enjoy things the way you used to?*  (e.g., feeling pleasure or interest in activities)"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve noticed that I don\u2019t enjoy things the way I used to. I still get a little pleasure from a few things, but it\u2019s definitely not as much as it was before."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "In the past week I\u2019ve hardly ever been able to laugh or see the funny side of things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "In the past week I\u2019ve hardly ever looked forward to things with any enjoyment."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve found myself blaming myself unnecessarily when things go wrong\u2014maybe more often than I\u2019d like, but it\u2019s not every single moment."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, over the past week I\u2019ve felt anxious and worried a lot, even when there isn\u2019t a clear reason for it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, over the past week I\u2019ve felt scared or panicky at times even when there isn\u2019t a clear reason for it. It\u2019s been unsettling, but it hasn\u2019t been constant."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve definitely felt like things have been getting on top of me lately. It\u2019s overwhelming at times, but I\u2019m still trying to push through and take care of my baby."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, over the past week I\u2019ve been so unhappy that it\u2019s been hard to fall asleep, and I often wake up during the night with anxious thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been feeling sad and miserable most days this past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve found myself crying a couple of times this week when I feel especially unhappy or overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve had a few fleeting thoughts of harming myself in the past week, but they were brief and I didn\u2019t have any plan or intention to act on them."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear how overwhelming this past week has been for you-feeling little joy, persistent sadness, anxiety, and even brief thoughts of harming yourself while you try to care for your baby. It sounds exhausting and distressing, and I want you to know that you're not alone and that help is available.\n**Screening Impression:** Total EPDS Score: 21, Risk Level: Probable depression, urgent referral (concerns include <sym>Patient reports hardly ever able to laugh, matching 'Not at all'.</sym>, <sym>Response describes hardly ever looking forward to things, matching the 'Hardly at all' option</sym>, <sym>Patient indicates occasional self-blame, matching 'Yes, some of the time</sym>, <sym>The patient reports feeling anxious and worried a lot over the past week, indicating frequent occurrence.</sym>, <sym>Patient reports feeling scared/panicky at times but not constantly, matching 'Yes, sometimes' option.</sym>, <sym>Patient reports occasional feeling of being overwhelmed and not coping as well, matching 'Yes, sometimes I haven't been coping as well as usual'.</sym>, <sym>Response indicates feeling sad most days, matching 'Yes, most of the time</sym>, <sym>Patient reports crying a few times in the past week, matching the 'Only occasionally' option; reversed scoring converts original score 1 to 2.</sym>)\n**Reasoning:** The EPDS total of 21 exceeds the threshold of 14, indicating probable <med>postpartum depression</med>. Responses show marked <sym>anhedonia</sym> (<quote>Hardly ever able to laugh or see the funny side</quote>), loss of anticipation (<quote>Hardly ever looked forward to things</quote>), pervasive <sym>sadness</sym> and <sym>crying</sym>, high <sym>anxiety</sym> and occasional <sym>panic</sym>, feelings of <sym>overwhelm</sym>, and <sym>insomnia</sym> linked to mood. The presence of any self\u2011harm thoughts (Q10 score 1) triggers an immediate safety alert. According to <med>DSM\u20115</med> criteria for Major Depressive Disorder with Peripartum Onset, the patient exhibits at least five depressive symptoms (anhedonia, depressed mood, sleep disturbance, guilt/self\u2011blame, diminished concentration implied by worry, and suicidal ideation) persisting for more than two weeks, with onset in the postpartum period, supporting a high risk impression. This warrants urgent referral for comprehensive evaluation and safety planning. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Contact an emergency service or crisis line now if thoughts of self\u2011harm become more frequent or you feel unsafe\n2. Arrange an urgent appointment with your <med>primary care provider</med> or a <med>mental health specialist</med> for full assessment\n3. Develop a safety plan that includes trusted contacts, removal of means, and coping strategies\n4. Begin sleep hygiene practices such as limiting screen time before bed, creating a calming routine, and seeking help for nighttime infant care if needed\n5. Consider referral to a therapist experienced in perinatal mood disorders for counseling or psychotherapy\n6. Explore support groups for new mothers to reduce isolation and share coping strategies\n7. If appropriate, discuss medication options with a prescriber familiar with <med>postpartum depression</med>\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "DSM-5-Summary-PSI.pdf",
+            "score": 0.0524,
+            "highlight": "This official r ecognition of  Postpartum Support International   www.postpartum.net    June 2013  Page 6   depression during pregnanc y represents a sig nificant step forward!  It is however disappointing  that the period following delivery was not extended  to recognize that real suffering often occurs  during the first year, as PSI and others had lobbied.",
+            "excerpt": "at. However the specifier has changed \nit is now titled \u201cwith peripartum onset \u201d which is defined as...",
+            "relevance_explanation": "Some relevance: Contains terms \"postpartum\", \"not\", \"period\", and 4 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 21: **Screening Summary \u2013 Postpartum Mood & Anxiety Evaluation**\n\n**Client:** [Name/Identifier]  \n**Date:** [Date of Screening]  \n**Evaluator:** [Clinician Name, Credentials]  \n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Client Response | Key Symptom |\n|------|----------------|-------------|\n| **Q1** \u2013 Ability to laugh/see humor | \u201cHardly ever able to laugh or see the funny side.\u201d | Anhedonia, low affect |\n| **Q2** \u2013 Looking forward with enjoyment | \u201cHardly ever looked forward to things with any enjoyment.\u201d | Anhedonia, loss of pleasure |\n| **Q3** \u2013 Unnecessary self\u2011blame | \u201cBlaming myself unnecessarily \u2026 more often than I\u2019d like.\u201d | Guilt, self\u2011criticism |\n| **Q4** \u2013 Anxiety/worry without clear reason | \u201cFelt anxious and worried a lot, even when there isn\u2019t a clear reason.\u201d | Generalized anxiety |\n| **Q5** \u2013 Fear/panic without clear reason | \u201cFelt scared or panicky at times \u2026 not constant.\u201d | Panic\u2011type anxiety |\n| **Q6** \u2013 Feeling overwhelmed | \u201cThings have been getting on top of me; overwhelming at times.\u201d | Perceived inability to cope |\n| **Q7** \u2013 Unhappiness affecting sleep | \u201cHard to fall asleep; wake during night with anxious thoughts.\u201d | Insomnia secondary to mood/anxiety |\n| **Q8** \u2013 Sadness/misery | \u201cFeeling sad and miserable most days.\u201d | Persistent low mood |\n| **Q9** \u2013 Crying spells | \u201cCrying a couple of times this week when especially unhappy.\u201d | Mood\u2011congruent crying |\n| **Q10** \u2013 Thoughts of self\u2011harm | \u201cA few fleeting thoughts of harming myself; brief, no plan or intent.\u201d | Suicidal ideation \u2013 safety concern |\n\n---\n\n### 2. Consistent Patterns Across Responses\n- **Low Mood & Anhedonia:** Marked reduction in pleasure (Q1, Q2) and pervasive sadness (Q8) with crying episodes (Q9).  \n- **Anxiety & Panic:** Frequent worry and fear without identifiable triggers (Q4, Q5).  \n- **Guilt/Self\u2011Blame:** Ongoing self\u2011critical thoughts (Q3).  \n- **Functional Impairment:** Feeling overwhelmed (Q6) and sleep disruption linked to mood/anxiety (Q7).  \n- **Suicidal Ideation:** Presence of fleeting self\u2011harm thoughts (Q10) \u2013 warrants immediate safety assessment.\n\n---\n\n### 3. Areas of Screening Significance (Postpartum Depression & Anxiety)\n- **Depressive Features:** Anhedonia, persistent sadness, crying, guilt, insomnia.  \n- **Anxiety Features:** Generalized worry, panic\u2011type fear, feeling overwhelmed.  \n- **Maternal Role Stress:** Overwhelm while caring for infant noted (Q6).  \n- **Sleep Disturbance:** Insomnia contributing to mood dysregulation (Q7).  \n- **Suicidal Ideation:** Any self\u2011harm thoughts require safety planning and possible urgent intervention.\n\n---\n\n### 4. Highlighted Risk Factors & Safety Flag\n- **Persistent Sadness & Anhedonia** \u2013 risk for worsening depressive symptomatology.  \n- **Sleep Difficulties** \u2013 may exacerbate mood and anxiety symptoms.  \n- **Excessive Guilt/Self\u2011Blame** \u2013 associated with depressive severity.  \n- **Anxiety/Panic Symptoms** \u2013 may increase functional impairment and distress.  \n- **Self\u2011Harm Thoughts** \u2013 **Flag:** Immediate safety assessment needed; discuss intent, plan, means, and protective factors.\n\n---\n\n### 5. Screening Observation (Objective Summary)\nThe client reports a one\u2011week period characterized by marked anhedonia, pervasive sadness, frequent crying, heightened guilt, and feeling overwhelmed. Anxiety symptoms include excessive worry and intermittent panic\u2011type fear without clear precipitating factors. Sleep is disrupted by mood\u2011related intrusive thoughts. The client acknowledges fleeting thoughts of self\u2011harm, though denies any plan or intent. These findings suggest significant depressive and anxiety symptom burden in the postpartum period, with a notable safety concern due to suicidal ideation. Further comprehensive assessment, risk evaluation, and safety planning are indicated.",
+          "results_count": 1,
+          "requested_count": 5,
+          "avg_score": 0.0524
+        },
+        "count": 1,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3462252616882324,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3657801151275635,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3453457355499268,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "I hear how overwhelming this past week has been for you-feeling little joy, persistent sadness, anxiety, and even brief thoughts of harming yourself while you try to care for your baby. It sounds exhausting and distressing, and I want you to know that you're not alone and that help is available.\n**Screening Impression:** Total EPDS Score: 21, Risk Level: Probable depression, urgent referral (concerns include <sym>Patient reports hardly ever able to laugh, matching 'Not at all'.</sym>, <sym>Response describes hardly ever looking forward to things, matching the 'Hardly at all' option</sym>, <sym>Patient indicates occasional self-blame, matching 'Yes, some of the time</sym>, <sym>The patient reports feeling anxious and worried a lot over the past week, indicating frequent occurrence.</sym>, <sym>Patient reports feeling scared/panicky at times but not constantly, matching 'Yes, sometimes' option.</sym>, <sym>Patient reports occasional feeling of being overwhelmed and not coping as well, matching 'Yes, sometimes I haven't been coping as well as usual'.</sym>, <sym>Response indicates feeling sad most days, matching 'Yes, most of the time</sym>, <sym>Patient reports crying a few times in the past week, matching the 'Only occasionally' option; reversed scoring converts original score 1 to 2.</sym>)\n**Reasoning:** The EPDS total of 21 exceeds the threshold of 14, indicating probable <med>postpartum depression</med>. Responses show marked <sym>anhedonia</sym> (<quote>Hardly ever able to laugh or see the funny side</quote>), loss of anticipation (<quote>Hardly ever looked forward to things</quote>), pervasive <sym>sadness</sym> and <sym>crying</sym>, high <sym>anxiety</sym> and occasional <sym>panic</sym>, feelings of <sym>overwhelm</sym>, and <sym>insomnia</sym> linked to mood. The presence of any self\u2011harm thoughts (Q10 score 1) triggers an immediate safety alert. According to <med>DSM\u20115</med> criteria for Major Depressive Disorder with Peripartum Onset, the patient exhibits at least five depressive symptoms (anhedonia, depressed mood, sleep disturbance, guilt/self\u2011blame, diminished concentration implied by worry, and suicidal ideation) persisting for more than two weeks, with onset in the postpartum period, supporting a high risk impression. This warrants urgent referral for comprehensive evaluation and safety planning. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Contact an emergency service or crisis line now if thoughts of self\u2011harm become more frequent or you feel unsafe\n2. Arrange an urgent appointment with your <med>primary care provider</med> or a <med>mental health specialist</med> for full assessment\n3. Develop a safety plan that includes trusted contacts, removal of means, and coping strategies\n4. Begin sleep hygiene practices such as limiting screen time before bed, creating a calming routine, and seeking help for nighttime infant care if needed\n5. Consider referral to a therapist experienced in perinatal mood disorders for counseling or psychotherapy\n6. Explore support groups for new mothers to reduce isolation and share coping strategies\n7. If appropriate, discuss medication options with a prescriber familiar with <med>postpartum depression</med>\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_urgent",
+    "question_count": 10,
+    "duration": 45021.13372707367,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 1,
+    "documents_accessed": {
+      "DSM-5-Summary-PSI.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0524,
+        "average_score": 0.0524,
+        "example_excerpt": "at. However the specifier has changed \nit is now titled \u201cwith peripartum onset \u201d which is defined as...",
+        "relevance_explanation": "Some relevance: Contains terms \"postpartum\", \"not\", \"period\", and 4 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

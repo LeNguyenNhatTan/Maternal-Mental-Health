@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-07T09:14:56.877803",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.\u202fToday I\u2019ll be guiding you through the **Edinburgh Postnatal Depression Scale (EPDS)**. This brief, ten\u2011question screening tool helps us understand how you\u2019ve been feeling over the past week and whether you might be experiencing symptoms of postpartum depression or anxiety.  \n\nEverything you share is completely confidential, and my goal is to create a safe, supportive space where you can speak openly about any thoughts or emotions you\u2019ve been having since the birth of your baby.  \n\nWe\u2019ll go through the ten questions one at a time, and you can answer as honestly as feels comfortable for you. There are no right or wrong answers\u2014just what reflects your experience.  \n\nIf at any point you feel uneasy or have any questions, please let me know.  \n\nWhenever you\u2019re ready, we can begin with the first question:\n\n**1. Over the past week, have you been able to laugh and see the funny side of things?**"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been able to laugh and see the funny side of things about as much as I always could."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "That\u2019s right\u2014I\u2019ve still been able to find humor when things feel a little hectic.\n\n**2. Over the past week, have you been able to enjoy things?**  \n\nI would say I\u2019ve still been able to enjoy things. I still find moments of pleasure, especially when my baby smiles or when I get a quiet minute to read or sip coffee. It\u2019s not overwhelming, and I don\u2019t feel a loss of interest."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I feel the same as before\u2014\u200bI still look forward to things just as much as I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "I don\u2019t really find myself blaming myself when things don\u2019t go as planned. It\u2019s something that comes up only a little, and I try not to dwell on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt a little anxious here and there\u2014mostly about my baby\u2019s health and whether I\u2019m doing everything right\u2014but it\u2019s not overwhelming, and it doesn\u2019t feel like I\u2019m worrying for no reason."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt scared or panicky for no reason\u2014just the occasional, mild worry about my baby, but nothing that feels like an unexpected panic attack."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve had a few moments where it feels like a lot is happening at once, especially when the baby needs something and I\u2019m trying to get other things done, but overall I\u2019m managing and it hasn\u2019t become overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t had trouble sleeping\u2014I\u2019m still getting the rest I need most nights."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt sad or miserable lately\u2014my mood has been pretty steady, and I\u2019m not experiencing that kind of heaviness."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t been crying much at all\u2014only on very rare occasions, and it hasn\u2019t been a problem for me."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts of harming myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 9, Risk Level: Depression possible.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0263,
+            "highlight": "Give the child/adolescent simple daily household tasks to do that  match their ability level and praise them immediately after they do  the task.",
+            "excerpt": "to contact other carers of children/adolescents with similar conditions for mutual support.2.3 Guida...",
+            "relevance_explanation": "Some relevance: Contains terms \"that\", \"ability\", \"tasks\", and 1 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0247,
+            "highlight": "Have a discussion  with the person based on the state- ments about their substance use, its causes, consequences  and their personal goals, allowing exploration of apparent inconsistencies between the consequences of substance use and the person\u2019s stated goals.",
+            "excerpt": " substance use.\n 3.  Ask t he person the reasons for their substance use , \nincluding as a response ...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 9: **Screening Summary \u2013 Postpartum Mood & Anxiety Check**\n\n**Identified Symptoms / Emotional\u2011Behavioral Concerns**  \n- Ability to find humor and enjoy daily activities (e.g., baby\u2019s smile, reading, coffee).  \n- Maintains anticipation and enjoyment of events; no reported loss of interest.  \n- Minimal self\u2011blame; occasional mild guilt that is not pervasive.  \n- Mild, situational anxiety focused on infant health and parenting competence; no uncontrolled worry.  \n- No panic or \u201cscared for no reason\u201d episodes reported.  \n- Occasional feeling \u201coverwhelmed\u201d by multiple demands, but overall manageable.  \n- No sleep disturbance; reports adequate rest.  \n- No persistent sadness, heaviness, or depressive mood.  \n- No frequent crying or emotional lability.  \n- No suicidal ideation or self\u2011harm thoughts.\n\n**Consistent Patterns Across Answers**  \n- Predominantly stable mood with preserved pleasure and humor.  \n- Anxiety is present but limited to realistic parenting concerns; not excessive or impairing.  \n- Functional coping with daily demands; occasional feeling of being \u201con top of\u201d tasks but not overwhelming.  \n- Absence of classic depressive features (anhedonia, low mood, sleep problems, crying, guilt, hopelessness).  \n\n**Potential Areas of Screening Significance (Post\u2011partum Depression / Anxiety)**  \n| Domain | Screening Relevance |\n|--------|---------------------|\n| Mood (sadness, anhedonia) | No current depressive symptoms noted. |\n| Interest/pleasure | Enjoyment retained; no loss of interest. |\n| Sleep | No difficulty sleeping reported. |\n| Guilt / self\u2011blame | Minimal, not pervasive. |\n| Anxiety (worry, panic) | Mild, situational worry present; no panic attacks. |\n| Overwhelm / coping | Occasional feeling of being \u201con top of\u201d tasks; coping appears adequate. |\n| Suicidal ideation / self\u2011harm | Denied. |\n\n**Risk Factors \u2013 Flagged for Safety Screening**  \n- **Persistent sadness / loss of pleasure:** Not present.  \n- **Sleep difficulties linked to mood:** Not present.  \n- **Feelings of worthlessness or excessive guilt:** Minimal, not pervasive.  \n- **Anxiety / panic / feeling overwhelmed:** Mild situational anxiety; no panic; occasional overwhelm but manageable.  \n- **Self\u2011harm / suicidal thoughts:** Explicitly denied \u2013 **no safety concern at this time**.\n\n**Overall Screening Observation**  \nThe client demonstrates a stable affect, retains pleasure in daily activities, and reports only mild, realistic anxiety related to infant care. There is no evidence of depressive symptomatology (e.g., anhedonia, persistent sadness, sleep disturbance, frequent crying) or significant anxiety/panic that would raise immediate clinical concern. No self\u2011harm ideation is present. Current presentation suggests low risk for postpartum depression or severe anxiety, though continued routine monitoring is advisable given the transitional nature of the postpartum period.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0255
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.358830213546753,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3822944164276123,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3619589805603027,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 9, Risk Level: Depression possible.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 34485.65440964699,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0263,
+        "average_score": 0.0255,
+        "example_excerpt": "to contact other carers of children/adolescents with similar conditions for mutual support.2.3 Guida...",
+        "relevance_explanation": "Some relevance: Contains terms \"that\", \"ability\", \"tasks\", and 1 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

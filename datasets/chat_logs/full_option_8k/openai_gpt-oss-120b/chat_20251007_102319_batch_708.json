@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-07T10:24:53.830293",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician specializing in postpartum mental health.**  \nYou\u2019ve taken a wonderful step by reaching out for support during this new chapter of motherhood.  \n\nToday I\u2019d like to administer the **Edinburgh Postnatal Depression Scale (EPDS)**. This short, ten\u2011question screening tool helps us understand how you\u2019ve been feeling over the past week, so we can identify any signs of postpartum depression or anxiety early on and connect you with the right support.\n\nEverything you share is completely confidential, and this is a safe, non\u2011judgmental space. My goal is simply to listen, learn about your experience, and work together on whatever you need right now.\n\nThe assessment will consist of ten conversational questions, one at a time. I\u2019ll ask a question, give you a moment to answer, and then move on to the next. If at any point you feel uncomfortable or need a break, just let me know.\n\n**Are you ready to begin?**  \n\n**First question:**  \n*In the past seven days, how often have you felt able to laugh and see the funny side of things?*"
+    },
+    {
+      "role": "patient",
+      "content": "Honestly, I\u2019ve found it\u2019s been hard to laugh or see the funny side of things. It\u2019s probably \u201chardly ever\u201d in the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m still finding it difficult to laugh or see the funny side of things\u2014most days it just feels heavy."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m not really looking forward to anything the way I used to. Most of the time I just get through the day without feeling any excitement or enjoyment."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve caught myself blaming myself a lot when something doesn\u2019t go right. I keep thinking I\u2019m not doing enough or that I\u2019m a bad mother, even when it\u2019s just a normal hiccup."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve definitely felt anxious or worried a lot\u2014almost every day there\u2019s something about the baby\u2019s health or safety that keeps me on edge, even when there\u2019s no real problem. It\u2019s been \u201cquite often\u201d over the past week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "It\u2019s been happening quite often\u2014I\u2019ve felt scared or panicky for no clear reason several times this past week."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, lately things have been feeling like they\u2019re piling up. I\u2019m often overwhelmed by the constant demands and worries, even though I try to keep going and manage the basics. It just feels like it\u2019s getting on top of me more often than I\u2019d like."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been so unhappy that I\u2019ve had a hard time falling asleep and staying asleep most nights this week. It feels like my mind just won\u2019t settle down."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve felt sad and miserable most days this past week\u2014there\u2019s a heaviness that just hangs over me, even when there\u2019s nothing specific to trigger it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been crying a few times this week, mostly when I feel overwhelmed or stressed. It\u2019s not constant, but it happens often enough that it\u2019s hard to ignore."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m really sorry you\u2019re feeling like this. It sounds incredibly painful, and I want you to know you don\u2019t have to face these thoughts alone.  \n\nIf you ever feel like you might act on these thoughts, please reach out right away for help. You can call or text 988 (U.S. Suicide and Crisis Lifeline) any time\u2014it\u2019s free, confidential, and available 24/7. If you\u2019re outside the United States, you can find a crisis hotline in your country here: https://findahelpline.com/, or you can search online for \u201csuicide helpline\u201d plus your country\u2019s name.  \n\nYou might also consider contacting your doctor, a mental\u2011health professional, or going to the nearest emergency department if you feel you\u2019re in immediate danger. If you have a trusted friend, family member, or partner you feel comfortable talking to, let them know what\u2019s going on so they can support you.  \n\nYou deserve help and support, and there are people who want to be there for you. Please reach out right now if you feel unsafe, and keep reaching out for professional care\u2014you don\u2019t have to go through this by yourself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 20, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.037,
+            "highlight": "Sometimes a person may feel \ufb01ne for a while, then something reminds them of the loss and they may feel as bad as they did at \ufb01rst.",
+            "excerpt": "thers do not. Crying does not mean one is weak. People who do not cry may feel the emotional pain ju...",
+            "relevance_explanation": "Some relevance: Contains terms \"bad\", \"loss\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0352,
+            "highlight": "Provide personalised feedback to the person about the  risks associated with their pattern of substance use,  whether or not they have a pattern of HARMFUL USE or DEPENDENCE, and the speci\ufb01c harms they may be experiencing or causing to others.",
+            "excerpt": "arts of the process: expressing empathy and building an atmosphere of trust, while also pointing out...",
+            "relevance_explanation": "Some relevance: Contains terms \"not\", \"associated\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 20: **Screening Summary \u2013 Postpartum Mental Health**\n\n**Presenting Concerns (Patient\u2011reported):**  \n- Diminished ability to laugh or find humor; mood described as \u201cheavy.\u201d  \n- Loss of anticipation or enjoyment in activities; \u201cjust get through the day.\u201d  \n- Frequent self\u2011blame (\u201cI\u2019m a bad mother,\u201d \u201cnot doing enough\u201d).  \n- Persistent anxiety/worry about infant\u2019s health and safety; \u201cquite often\u201d over the past week.  \n- Recurrent panic/fear episodes without clear trigger; \u201cquite often\u201d this past week.  \n- Feeling overwhelmed by daily demands; \u201cthings are piling up.\u201d  \n- Insomnia (difficulty falling and staying asleep) linked to unhappiness; most nights this week.  \n- Persistent sadness/misery most days; \u201cheaviness\u201d present.  \n- Crying several times this week, especially when overwhelmed.  \n- No explicit endorsement of active suicidal intent, but the patient was provided with crisis resources.\n\n**Key Symptom Domains Identified:**  \n1. **Depressive symptoms** \u2013 anhedonia, low mood, tearfulness, sleep disturbance.  \n2. **Anxious symptoms** \u2013 excessive worry, panic/fear, feeling on edge.  \n3. **Cognitive\u2011affective symptoms** \u2013 guilt/self\u2011blame, feelings of inadequacy as a mother.  \n4. **Functional impact** \u2013 sense of being overwhelmed, difficulty coping with routine demands.\n\n**Consistent Patterns Across Items:**  \n- **Low mood & loss of pleasure** reported in Q1, Q2, Q8, Q9.  \n- **Anxiety & panic** evident in Q4, Q5, Q6.  \n- **Self\u2011critical thoughts/guilt** highlighted in Q3.  \n- **Sleep disruption** linked to mood (Q7).  \n- **Emotional dysregulation** (crying, feeling overwhelmed) across multiple items.\n\n**Screening Significance for Postpartum Depression/Anxiety:**  \n- Elevated scores on anhedonia, sadness, guilt, and anxiety suggest significant depressive and anxious symptomatology.  \n- Sleep disturbance and pervasive worry are common contributors to postpartum mood disorders.  \n- Over\u2011identification with parenting competence (self\u2011blame) is a known risk factor for postpartum depression.  \n- The combination of depressive and anxiety symptoms warrants close monitoring for worsening mood or emergence of suicidal ideation.\n\n**Risk Factors Highlighted:**  \n- Persistent sadness, loss of pleasure, and frequent crying.  \n- Insomnia associated with dysphoric mood.  \n- Strong self\u2011critical cognitions and feelings of inadequacy.  \n- High levels of anxiety/panic and sense of being overwhelmed.  \n- No active self\u2011harm plan disclosed, but the patient was provided with emergency resources; safety concern flagged for ongoing monitoring.\n\n**Safety Concern:**  \n- Although the patient did not explicitly endorse a current intent to act on self\u2011harm thoughts, the presence of passive suicidal ideation warrants a **safety flag**. Immediate follow\u2011up to assess for any change in intent, plan, or means is recommended.\n\n**Screening Observation (Clinical Note):**  \nThe patient reports a constellation of depressive symptoms (anhedonia, pervasive sadness, tearfulness, insomnia) alongside marked anxiety (excessive worry, panic episodes) and pervasive self\u2011blame related to maternal role. Functional impairment is evident through feelings of being overwhelmed and difficulty managing daily responsibilities. No active suicidal plan is disclosed, but passive thoughts are present, prompting a safety flag. The symptom profile aligns with significant postpartum mood disturbance and warrants further comprehensive assessment, close safety monitoring, and timely referral for specialized perinatal mental\u2011health services.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0361
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3687310218811035,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.388381242752075,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.374079942703247,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 20, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_probable",
+    "question_count": 10,
+    "duration": 38682.606899261475,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.037,
+        "average_score": 0.0361,
+        "example_excerpt": "thers do not. Crying does not mean one is weak. People who do not cry may feel the emotional pain ju...",
+        "relevance_explanation": "Some relevance: Contains terms \"bad\", \"loss\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

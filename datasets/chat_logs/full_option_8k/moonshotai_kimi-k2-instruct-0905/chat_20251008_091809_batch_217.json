@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T09:18:55.572148",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there, I\u2019m so glad you\u2019re here. I\u2019m [Your Name], a perinatal mental-health clinician, and my job is simply to listen and help you feel supported as you navigate new motherhood. Today I\u2019ll be asking you the ten questions that make up the Edinburgh Postnatal Depression Scale\u2014often called the EPDS. It\u2019s a quick, well-studied screen that looks at how you\u2019ve been feeling emotionally over the past seven days. There are no right or wrong answers, everything you share stays between us, and we can pause any time you need. When we\u2019re finished I\u2019ll tally your score, explain what it means, and\u2014together\u2014decide on next steps that feel right for you. Ready to begin?\n\nFirst question: Over the last seven days, how often have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve still been laughing\u2014maybe not quite as easily as before the baby, but when my husband makes a silly face or the dog does something goofy, I\u2019ll catch myself giggling most days."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Most of the time\u2014like, I\u2019d say I still laugh every day, just maybe not quite as loudly or as often as I used to before the baby came."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I still get excited about little things\u2014like my morning coffee or when my mom\u2019s coming over to see the baby. It\u2019s not every single moment, but most days there\u2019s something I look forward to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I mean, if the baby spits up right after I\u2019ve changed her outfit, I might think \u201coops, maybe I jostled her too much,\u201d but I don\u2019t dwell on it. I figure babies just do these things."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I\u2019ll suddenly wonder if she\u2019s breathing okay in the middle of the night, even when the monitor looks fine. It\u2019s not constant, just a quick little jolt of worry that passes after I check on her."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had that panicky feeling. I get a brief flutter of worry now and then, but nothing that feels like real fear or panic."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Now and then, yeah\u2014like yesterday when she wouldn\u2019t nap and the laundry pile looked like a mountain, I felt a bit swamped. A deep breath and a cup of tea usually settle it, though."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, I\u2019ve actually been sleeping pretty well\u2014when the baby lets me. Once I\u2019m down, I\u2019m out. I\u2019m not lying there feeling unhappy or anything."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t really felt sad or miserable. I get a bit tired and maybe a touch overwhelmed, but it passes quickly and I\u2019m back to feeling okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t cried from being unhappy. I teared up once when I was really tired and she wouldn\u2019t latch, but it wasn\u2019t a big sobbing thing\u2014just a moment of frustration, then it was over."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014never. That hasn\u2019t crossed my mind at all."
+    },
+    {
+      "role": "assistant",
+      "content": "You're doing a lovely job settling into life with your baby. You shared that you still laugh every day, look forward to small joys like your morning coffee, and bounce back quickly when things feel momentarily overwhelming. You experience the occasional <sym>worry</sym> about your daughter's breathing, but it passes as soon as you check the monitor, and you haven't felt persistently <sym>sad</sym>, <sym>panicky</sym>, or had any thoughts of self-harm.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>Fallback score from text</sym>)\n**Reasoning:** EPDS items map to core symptoms of <med>Major Depressive Disorder with Peripartum Onset</med>. Your score of 6 falls well below the 9-point threshold where depression becomes possible. You endorsed only mild <sym>anxiety</sym> (Q4=2) and occasional stress coping (Q6=1), while denying persistent low mood, anhedonia, guilt, sleep disruption from mood, crying spells, or self-harm. This pattern does not meet <med>DSM-5</med> criteria for depression or <med>Generalized Anxiety Disorder</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine pediatric and postpartum check-ups\n2. Practice self-compassion and accept help with chores to reduce occasional <sym>overwhelm</sym>\n3. Use quick grounding techniques (deep breath, cup of tea) when <sym>worry</sym> surfaces\n4. Re-screen with EPDS at the 6-week or 3-month visit, sooner if mood worsens\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0367,
+            "highlight": "and Neuroscience King\u2019s College, London, UK; Asma Humayun*, Meditrina Health Care, Islamabad, Pakistan; Gabriel Ivbijaro*, Wood Street Medical Centre, London, UK; Nathalie Jette*, Hotchkiss Brain Institute and O\u2019Brien Institute for Public Health, University of Calgary, Canada; Lynne Jones, National Health Service, UK; Marc Laporta, Department of Psychiatry, McGill Montreal, WHO PAHO Collaborating Center for Research and Douglas Mental Health University Institute, Montreal, Canada; Anita Marini, Cittadinanza NGO, Rimini, Italy; Farrah Mateen, Massachusetts General Hospital, Harvard Medical School, USA; Zhao Min, Shanghai* Drug Abuse Treatment Centre, Shanghai Jiaotong University School of Medicine, Shanghai, China; Charles Newton*, Kenya Medical Research Institute, Kili\ufb01, Kenya; Olayinka Omigbodun*, Centre for Child and Adolescent Mental Health (CCAMH), University College Hospital, Ibadan, Nigeria; Akwasi Osei*, Ministry of Health, Accra, Ghana; Amrita Parekh, Dasra, Mumbai, India; Alfredo Pemjean*, Departamento de Salud Mental, Ministerio de Salud, Santiago, Chile; Hemamali Perera, Faculty of Medicine, University of Colombo, Sri Lanka; Michael Phillips, Suicide Research and Preve.",
+            "excerpt": " \nand Neuroscience King\u2019s College, London, UK; Asma Humayun*, Meditrina Health Care, Islamabad, Paki...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0298,
+            "highlight": "fredo Pemjean*, Departamento de Salud Mental, Ministerio de Salud, Santiago, Chile; Hemamali Perera, Faculty of Medicine, University of Colombo, Sri Lanka; Michael Phillips, Suicide Research and Prevention Center and Research Methods Consulting Center, Shanghai Mental Health Center, Shanghai Jiaotong University School of Medicine and WHO Collaborating Center for Research and Training in Suicide Prevention, Beijing Huilongguan Hospital, Beijing, China; Martin Prince*, Institute of Psychiatry, Psychology and Neuroscience, King\u2019s College, London, UK; Atif Rahman,* Institute of Psychology, Health & Society, University of Liverpool, Liverpool, UK; Richard Rawson*, University of California at Los Angeles Integrated Substance Abuse Programs, California, USA; Tahilia Rebello, Columbia University, USA; Rajesh Sagar, All India institute of Medical Sciences, New Delhi, India; Ley Sander, UCL Institute of Neurology, London, UK; Alison Schafer, World Vision, Nairobi, Kenya; Kunnukattil S Shaji, Government Medical College, Thrissur, India; Pratap Sharan*, All India Institute of Medical Sciences, New Delhi, India; Vandad Shari\ufb01 Senejani, Tehran University of Medical Sciences, Tehran, Islamic Repu.",
+            "excerpt": "fredo Pemjean*, Departamento de Salud Mental, Ministerio de Salud, Santiago, Chile; Hemamali Perera,...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 6: Postpartum Depression / Anxiety Screening Summary  \n(Edinburgh Postnatal Depression Scale \u2013 patient self-report)\n\nSymptoms endorsed  \n<sym>None</sym> meet threshold for high-risk <med>postpartum depression</med> or <med>anxiety</med> on this screen.  \nBrief, situational worries about infant safety (Q4) and occasional \u201cgetting on top of me\u201d feelings (Q6) reported; both resolve quickly with routine coping (checking monitor, taking break). No persistent low mood, anhedonia, guilt, sleep-mood linkage, crying spells, or self-harm ideation.\n\nPattern  \nOverall affective tone: stable mood, preserved enjoyment, no undue self-blame, no panic or depressive cognitions.\n\nRisk factors  \n<sym>Nil</sym> of clinical concern identified on screening; no safety flags raised.\n\nScreening observation  \nPatient\u2019s responses place her in the low-risk range for postpartum depression and anxiety at this time; routine monitoring and psychoeducation remain appropriate.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0332
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.357876777648926,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3456523418426514,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.370248556137085,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You're doing a lovely job settling into life with your baby. You shared that you still laugh every day, look forward to small joys like your morning coffee, and bounce back quickly when things feel momentarily overwhelming. You experience the occasional <sym>worry</sym> about your daughter's breathing, but it passes as soon as you check the monitor, and you haven't felt persistently <sym>sad</sym>, <sym>panicky</sym>, or had any thoughts of self-harm.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>Fallback score from text</sym>)\n**Reasoning:** EPDS items map to core symptoms of <med>Major Depressive Disorder with Peripartum Onset</med>. Your score of 6 falls well below the 9-point threshold where depression becomes possible. You endorsed only mild <sym>anxiety</sym> (Q4=2) and occasional stress coping (Q6=1), while denying persistent low mood, anhedonia, guilt, sleep disruption from mood, crying spells, or self-harm. This pattern does not meet <med>DSM-5</med> criteria for depression or <med>Generalized Anxiety Disorder</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine pediatric and postpartum check-ups\n2. Practice self-compassion and accept help with chores to reduce occasional <sym>overwhelm</sym>\n3. Use quick grounding techniques (deep breath, cup of tea) when <sym>worry</sym> surfaces\n4. Re-screen with EPDS at the 6-week or 3-month visit, sooner if mood worsens\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 10549.926177024841,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0367,
+        "average_score": 0.0333,
+        "example_excerpt": " \nand Neuroscience King\u2019s College, London, UK; Asma Humayun*, Meditrina Health Care, Islamabad, Paki...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

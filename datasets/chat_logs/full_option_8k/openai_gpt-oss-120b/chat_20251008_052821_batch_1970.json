@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T05:29:17.474996",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \n\nI\u2019d like to invite you to complete the **Edinburgh Postnatal Depression Scale (EPDS)** today. This short, 10\u2011item questionnaire is a trusted tool that helps us understand how you\u2019ve been feeling over the past week as you adjust to life with your new baby.  \n\nEverything you share is completely confidential, and my goal is to create a safe, supportive space where you can speak openly about any thoughts or emotions you\u2019ve been experiencing. The EPDS takes only a few minutes\u2014I'll ask you each question one at a time, and you can answer in whatever way feels most honest to you.  \n\nIf at any point you feel uncomfortable or have questions, please let me know.  \n\nWhenever you\u2019re ready, we can begin with the first question.\n\n**Question\u202f1:**  \n*In the past seven days, how often have you felt able to enjoy things you usually like?*  \n\nYou can answer with \u201cnot at all,\u201d \u201chardly ever,\u201d \u201csometimes,\u201d or \u201cyes, most of the time.\u201d  \n\nWhenever you\u2019re ready, I\u2019m here to listen."
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "Not at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0178,
+            "highlight": "Disability Any restriction or lack (resulting from an impairment) of ability to perform an activity in the manner, or within the range, considered to be normal for a human being.",
+            "excerpt": " or substance withdrawal.\nDelusion Fixed belief that is contrary to available evidence. It cannot be...",
+            "relevance_explanation": "Some relevance: Contains terms \"ability\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0159,
+            "highlight": "rent thoughts/plan/act of self-harm suicide or history   thereof, act of self-harm with signs of poisoning/intoxication, bleeding from self-inflicted wound,  loss of consciousness and/or extreme lethargy, OR     Any of the priority MNS conditions, chronic pain or extreme emotional distress Is there an imminent risk of self-harm/suicide?2SUI 1134  Ask the person and carers if there are ANY  of the following: \u2013  Current thoughts or plan of self-harm/suicide \u2013  History of thoughts or plan of self-harm in the past month or act of self-harm in the past year    in a person who is now extremely agitated, violent, distressed or lacks communication IMMINENT RISK OF   SELF-HARM/SUICIDE  is likely    Go to  PROTOCOL 2 , manage, and then continue to STEP  3 3 Is there a history of thoughts or plan   of self-harm in the past month or act of   self-harm in the past year? Imminent risk of self-harm/suicide is   unlikely, but a risk may still persist.",
+            "excerpt": "rent thoughts/plan/act of self-harm suicide or history  \nthereof, act of self-harm with signs of poi...",
+            "relevance_explanation": "Some relevance: Contains terms \"current\", \"risk\", \"may\", and 5 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 13: **Postpartum Depression Screening \u2013 Summary Note**\n\n**Client:** [Name/ID]  \n**Date:** [Insert Date]  \n**Clinician:** [Licensed Mental Health Professional]\n\n---\n\n### 1. Reported Symptoms / Emotional\u2011Behavioral Concerns\n| Item | Symptom Domain | Frequency Reported |\n|------|----------------|--------------------|\n| Q1 \u2013 Ability to laugh / see humor | Anhedonia / low positive affect | *Sometimes* |\n| Q2 \u2013 Looking forward with enjoyment | Anhedonia / loss of interest | *Sometimes* |\n| Q3 \u2013 Unnecessary self\u2011blame | Guilt / self\u2011critical thoughts | *Sometimes* |\n| Q4 \u2013 Anxiety or worry \u201cfor no good reason\u201d | Generalized anxiety | *Sometimes* |\n| Q5 \u2013 Scared or panicky \u201cfor no very good reason\u201d | Panic\u2011type anxiety | *Sometimes* |\n| Q6 \u2013 Feeling \u201cthings getting on top of me\u201d | Overwhelm / difficulty coping | *Sometimes* |\n| Q7 \u2013 Unhappiness interfering with sleep | Mood\u2011related sleep disturbance | *Sometimes* |\n| Q8 \u2013 Sad or miserable mood | Persistent sadness | *Sometimes* |\n| Q9 \u2013 Crying due to unhappiness | Emotional dysregulation / tearfulness | *Sometimes* |\n| Q10 \u2013 Thoughts of self\u2011harm | Suicidal ideation | **Not at all** |\n\n---\n\n### 2. Consistent Patterns Across Answers\n- **Low mood / anhedonia:** Reported \u201csometimes\u201d for both enjoyment of humor and anticipation of activities.  \n- **Anxiety / panic:** \u201cSometimes\u201d endorsement of worry, fear, and feeling panicky without clear trigger.  \n- **Guilt/self\u2011blame:** Intermittent self\u2011critical thoughts.  \n- **Overwhelm & coping difficulty:** Occasional sense of being \u201con top of\u201d stressors.  \n- **Sleep impact:** Unhappiness sometimes disrupts sleep.  \n- **Crying spells:** Present intermittently.  \n- **No current suicidal ideation** (self\u2011harm thoughts denied).\n\n---\n\n### 3. Screening Significance (Post\u2011partum Context)\n- **Mood disturbances:** Persistent (though intermittent) sadness, loss of pleasure, and crying are core features of postpartum depression (PPD).  \n- **Anxiety symptoms:** Frequent worry and panic are common comorbidities in the postpartum period and may exacerbate depressive symptoms.  \n- **Cognitive\u2011affective symptoms:** Unnecessary self\u2011blame and feelings of being overwhelmed align with depressive cognitions.  \n- **Sleep disruption:** Mood\u2011related insomnia is a red\u2011flag symptom for worsening PPD.  \n- **Safety:** Absence of self\u2011harm thoughts reduces immediate safety concern, but ongoing monitoring is warranted.\n\n---\n\n### 4. Highlighted Risk Factors\n- **Persistent sadness & loss of pleasure** (reported \u201csometimes\u201d) \u2013 warrants close observation.  \n- **Crying episodes** linked to mood dysregulation.  \n- **Sleep difficulty** associated with mood symptoms.  \n- **Guilt/self\u2011blame** indicating possible depressive cognitions.  \n- **Anxiety/panic symptoms** (worry, fear, feeling overwhelmed).  \n- **No suicidal ideation** at present, but routine safety check\u2011ins recommended.\n\n---\n\n### 5. Observation Summary\nThe client endorses intermittent (i.e., \u201csometimes\u201d) experiences of low mood, reduced enjoyment, self\u2011critical thoughts, anxiety, feeling overwhelmed, sleep disturbance, and crying. While these symptoms do not reach the threshold for a formal diagnosis in this screening, they reflect several domains relevant to postpartum depression and anxiety. No suicidal ideation is reported. Ongoing assessment of symptom frequency, intensity, functional impact, and safety is recommended to determine whether further evaluation or intervention is indicated.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0169
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3528406620025635,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3618757724761963,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.352158546447754,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 107346.25160264969,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0178,
+        "average_score": 0.0169,
+        "example_excerpt": " or substance withdrawal.\nDelusion Fixed belief that is contrary to available evidence. It cannot be...",
+        "relevance_explanation": "Some relevance: Contains terms \"ability\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T10:47:16.126071",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014thank you for making time today. I\u2019m Sarah, a perinatal-mental-health clinician. In the next few minutes I\u2019d like to do a quick check-in with the Edinburgh Postnatal Depression Scale (the EPDS). It\u2019s a 10-question tool we use to see how you\u2019ve been feeling since your baby arrived, because the postpartum weeks can bring a lot more ups and downs than most people expect. Everything you share stays between us unless there\u2019s an immediate safety concern, and we\u2019ll go at your pace. Ready to start?  \n\nFirst, thinking about the past seven days\u2026 have you been able to laugh and see the funny side of things, or has that felt hard to do?"
+    },
+    {
+      "role": "patient",
+      "content": "I can still laugh, just\u2026 not as easily as before she was born. My sister came over yesterday and made a joke that normally would\u2019ve had me doubled over, and I did chuckle, but it felt kind of muted\u2014like I had to remind myself it was funny."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I can still laugh, but it feels kind of distant\u2014like I hear the joke and I know it\u2019s funny, I just don\u2019t feel it in my chest the way I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I do\u2014like when my mom says she\u2019ll come help so I can take a walk, I look forward to that. But mostly the excitement feels kind of\u2026 flat. I\u2019ll think, \u201cOh, that should be nice,\u201d but the spark isn\u2019t really there."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a few times this week. Yesterday she wouldn\u2019t settle for her nap and I kept thinking I must be doing something wrong\u2014like if I were a better mom she\u2019d sleep. I know it\u2019s probably not true, but the thought still sneaks in."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "A little bit. I\u2019ll be feeding her and suddenly wonder if she\u2019s breathing okay, or I\u2019ll worry the diaper\u2019s too tight and cutting off her circulation\u2014things I know are probably fine, but the worry still jumps in before I can stop it. It usually passes once I check on her, though."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not really panicky\u2014more like a quick rush of \u201cwhat if something\u2019s wrong?\u201d and then it fades once I take a breath or two."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Some days, yeah. Like when she cluster-feeds and I can\u2019t even get a shower, it feels as if the whole day piles on me. I usually manage to push through, but it\u2019s stressful while it\u2019s happening."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, sleeping hasn\u2019t been a big problem. I get to bed pretty exhausted, so I usually nod off okay. Maybe once this week I lay there thinking about everything I didn\u2019t get done, but even then I drifted off within half an hour."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I do feel that way sometimes\u2014like yesterday evening when my partner went back to work after paternity leave, I just sat on the couch and felt this heavy sadness for a while. It comes and goes, but it\u2019s not there all day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I\u2019ve cried a couple of times this week. Once was when she wouldn\u2019t latch and I felt like I was failing her, and another time was just feeling overwhelmed by everything on my to-do list. The tears came, but they didn\u2019t last long."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014nothing like that. I\u2019ve felt tired and stressed, but I\u2019ve never thought about hurting myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0357,
+            "highlight": "These contributions have been vital to the update of mhGAP Guidelines and/or develop - ment of the mhGAP-IG Version 2.0.",
+            "excerpt": "li, Mark van Ommeren.\nContribution\nValuable material, help and advice was received from technical st...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0357,
+            "highlight": "Interns Farnoosh Ali, Lakshmi Chandrasekaran, Paul Christiansen,   Anais Collin, Aislinne Freeman, Anna Fruehauf, Ali Haidar,   Huw Jarvis, Steven Ma, Emma Mew, Elise Paul, Charlotte Phillips,   Pooja Pradeeb, Matthew Schreiber.Technical Reviewers Inputs and feedback were received from the following international experts for the development of updated mhGAP.",
+            "excerpt": " Moller, Regional Of\ufb01ce for Europe; Maristela Goldnadel Monteiro, Regional Of\ufb01ce for Americas; Matth...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 13: **Postpartum Depression / Anxiety Screening Summary**\n\n**Symptoms endorsed**  \n- Anhedonia (reduced emotional resonance with humor, \u201cflat\u201d anticipatory pleasure)  \n- Intermittent low mood, situational tearfulness  \n- Unwarranted self-blame regarding infant care  \n- Transient, situational worries about infant safety  \n- Episodic feeling \u201coverwhelmed\u201d by daily demands  \n\n**Observed patterns**  \n- Symptoms fluctuate and are situationally triggered; no pervasive day-long mood disruption  \n- No sleep-onset insomnia, no middle-of-the-night distress beyond typical new-parent fatigue  \n- No anhedonia or sadness sufficient to meet full DSM-5 MDD threshold, but sub-syndromal concerns present  \n- No panic attacks, no compulsive behaviors; worries remit quickly after reassurance  \n- No suicidal ideation, no thoughts of self-harm  \n\n**Screening significance**  \nFindings are consistent with **mild postpartum distress / adjustment difficulties with mixed anxiety and depressive features**.  \nRisk factors: primiparous status, partner return to work, self-criticism.  \nProtective factors: social support (mother helping), intact reality testing, absence of self-harm ideation.\n\n**Safety**  \nPatient explicitly denied self-harm thoughts; no current safety concerns identified.\n\n**Recommendation for follow-up**  \nContinue monitoring with Edinburgh Postnatal Depression Scale (EPDS) in 2 weeks; consider brief supportive counseling or referral if symptoms worsen, persist >2 weeks, or impair functioning.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0357
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.369080066680908,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3652117252349854,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3371148109436035,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 13, Risk Level: High possibility of depression.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_high",
+    "question_count": 10,
+    "duration": 15850.481099843979,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0357,
+        "average_score": 0.0357,
+        "example_excerpt": "li, Mark van Ommeren.\nContribution\nValuable material, help and advice was received from technical st...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

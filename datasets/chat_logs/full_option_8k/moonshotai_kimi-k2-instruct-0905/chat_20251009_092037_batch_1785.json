@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T09:21:25.180799",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Good morning! I\u2019m so glad you\u2019re here. My name is Maya Bennett\u2014I\u2019m a perinatal mental-health clinician, and I work with new mothers to be sure they\u2019re getting the emotional support they need after baby arrives. Today I\u2019ll be using the Edinburgh Postnatal Depression Scale\u2014usually just called the EPDS\u2014to check in on how you\u2019ve been feeling since your little one was born. It\u2019s a short, 10-question screen that looks at mood, anxiety, and self-harm thoughts in the past week. Everything you share stays between you and our care team unless you give us permission to involve anyone else; the only exception is if you tell me you might hurt yourself or your baby\u2014then I\u2019d need to keep you safe and bring in extra help.\n\nWe\u2019ll keep this conversational: I\u2019ll ask each question in everyday language, you answer however feels most comfortable, and we\u2019ll move along at your pace. When we\u2019re done I\u2019ll add up the responses and we can talk about what the score means and any next steps that might help you feel more like yourself again.\n\nReady to begin?  \nThinking back over the past seven days, have you still been able to look forward to things you used to enjoy, or has that sense of enjoyment slipped away?"
+    },
+    {
+      "role": "patient",
+      "content": "I still look forward to the little things\u2014like when my husband gets home and we watch our show together, or when I get twenty minutes to fold laundry while listening to my podcast. They\u2019re small, but they feel nice. I guess the enjoyment hasn\u2019t slipped away."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I still laugh\u2014like yesterday the baby let out this huge burp and it startled him so much he started bobbing his head around. My mom and I cracked up. It felt good to laugh."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I still find myself looking forward to little things\u2014like taking the baby out in the stroller when the weather\u2019s nice or meeting a friend for coffee. They don\u2019t feel like chores; I actually enjoy them."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. If the baby spits up a lot or won\u2019t settle, I figure it\u2019s probably normal baby stuff, not something I did wrong. I might think, \u201cMaybe I could\u2019ve burped him longer,\u201d but I don\u2019t dwell on it or beat myself up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I do get little waves of worry, mostly about whether he\u2019s breathing okay when he\u2019s sleeping, or if I\u2019m missing some cue that something\u2019s wrong. It\u2019s not constant and I can usually talk myself down, but yeah\u2014sometimes the anxiety just pops up even when everything looks fine."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t had any real panic feelings. Once or twice I\u2019ve felt my heart race when he cried really hard and I couldn\u2019t settle him right away, but it passed quickly and I never felt truly scared\u2014just a bit on edge."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Mostly I feel like I\u2019m keeping up. Sure, there are moments\u2014like when the laundry pile looks like a mountain or he won\u2019t nap\u2014but I take a breath, tackle one thing at a time, and it gets handled. I don\u2019t feel swamped or like I\u2019m drowning in it all."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, my mood hasn\u2019t interfered with sleep at all. Once I finally lie down\u2014usually after the night feeding\u2014I drift off pretty easily and stay asleep until he wakes me. I\u2019m tired, but it\u2019s just the usual new-mom tired, not because I\u2019m feeling unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t felt really sad or miserable. I get a little emotional when I\u2019m extra tired\u2014like if he\u2019s had a rough night\u2014but it\u2019s more \u201cI need a nap\u201d than actual sadness. Overall I feel pretty steady."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t cried much at all. Maybe once when I was super tired and he wouldn\u2019t latch, but it was just a few tears and I was fine after a glass of water and a deep breath."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts like that. I\u2019m tired, but I want to be here for my baby and watch him grow."
+    },
+    {
+      "role": "assistant",
+      "content": "You've shared that, overall, you're enjoying new-mom moments-laughing with your mom, looking forward to stroller walks, and appreciating small pleasures like your evening show. You do notice occasional <sym>waves of worry</sym> about the baby's breathing or prolonged crying, yet these pass quickly with self-talk, and you don't feel swamped or persistently sad.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>Patient reports recurring waves of worry without objective cause, consistent with \"Yes, sometimes\"</sym>)\n**Reasoning:** EPDS total 6 falls below the 8-point threshold suggesting <med>postpartum depression</med> is unlikely at present. You deny core mood symptoms (persistent sadness, anhedonia, excessive guilt, mood-related insomnia, self-harm thoughts) and maintain normal enjoyment and coping. Occasional <sym>anxiety</sym> and <sym>worry</sym> are common postpartum adjustments and do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine pediatric and postpartum check-ups\n2. Practice brief relaxation or breathing exercises when <sym>worry</sym> arises\n3. Aim for rest, balanced meals, and accept help with chores to reduce fatigue\n4. Re-screen with EPDS if mood drops, anxiety worsens, or coping feels overwhelmed\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0422,
+            "highlight": "Before we start, we will relax the body.\u201d \u00bb    Slowly start relaxation exercises and demonstrate breathing.",
+            "excerpt": "ur breathing. Before we start, we will relax the body.\u201d\n\u00bb    Slowly start relaxation exercises and d...",
+            "relevance_explanation": "Some relevance: Contains terms \"breathing\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0413,
+            "highlight": "Financial support The following organizations contributed \ufb01nancially to the  development and production of the Intervention Guide: Autism Speaks, USA; CBM; Fountain House Inc.; Government   of Japan; Government of the Republic of Korea; Government of  Switzerland; Nat.",
+            "excerpt": "University of Calgary, Canada; Shoba Raja, Basic Needs, India; Brian Reichow, Child Study Centre, Ya...",
+            "relevance_explanation": "Some relevance: Contains terms \"support\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 6: **Postpartum Depression / Anxiety Screening Summary**\n\n**Responses reviewed:** Edinburgh Postnatal Depression Scale items (self-report)\n\n**Primary findings:**\n- **Mood:** Denies persistent sadness, hopelessness, or crying spells; reports \u201cpretty steady\u201d affect.  \n- **Enjoyment:** Maintains ability to laugh and look forward to activities; no anhedonia reported.  \n- **Guilt / self-blame:** Minimal; attributes infant issues to normal baby behavior.  \n- **Anxiety:** Acknowledges intermittent, situational worries (e.g., infant breathing, prolonged crying) without pervasive apprehension or panic attacks; symptoms manageable with self-talk.  \n- **Coping / overwhelm:** Describes occasional stress but feels generally \u201ckeeping up\u201d; no sense of drowning in tasks.  \n- **Sleep:** Disturbance solely attributable to infant feeding schedule; mood-related insomnia denied.  \n- **Self-harm:** Denies any thoughts of self-harm or suicide.\n\n**Screening significance:**\n- No indicators of major depressive episode (e.g., sustained low mood, anhedonia, guilt, mood-linked insomnia).  \n- Mild, expected postpartum anxiety present; does not meet threshold for generalized anxiety or panic features at this time.  \n- No current safety concerns.\n\n**Clinical impression:**\nPatient screens **negative** for postpartum depression and **low-risk** for perinatal mood/anxiety disorders at present. Continue routine postpartum support and re-screen if clinical picture changes.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0417
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3502743244171143,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3477096557617188,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3240795135498047,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You've shared that, overall, you're enjoying new-mom moments-laughing with your mom, looking forward to stroller walks, and appreciating small pleasures like your evening show. You do notice occasional <sym>waves of worry</sym> about the baby's breathing or prolonged crying, yet these pass quickly with self-talk, and you don't feel swamped or persistently sad.\n**Screening Impression:** Total EPDS Score: 6, Risk Level: Depression not likely (concerns include <sym>Patient reports recurring waves of worry without objective cause, consistent with \"Yes, sometimes\"</sym>)\n**Reasoning:** EPDS total 6 falls below the 8-point threshold suggesting <med>postpartum depression</med> is unlikely at present. You deny core mood symptoms (persistent sadness, anhedonia, excessive guilt, mood-related insomnia, self-harm thoughts) and maintain normal enjoyment and coping. Occasional <sym>anxiety</sym> and <sym>worry</sym> are common postpartum adjustments and do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine pediatric and postpartum check-ups\n2. Practice brief relaxation or breathing exercises when <sym>worry</sym> arises\n3. Aim for rest, balanced meals, and accept help with chores to reduce fatigue\n4. Re-screen with EPDS if mood drops, anxiety worsens, or coping feels overwhelmed\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 97099.53482604027,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0422,
+        "average_score": 0.0418,
+        "example_excerpt": "ur breathing. Before we start, we will relax the body.\u201d\n\u00bb    Slowly start relaxation exercises and d...",
+        "relevance_explanation": "Some relevance: Contains terms \"breathing\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

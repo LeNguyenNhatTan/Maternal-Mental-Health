@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T04:26:13.549023",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "<med>EPDS introduction</med>\n\nHello\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019re feeling now that your baby has arrived. We\u2019ll use a short screening tool called the **Edinburgh Postnatal Depression Scale**, or EPDS for short. It\u2019s simply ten questions about your mood and thoughts over the past seven days. Your answers are completely confidential and will help us figure out the best next steps for supporting you. There are no right or wrong answers\u2014just whatever feels true for you today. Ready to begin?\n\nFirst, thinking about the past week, how often have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "Hi Sarah\u2026 I guess I\u2019m ready.\n\nUm, laughing? Honestly, not much. I can still chuckle if something\u2019s really funny, but it feels kind of forced. Most days I just don\u2019t feel like laughing at all."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Not very often\u2026 maybe once or twice I sort-of laughed, but it didn\u2019t feel like it used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I still get a little excited about a couple things\u2014like when my sister said she\u2019d bring over coffee tomorrow\u2014but mostly I don\u2019t really look forward to much anymore. It\u2019s like the color\u2019s been drained out of everything."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I do that. If the baby\u2019s fussy or I can\u2019t get her to nap, I keep thinking it\u2019s because I\u2019m doing something wrong\u2014like I\u2019m already failing as a mom. It pops into my head even when I know, rationally, that babies just cry. I\u2019d say that\u2019s been happening most days this week."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes\u2026 pretty much every day. I\u2019ll be feeding her and suddenly imagine her choking, or I\u2019ll lie down and picture something awful happening in her crib. There\u2019s no real reason, but the thoughts just race and I can\u2019t shut them off."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a few times. It\u2019s like a sudden wave\u2014my heart starts racing and I feel shaky even though nothing\u2019s happening. It hits me out of nowhere, maybe every other day, and I have to sit and breathe until it passes."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes\u2026 most days it feels like I\u2019m barely keeping my head above water. Even little stuff\u2014dishes piling up, a text I forgot to answer\u2014feels overwhelming, like I\u2019m constantly one step behind and about to drown."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I lie down exhausted, but my head won\u2019t stop spinning with worries and \u201cwhat-ifs.\u201d I\u2019d say four or five nights this week I was still awake an hour after I went to bed, and when I do drift off I wake up at least once or twice with my heart racing."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Pretty much every day. It\u2019s like a gray cloud that settles over me the moment I open my eyes. I still get up and do what I have to, but the sadness is just\u2014there, lingering in the background all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I cried twice this week. Once when she wouldn\u2019t stop crying and I couldn\u2019t figure out what she needed, and another time when I dropped a plate and it just felt like the last straw."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "It\u2019s\u2026 it\u2019s crossed my mind. Just brief flashes, like \u201cwhat if I wasn\u2019t here,\u201d but I\u2019ve never planned anything and I don\u2019t want to act on it. Still, the thought has popped up once or twice when everything feels too heavy."
+    },
+    {
+      "role": "assistant",
+      "content": "You've shared that over the past week most days feel heavy and gray, with little joy or laughter, constant worry, sudden panicky waves, draining sleep, and frequent tears. While you're caring for your baby and managing the essentials, you also describe feeling overwhelmed, blaming yourself for every hiccup, and even brief flashes of wondering whether everyone might be better off if you weren't here. Your honesty highlights how hard postpartum life has become and how much support you deserve right now.\n**Screening Impression:** Total EPDS Score: 25, Risk Level: Probable depression, urgent referral (concerns include <sym>Response indicates noticeable reduction in ability to enjoy humor, aligning with \"Definitely not so much now\"</sym>, <sym>Fallback score from text</sym>, <sym>Patient reports self-blame occurring \"most days this week\" and describes pervasive guilt about her parenting, matching \"Yes, most of the time\"</sym>, <sym>Patient reports daily, intrusive, racing anxious thoughts without real cause, matching \"Yes, very often\"</sym>, <sym>Patient reports sudden, unexpected panic episodes occurring every other day, matching \"Yes, sometimes\"</sym>, <sym>Patient describes constant overwhelm, inability to keep up, and feeling close to drowning, matching \"most of the time I haven't been able to cope at all\".</sym>, <sym>Patient describes frequent, severe sleep disruption nearly every night due to racing thoughts and anxiety, matching \"Yes, most of the time\"</sym>, <sym>Patient describes persistent daily sadness that overshadows her entire day, aligning with 'most of the time'.</sym>, <sym>Patient confirms crying twice in the past week due to feeling overwhelmed, matching \"Yes, quite often\"</sym>)\n**Reasoning:** An EPDS of 25 falls well above the \u226514 threshold that flags probable major depression requiring urgent evaluation. You endorsed core depressive symptoms (sadness, anhedonia, tearfulness, guilt, sleep loss) plus prominent anxiety and brief suicidal ideation without intent, meeting <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. The scale's Item 10 score \u22651 mandates immediate safety assessment. Combined with functional impairment and maternal distress, this pattern indicates clinically significant mood disturbance needing prompt professional attention. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange urgent same-week appointment with your <med>obstetrician</med>, <med>primary care provider</med>, or local <med>perinatal mental health team</med>\n2. Ask about same-day <med>crisis counselling</med> or emergency department if self-harm thoughts intensify or plans develop\n3. Bring baby to appointment or request telephone/video consult if leaving home feels impossible\n4. Enlist partner/family to handle night feeds where possible so you can obtain 3-4 hour uninterrupted sleep blocks\n5. Begin gentle daily movement (10-min stroller walk, stretching) and balanced snacks every 3-4 h to stabilise energy and mood\n6. Limit online doom-scrolling; replace with calming audio (music, guided breathing) to reduce bedtime arousal\n7. Keep brief mood log (1-10 scale) and note any escalating thoughts of harm to share with clinician\n8. Identify trusted friend/family member for 15-min check-in call each evening to bolster support and safety\n9. Store local 24-h crisis line number in your phone for immediate professional support if distress spikes\n10. Discuss with clinician evidence-based options including <med>CBT</med>, peer support groups, and medication compatible with breastfeeding if indicated\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0551,
+            "highlight": "MEN WHO ARE PREGNANT OR   BREAST-FEEDING  If the woman is of child-bearing age, ask about:  \u2013 Breastfeeding    \u2013 Possible pregnancy    \u2013 Last menstrual period, if pregnant   Liaise with maternal health specialist to organize care.",
+            "excerpt": "MEN WHO ARE PREGNANT OR  \nBREAST-FEEDING\n If the woman is of child-bearing age, ask about:\n \u2013 Breast...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.055,
+            "highlight": "Although there is no cure, with early recognition and supportive treatment, the lives of people with dementia and their caregivers can be significantly   improved, and the physical health, cognition, activity, and well-being of the person with dementia can be optimized.",
+            "excerpt": "mer\u2019s disease is the most common cause, however, dementia can be caused by a variety of diseases and...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 25: **Postpartum Depression / Anxiety Screening Note**\n\n**Chief concerns endorsed**  \n- Persistent low mood, anhedonia, tearfulness (Q1, Q2, Q8, Q9)  \n- Daily excessive guilt/self-blame regarding parenting adequacy (Q3)  \n- Marked anxiety (Q4) and episodic panic symptoms (Q5) without clear precipitant  \n- Subjective overwhelm and difficulty coping with routine tasks (Q6)  \n- Mood-related insomnia: initial and middle-of-night wakening with racing thoughts (Q7)  \n\n**Pattern summary**  \nSymptoms present most days over the past week, interfere with sleep and daily functioning, and exceed typical postpartum adjustment stress.\n\n**Safety flag**  \nPassive, transient self-harm ideation reported (\"what if I wasn\u2019t here\") without intent or plan (Q10).\n\n**Screening significance**  \nFindings are consistent with moderate-to-severe postpartum depressive symptoms with comorbid anxiety; further clinical evaluation recommended to confirm diagnosis and assess risk.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0551
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3486034870147705,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.349586248397827,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.331054210662842,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You've shared that over the past week most days feel heavy and gray, with little joy or laughter, constant worry, sudden panicky waves, draining sleep, and frequent tears. While you're caring for your baby and managing the essentials, you also describe feeling overwhelmed, blaming yourself for every hiccup, and even brief flashes of wondering whether everyone might be better off if you weren't here. Your honesty highlights how hard postpartum life has become and how much support you deserve right now.\n**Screening Impression:** Total EPDS Score: 25, Risk Level: Probable depression, urgent referral (concerns include <sym>Response indicates noticeable reduction in ability to enjoy humor, aligning with \"Definitely not so much now\"</sym>, <sym>Fallback score from text</sym>, <sym>Patient reports self-blame occurring \"most days this week\" and describes pervasive guilt about her parenting, matching \"Yes, most of the time\"</sym>, <sym>Patient reports daily, intrusive, racing anxious thoughts without real cause, matching \"Yes, very often\"</sym>, <sym>Patient reports sudden, unexpected panic episodes occurring every other day, matching \"Yes, sometimes\"</sym>, <sym>Patient describes constant overwhelm, inability to keep up, and feeling close to drowning, matching \"most of the time I haven't been able to cope at all\".</sym>, <sym>Patient describes frequent, severe sleep disruption nearly every night due to racing thoughts and anxiety, matching \"Yes, most of the time\"</sym>, <sym>Patient describes persistent daily sadness that overshadows her entire day, aligning with 'most of the time'.</sym>, <sym>Patient confirms crying twice in the past week due to feeling overwhelmed, matching \"Yes, quite often\"</sym>)\n**Reasoning:** An EPDS of 25 falls well above the \u226514 threshold that flags probable major depression requiring urgent evaluation. You endorsed core depressive symptoms (sadness, anhedonia, tearfulness, guilt, sleep loss) plus prominent anxiety and brief suicidal ideation without intent, meeting <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. The scale's Item 10 score \u22651 mandates immediate safety assessment. Combined with functional impairment and maternal distress, this pattern indicates clinically significant mood disturbance needing prompt professional attention. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange urgent same-week appointment with your <med>obstetrician</med>, <med>primary care provider</med>, or local <med>perinatal mental health team</med>\n2. Ask about same-day <med>crisis counselling</med> or emergency department if self-harm thoughts intensify or plans develop\n3. Bring baby to appointment or request telephone/video consult if leaving home feels impossible\n4. Enlist partner/family to handle night feeds where possible so you can obtain 3-4 hour uninterrupted sleep blocks\n5. Begin gentle daily movement (10-min stroller walk, stretching) and balanced snacks every 3-4 h to stabilise energy and mood\n6. Limit online doom-scrolling; replace with calming audio (music, guided breathing) to reduce bedtime arousal\n7. Keep brief mood log (1-10 scale) and note any escalating thoughts of harm to share with clinician\n8. Identify trusted friend/family member for 15-min check-in call each evening to bolster support and safety\n9. Store local 24-h crisis line number in your phone for immediate professional support if distress spikes\n10. Discuss with clinician evidence-based options including <med>CBT</med>, peer support groups, and medication compatible with breastfeeding if indicated\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_urgent",
+    "question_count": 10,
+    "duration": 79387.90305137634,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0551,
+        "average_score": 0.0551,
+        "example_excerpt": "MEN WHO ARE PREGNANT OR  \nBREAST-FEEDING\n If the woman is of child-bearing age, ask about:\n \u2013 Breast...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

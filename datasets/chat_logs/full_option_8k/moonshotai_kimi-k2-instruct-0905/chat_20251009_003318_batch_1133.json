@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T00:34:07.147635",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019ll be guiding you through a short screening tool called the Edinburgh Postnatal Depression Scale, or EPDS for short. It\u2019s simply a set of 10 questions about how you\u2019ve been feeling over the past seven days, and it helps us pick up on signs of depression, anxiety, or distress that can crop up after having a baby.  \n\nEverything you share stays between you, me, and the clinical team\u2014no judgment, just support. We\u2019ll go one question at a time at your pace, and if anything feels difficult to talk about, we can pause. Ready to start?\n\nQuestion 1: Over the last week, have you been able to laugh and see the funny side of things, or has that felt pretty impossible?"
+    },
+    {
+      "role": "patient",
+      "content": "Hi, Sarah. I\u2019ve been able to laugh a little\u2014like if I see something silly on my phone\u2014but it doesn\u2019t come as easily as it used to. Most of the time I\u2019m just tired, so even when something\u2019s funny it feels like effort to really enjoy it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I wouldn\u2019t say it\u2019s been easy, but yeah\u2014if my partner makes a joke or the baby does something goofy, I can still laugh. It just feels kind of distant, like I have to remind myself to enjoy it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I still get little sparks of excitement\u2014like when my mom said she\u2019d come over so I could take a walk\u2014but mostly it feels flat. I\u2019ll think, \u201cOh, that could be nice,\u201d yet it\u2019s hard to really feel it. Everything just seems kind of dulled."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, yeah. Like yesterday the baby was extra fussy and I kept thinking maybe I\u2019m not feeding him right or I missed some cue. My head knows it\u2019s probably just a growth-spurt thing, but I still catch myself wondering what I did wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 most evenings my mind just starts racing\u2014what if he spits up more than usual, what if that tiny cough means something awful, what if I\u2019m not watching him close enough? Nothing\u2019s actually wrong, but I still feel on edge, like I can\u2019t fully settle."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t had full panic, but I\u2019ll get these sudden surges\u2014like when he\u2019s napping and the room\u2019s too quiet, my heart starts pounding and I have to check he\u2019s breathing. It passes pretty fast, but it\u2019s scary while it\u2019s happening."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Some days, yeah. It\u2019s like the second I finish one feeding, the laundry or dishes is already piled up again, and I think, \u201cHow am I supposed to keep doing this?\u201d I manage, but it feels like I\u2019m always one step behind, and by bedtime I\u2019m just wiped."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I wouldn\u2019t call it \u201cso unhappy,\u201d but my mind does keep spinning once the lights are out\u2014mostly running through what I might have missed or need to do tomorrow. I finally drift off, then jolt awake to every little squeak from the bassinet. It\u2019s not every night, just enough to leave me more tired the next day."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I do have moments where I just feel really low\u2014like yesterday, when he wouldn\u2019t settle, I sat there rocking him and tears just leaked out. It\u2019s not all day, but a couple of times this week I\u2019ve felt pretty blue without a clear reason."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Not that level. I\u2019ve teared up a couple of times\u2014mostly when I\u2019m exhausted and he won\u2019t latch\u2014but I haven\u2019t had those big, can\u2019t-stop sobbing spells. Just quiet, quick cries that stop once I blow my nose and take a breath."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014nothing like that. I feel tired and overwhelmed sometimes, but I\u2019ve never thought about hurting myself. I just want to feel more like \u201cme\u201d again and be able to enjoy my baby."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0316,
+            "highlight": "In many cultures, knowledge about the ef\ufb01cacy of herbal remedies is carefully preserved and handed on by oral tradition from one generation to the next.",
+            "excerpt": "ate including drowsiness, confusion or coma \ncaused by liver dysfunction.\nHerbal products A range of...",
+            "relevance_explanation": "Some relevance: Contains terms \"one\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0278,
+            "highlight": "Access to essential medicines is a component of \u201cthe right to [the highest attainable standard of] health.\u201dThere are four main groups of  medications that target priority MNS conditions mentioned in this guide:   antipsychotics for psychotic disorders;   drugs used in mood disorders (depressive or bipolar);    anticonvulsants/antiepileptics;   medications used for management of substance withdrawal, intoxication or dependence.",
+            "excerpt": "clude: the WHO Problem Management Therapy PM+ manual, the WHO Interpersonal Therapy manual (IPT), th...",
+            "relevance_explanation": "Some relevance: Contains terms \"depressive\", \"mood\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 16: Postpartum Depression / Anxiety Screening Summary  \n\n**Identified symptoms / concerns**  \n- Anhedonia: diminished ability to enjoy laughing or looking forward to events (\u201cdistant,\u201d \u201cflat,\u201d \u201cdulled\u201d)  \n- Persistent low mood: \u201creally low,\u201d \u201cpretty blue,\u201d spontaneous crying when exhausted  \n- Excessive guilt: self-blame when infant is fussy despite objective evidence of adequate care  \n- Generalized anxiety: near-daily evening rumination, physiological surges when infant sleeps, heart pounding  \n- Feeling overwhelmed: \u201calways one step behind,\u201d difficulty coping with daily tasks  \n- Sleep disturbance: initial insomnia and hyper-arousal to infant sounds (not nightly but recurrent)  \n\n**Screening significance**  \nResponses are consistent with mild-to-moderate postpartum depressive symptoms and co-occurring anxiety. No anhedonia is complete, and crying episodes are brief and situational. No self-harm ideation reported.  \n\n**Risk factors noted**  \n- Recurrent low mood and tearfulness  \n- Enjoyment markedly reduced  \n- Self-blame/cognitive guilt  \n- Anxiety with mild physiological panic-like surges  \n- Fatigue compounded by disrupted sleep  \n\n**Safety**  \nPatient explicitly denied thoughts of self-harm; no suicidal content elicited.  \n\n**Overall screening observation**  \nPatient exhibits sub-threshold to mild postpartum depressive and anxious features causing functional fatigue and emotional distress; further clinical evaluation recommended to clarify severity and inform support/intervention options.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0297
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3371293544769287,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.363312005996704,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3399477005004883,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_possible",
+    "question_count": 10,
+    "duration": 65461.5026640892,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0316,
+        "average_score": 0.0297,
+        "example_excerpt": "ate including drowsiness, confusion or coma \ncaused by liver dysfunction.\nHerbal products A range of...",
+        "relevance_explanation": "Some relevance: Contains terms \"one\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

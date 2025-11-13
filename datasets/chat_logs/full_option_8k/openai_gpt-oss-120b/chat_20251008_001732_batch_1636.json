@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T00:18:24.216798",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.\u202fI\u2019m glad you\u2019re here today, and I want to thank you for taking the time to speak with me.\n\nWe\u2019re going to complete the **Edinburgh Postnatal Depression Scale (EPDS)**. This short, ten\u2011question screening tool helps us understand how you\u2019ve been feeling over the past week and whether you might be experiencing symptoms of postpartum depression or anxiety.\u202fYour honest answers give us a clear picture of how you\u2019re doing, so we can provide the right support.\n\nEverything you share is completely confidential, and this is a safe, non\u2011judgmental space.\u202fIf at any point something feels uncomfortable or you have any concerns, please let me know\u2014I\u2019m here to listen and help.\n\nWe\u2019ll go through the ten questions one by one, focusing on the last seven days.\u202fYou can answer as simply or as fully as you like; there are no right or wrong responses.\n\nLet\u2019s begin.\n\n**First question:**\u202fIn the past week, have you found yourself able to laugh or see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve found it hard to laugh or see the funny side of things lately\u2014maybe only once in a while, but not very often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Hardly ever."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Definitely less than I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Quite often."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Rather more than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Often."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been crying about once or twice a week when things feel overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve had brief thoughts of harming myself a couple of times this week, but I don\u2019t have any plan or intention to act on them."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear how overwhelming the past week has felt-you've struggled to find humor, enjoyment has faded, worries and panic have been frequent, sleep has been harder, sadness and tears come often, and brief thoughts of harming yourself have appeared. It's understandable to feel this way while adjusting to new motherhood, and I want you to know you are not alone and that help is available.\n**Screening Impression:** Total EPDS Score: 17, Risk Level: Probable depression, urgent referral (concerns include <sym>Response 'Hardly ever' indicates they rarely laugh, matching the 'Not at all' option</sym>, <sym>the option 'Definitely less than I used to', indicating reduced enjoyment</sym>, <sym>The patient says 'Quite often,' indicating frequent anxiety, which aligns with the 'Yes, very often' option (score 3).</sym>, <sym>Patient says \"Yes, sometimes\", matching the option indicating occasional difficulty coping</sym>, <sym>Patient reports sleeping difficulty 'rather more than usual', matching 'Yes, sometimes</sym>, <sym>Patient reports brief thoughts a few times in the past week, matching the 'Sometimes' option.</sym>)\n**Reasoning:** The EPDS total of 17 exceeds the \u226514 cutoff indicating probable <med>postpartum depression</med>. Scores on items reflect <sym>loss of pleasure</sym> (Q1=3, Q2=2), <sym>persistent sadness</sym> (Q8=1), <sym>crying episodes</sym> (Q9=1), <sym>anxiety and panic</sym> (Q4=3, Q5=0), and <sym>sleep disturbance</sym> (Q7=2). The patient also endorsed passive <sym>suicidal thoughts</sym> (Q10=2), which triggers an immediate safety alert. According to <med>DSM\u20115</med> criteria for Major Depressive Disorder with Peripartum Onset, she reports \u22655 depressive symptoms (anhedonia, depressed mood, sleep change, guilt, suicidal ideation) lasting >2 weeks, meeting threshold. The presence of anxiety symptoms further supports a mixed presentation. This pattern warrants urgent referral for comprehensive assessment and safety planning. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an urgent appointment with the primary care provider or obstetrician\n2. Refer to a mental health specialist experienced in perinatal mood disorders\n3. Conduct a detailed safety assessment and develop a safety plan, providing crisis line information\n4. Encourage sleep hygiene practices and help identify supportive people for childcare assistance\n5. Provide psychoeducation about postpartum mood changes and normalize the experience\n6. Consider initiating low\u2011intensity psychosocial support such as peer support groups or counseling while awaiting specialist care\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0257,
+            "highlight": "hypogylcemia/ hyponatremia)  \u2013  Alcohol or drug intoxication or   withdrawal  Suspect EPILEPSY EPI 160 EPILEPSY  Assessment  COMPLEX FEBRILE SEIZURE      REFER TO HOSPITAL   FOR ADMISSION  SIMPLE FEBRILE SEIZURE    Look for cause (local Integrated Management   of Childhood Illness (IMCI) guidelines)    Observe over 24 hours    No antiepileptic treatment needed Are the convulsions: \u2013  Focal: Starts in one part of the body \u2013  Prolonged: Lasts more than 15 min  \u2013  Repetitive: More than 1 episode during the  current illness    IS IT A CHILD 6 MONTHS TO   6 YEARS OLD WITH A FEVER?   \u00bb  EVALUATE & TREAT MEDICAL CONDITION \u00bb  REFER TO HOSPITAL   IF POSSIBLE FOR HEAD INJURY, MENINGITIS, AND METABOLIC ABNORMALITIES   ANTIEPILEPTIC MEDICATION   NOT REQUIRED \u00bb  Follow-up in 3 months to   assess for possible epil.",
+            "excerpt": "dy\nConvulsive seizures unlikely\n   Consult a specialist for recurrent episodes \n   Follow-up in 3 mo...",
+            "relevance_explanation": "Some relevance: Contains terms \"more\", \"possible\", \"follow\", and 2 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0253,
+            "highlight": "s of dependence:   Is DEPENDENCE  likely?3 \u2013  High levels of frequent substance use \u2013  A strong craving  or sense of compulsion to   use the substance\u2013  Dif\ufb01culty self regulating  the use of that substance  despite the risks and harmful consequences \u2013  Increasing levels of use tolerance and withdrawal  symptoms on cessation IF THERE IS IMMINENT RISK OF  SUICIDE, ASSESS AND MANAGE  before continuing to Protocol   (Go to  SUI) IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE  before continuing to Protocol   (Go to   SUI)CLINICAL TIP  Patterns of substance use that suggest dependence include: TOBACCO:  several times a day, often starting in the morning.",
+            "excerpt": "s of dependence:\n \nIs DEPENDENCE  likely?3\n\u2013  High levels of frequent substance use\n\u2013  A strong crav...",
+            "relevance_explanation": "Some relevance: Contains terms \"risk\", \"frequent\", \"symptoms\", and 8 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 17: **Screening Summary \u2013 Postpartum Mood & Anxiety Evaluation**\n\n**Client Identifier:** [Redacted]  \n**Date of Screening:** [Insert Date]  \n**Clinician:** [Licensed Mental Health Professional]\n\n---\n\n### 1. Reported Symptoms & Emotional/Behavioral Concerns\n| Item | Client Response | Clinical Interpretation |\n|------|----------------|------------------------|\n| **Anhedonia / Low Positive Affect** (Q1, Q2) | \u201cHardly ever\u201d able to laugh; \u201cdefinitely less\u201d enjoyment than before. | Marked reduction in pleasure and humor. |\n| **Self\u2011Blame / Guilt** (Q3) | \u201cSometimes\u201d blames self unnecessarily. | Intermittent guilt. |\n| **Generalized Anxiety / Worry** (Q4) | \u201cQuite often\u201d anxious or worried without clear reason. | Frequent anxiety. |\n| **Panic\u2011type Symptoms** (Q5) | \u201cQuite often\u201d scared or panicky without clear trigger. | Recurrent panic\u2011like experiences. |\n| **Feeling Overwhelmed** (Q6) | \u201cYes, sometimes\u201d things getting on top of her. | Periodic sense of being overwhelmed. |\n| **Sleep Disturbance linked to Mood** (Q7) | \u201cRather more than usual\u201d difficulty sleeping due to unhappiness. | Mood\u2011related insomnia. |\n| **Persistent Sadness** (Q8) | \u201cOften\u201d feels sad or miserable. | Ongoing low mood. |\n| **Crying Episodes** (Q9) | Crying \u201conce or twice a week\u201d when overwhelmed. | Episodic crying fits. |\n| **Suicidal Ideation** (Q10) | Brief thoughts of self\u2011harm \u201ca couple of times this week,\u201d **no plan or intent**. | Passive suicidal ideation \u2013 safety flag. |\n\n---\n\n### 2. Consistent Patterns Across Answers\n- **Low mood & loss of pleasure** (Q1, Q2, Q8, Q9).  \n- **Anxiety & panic symptoms** (Q4, Q5, Q6).  \n- **Guilt/self\u2011blame** present intermittently (Q3).  \n- **Sleep disruption** secondary to mood (Q7).  \n- **Passive suicidal thoughts** without intent (Q10).\n\nThese findings collectively suggest a **mixed depressive\u2011anxious presentation** typical of postpartum mood disturbances.\n\n---\n\n### 3. Areas of Screening Significance (Postpartum Context)\n- **Depressive symptomatology:** anhedonia, persistent sadness, crying, insomnia.  \n- **Anxiety/panic symptomatology:** frequent worry, panic\u2011like fear, feeling overwhelmed.  \n- **Self\u2011critical cognitions:** occasional self\u2011blame.  \n- **Suicidal ideation:** passive thoughts of self\u2011harm \u2013 requires immediate safety assessment.  \n- **Functional impact:** reports of being \u201con top of\u201d tasks and sleep difficulty, indicating possible impairment in daily functioning and caregiving capacity.\n\n---\n\n### 4. Risk Factors & Safety Concern\n- **Persistent sadness & loss of pleasure** \u2013 core depressive features.  \n- **Sleep difficulty** linked to mood disturbance.  \n- **Intermittent guilt/self\u2011blame** \u2013 may exacerbate depressive mood.  \n- **Frequent anxiety/panic symptoms** \u2013 contribute to overall distress and coping difficulty.  \n- **Passive suicidal ideation** (Q10) \u2013 **flagged as a safety concern**; requires thorough risk assessment, safety planning, and possible urgent follow\u2011up.\n\n---\n\n### 5. Screening Observation Summary\nThe client reports a constellation of depressive symptoms (marked anhedonia, frequent sadness, crying episodes, mood\u2011related insomnia) accompanied by significant anxiety and occasional panic\u2011type experiences. Intermittent self\u2011blame is present, and there are passive thoughts of self\u2011harm without a concrete plan or intent. The pattern suggests a moderate\u2011to\u2011severe postpartum mood disturbance with mixed depressive\u2011anxious features and warrants immediate safety evaluation and further comprehensive assessment for postpartum depression and anxiety. No formal diagnosis is rendered at this screening stage.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0255
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.358079433441162,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.36429762840271,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.340336561203003,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "I hear how overwhelming the past week has felt-you've struggled to find humor, enjoyment has faded, worries and panic have been frequent, sleep has been harder, sadness and tears come often, and brief thoughts of harming yourself have appeared. It's understandable to feel this way while adjusting to new motherhood, and I want you to know you are not alone and that help is available.\n**Screening Impression:** Total EPDS Score: 17, Risk Level: Probable depression, urgent referral (concerns include <sym>Response 'Hardly ever' indicates they rarely laugh, matching the 'Not at all' option</sym>, <sym>the option 'Definitely less than I used to', indicating reduced enjoyment</sym>, <sym>The patient says 'Quite often,' indicating frequent anxiety, which aligns with the 'Yes, very often' option (score 3).</sym>, <sym>Patient says \"Yes, sometimes\", matching the option indicating occasional difficulty coping</sym>, <sym>Patient reports sleeping difficulty 'rather more than usual', matching 'Yes, sometimes</sym>, <sym>Patient reports brief thoughts a few times in the past week, matching the 'Sometimes' option.</sym>)\n**Reasoning:** The EPDS total of 17 exceeds the \u226514 cutoff indicating probable <med>postpartum depression</med>. Scores on items reflect <sym>loss of pleasure</sym> (Q1=3, Q2=2), <sym>persistent sadness</sym> (Q8=1), <sym>crying episodes</sym> (Q9=1), <sym>anxiety and panic</sym> (Q4=3, Q5=0), and <sym>sleep disturbance</sym> (Q7=2). The patient also endorsed passive <sym>suicidal thoughts</sym> (Q10=2), which triggers an immediate safety alert. According to <med>DSM\u20115</med> criteria for Major Depressive Disorder with Peripartum Onset, she reports \u22655 depressive symptoms (anhedonia, depressed mood, sleep change, guilt, suicidal ideation) lasting >2 weeks, meeting threshold. The presence of anxiety symptoms further supports a mixed presentation. This pattern warrants urgent referral for comprehensive assessment and safety planning. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Arrange an urgent appointment with the primary care provider or obstetrician\n2. Refer to a mental health specialist experienced in perinatal mood disorders\n3. Conduct a detailed safety assessment and develop a safety plan, providing crisis line information\n4. Encourage sleep hygiene practices and help identify supportive people for childcare assistance\n5. Provide psychoeducation about postpartum mood changes and normalize the experience\n6. Consider initiating low\u2011intensity psychosocial support such as peer support groups or counseling while awaiting specialist care\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_urgent",
+    "question_count": 10,
+    "duration": 88692.99340510368,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0257,
+        "average_score": 0.0255,
+        "example_excerpt": "dy\nConvulsive seizures unlikely\n   Consult a specialist for recurrent episodes \n   Follow-up in 3 mo...",
+        "relevance_explanation": "Some relevance: Contains terms \"more\", \"possible\", \"follow\", and 2 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

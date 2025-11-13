@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-07T14:51:49.344774",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Hello, I\u2019m\u202f[Your Name], a clinician who specializes in postpartum mental health.**  \nI\u2019d like to invite you to complete the **Edinburgh Postnatal Depression Scale (EPDS)** today. This brief, 10\u2011item questionnaire helps us understand how you\u2019ve been feeling over the past week and lets us identify any signs of depression or anxiety that can sometimes arise after birth.  \n\nEverything you share is completely confidential, and our goal is simply to create a safe, supportive space where you can speak openly about your experiences. The EPDS takes only a few minutes\u2014I'll ask you each of the ten questions one at a time, and you can answer in the way that feels most true for you.\n\nWhen you\u2019re ready, we can begin with the first question.\n\n**Question\u202f1:**  \nIn the past seven days, how often have you felt able to laugh or enjoy things as you usually would?"
+    },
+    {
+      "role": "patient",
+      "content": "I haven\u2019t been able to laugh or enjoy things as much as I usually would\u2014definitely not as often as I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Actually, it\u2019s been harder for me to find humor lately\u2014I definitely haven\u2019t been able to laugh or enjoy things as often as I used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019m not really looking forward to things like I used to. Most days I just get through the basics, and the excitement or anticipation I once felt has kind of faded."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I often find myself blaming myself when something doesn\u2019t go perfectly. I feel guilty and think I\u2019m not doing enough as a mother, even when the situation is out of my control."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been feeling anxious and worried a lot\u2014often about my baby\u2019s health and safety, even when there\u2019s no clear reason. It\u2019s hard to shake those thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve had moments where I feel scared or even panicky for no clear reason. It usually comes out of the blue\u2014like a sudden rush of fear about something with my baby, and it can be hard to calm down even when I try."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve definitely been feeling like things are piling up on me. Some days the demands of caring for the baby, the house, and my own worries feel overwhelming, and I struggle to keep everything together, even though I try to push through."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been feeling really unhappy, and it\u2019s been hard for me to fall asleep or stay asleep most nights."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, I\u2019ve been feeling really sad and miserable most days\u2014like a heavy weight that just won\u2019t lift."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve been crying a few times this week\u2014usually when I feel especially stressed or overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had any thoughts of hurting myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 17, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0468,
+            "highlight": "The training structure can follow a cascade plan with two levels:  a master facilitator trains \u2018trainers\u2019 who then train the non-specialist front-line healthcare providers.4 5IMPLEMENTATION OF mhGAP-IG IMPLEMENTATION OF mh GAP-IG 155mhGAP-IG train the trainers: The objective is to ensure that trainers are skilled and con\ufb01dent  in their ability to train non-specialist healthcare providers and act as informed resources for these providers.",
+            "excerpt": "xperts to ensure its optimum delivery.\nThe objective of mhGAP-IG training is to teach non-specialist...",
+            "relevance_explanation": "Some relevance: Contains terms \"that\" that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0403,
+            "highlight": "mhGAP-IG training & supervision  An important aspect of mhGAP-IG implementation is the  training of healthcare providers working in non-specialist settings to deliver interventions as front line personnel, along with mechanisms to ensure their continued support and super-   vision.",
+            "excerpt": "g different levels of general health care, (e.g. public health practitioners, primary health care pr...",
+            "relevance_explanation": "Some relevance: Contains terms \"support\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 17: **Screening Summary \u2013 Postpartum Mental Health Check\u2011In**\n\n**Identified Symptoms / Emotional\u2011Behavioral Concerns**  \n- **Anhedonia / Loss of pleasure:** Difficulty finding humor, reduced enjoyment and anticipation of activities.  \n- **Persistent low mood:** Reports of feeling \u201csad or miserable,\u201d \u201cunhappy,\u201d and crying several times per week.  \n- **Sleep disturbance:** Difficulty falling asleep or staying asleep associated with low mood.  \n- **Excessive guilt/self\u2011blame:** Frequent self\u2011critical thoughts about parenting performance.  \n- **Anxiety / Worry:** Ongoing, unfounded worry about infant\u2019s health and safety; described as \u201canxious\u201d and \u201cworried for no good reason.\u201d  \n- **Panic / Fear:** Sudden, unexplained episodes of fear or panic concerning the baby.  \n- **Feeling overwhelmed:** Perception that responsibilities are \u201cpiling up\u201d and difficulty managing daily demands.\n\n**Consistent Patterns Across Responses**  \n- A clear pattern of **low affect** (loss of humor, diminished anticipation, sadness, crying).  \n- Co\u2011occurring **anxiety symptoms** (worry, panic, feeling scared).  \n- **Cognitive distortions** (self\u2011blame, guilt) that reinforce negative mood.  \n- Functional impact evident in **sleep disruption** and feeling overwhelmed by caregiving tasks.\n\n**Potential Areas of Screening Significance (Postpartum Depression & Anxiety)**  \n1. **Depressive symptom cluster:** Anhedonia, depressed mood, crying, sleep difficulty.  \n2. **Anxiety symptom cluster:** Generalized worry, panic\u2011type fear, hyper\u2011vigilance about infant safety.  \n3. **Cognitive\u2011affective factors:** Guilt, self\u2011criticism, perceived inadequacy as a mother.  \n4. **Functional impairment:** Overwhelm with daily tasks, disrupted sleep, reduced enjoyment of activities.  \n\n**Risk Factor Highlight**  \n- **Persistent sadness & loss of pleasure** \u2013 present.  \n- **Crying spells** \u2013 occurring several times per week.  \n- **Sleep difficulties** \u2013 reported nightly.  \n- **Feelings of guilt/self\u2011blame** \u2013 frequent.  \n- **Anxiety/panic** \u2013 ongoing, intrusive.  \n- **Self\u2011harm thoughts** \u2013 **absent** (patient denied any suicidal ideation).  \n\n**Safety Assessment**  \n- No endorsement of self\u2011harm or suicidal thoughts. No immediate safety concern identified at this time.\n\n**Overall Screening Observation**  \nThe client demonstrates multiple symptoms consistent with a moderate depressive presentation accompanied by significant anxiety and guilt. The symptom constellation includes anhedonia, persistent low mood, sleep disturbance, excessive self\u2011blame, and frequent anxiety/panic episodes, all of which are affecting daily functioning and caregiving capacity. No suicidal ideation is reported. Further comprehensive evaluation and ongoing monitoring are warranted to determine the need for intervention and to support postpartum mental health.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0436
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.383212089538574,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3791167736053467,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3496320247650146,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 17, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "openai/gpt-oss-120b",
+    "patient_model": "openai/gpt-oss-120b",
+    "patient_profile": "ppd_probable",
+    "question_count": 10,
+    "duration": 54698.120369672775,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0468,
+        "average_score": 0.0436,
+        "example_excerpt": "xperts to ensure its optimum delivery.\nThe objective of mhGAP-IG training is to teach non-specialist...",
+        "relevance_explanation": "Some relevance: Contains terms \"that\" that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "timestamp": "2025-10-09T01:10:38.659845",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Sarah, and I\u2019m a perinatal mental-health clinician. I\u2019ll be guiding you through a short screening tool called the **Edinburgh Postnatal Depression Scale**\u2014or EPDS for short. It\u2019s simply a set of 10 questions we use to see how you\u2019ve been feeling since your baby arrived.  \n\nEverything we discuss stays confidential, and this is a judgment-free space. My only goal is to understand how you\u2019re coping so we can make sure you get whatever support you need. The questions take just a few minutes, and I\u2019ll ask each one conversationally\u2014no need to remember any numbers or categories.  \n\nWhenever you\u2019re ready, we can begin.  \n\nTo start: over the past seven days, have you been able to enjoy things as much as you usually do, or has even the good stuff felt a bit flat or \u201cblah\u201d?"
+    },
+    {
+      "role": "patient",
+      "content": "Honestly? Things feel pretty flat. Even when something nice happens\u2014my mom brought over my favorite soup yesterday\u2014it was like I could recognize it was sweet, but I didn\u2019t really *feel* it, you know? It\u2019s like watching life through a foggy window."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I still laugh sometimes\u2014like when the baby lets out a funny burp or my husband does a silly dance\u2014but the giggles feel kind of forced or short-lived. It\u2019s almost as if I have to remind myself, \u201cThis is supposed to be fun,\u201d and then the moment fades really fast."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I see stuff on the calendar\u2014like, my sister\u2019s coming over this weekend\u2014and I think I *should* be excited, but mostly I just feel\u2026 tired and anxious, like I\u2019m already dreading how I\u2019ll cope. It\u2019s hard to look forward to anything when I\u2019m worried I\u2019ll feel this drained the whole time."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 that happens a lot. If the baby won\u2019t settle or I can\u2019t figure out what he wants, I jump straight to \u201cI\u2019m failing him.\u201d Yesterday I spilled a little pumped milk and just sat there crying because that felt like proof I\u2019m a terrible mom, even though I *know* accidents happen."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Pretty often. I\u2019ll be rocking the baby and suddenly my heart\u2019s racing, picturing every awful thing that could go wrong\u2014SIDS, choking, the works. Nothing triggered it; I just spiral. Sometimes I can breathe through it, but it keeps popping up out of nowhere."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes it hits out of nowhere\u2014like last night, I was just folding tiny onesies and suddenly felt this wave of panic, tight chest, couldn\u2019t catch my breath. Nothing was happening, but my body was convinced something awful was about to go wrong. It passes after a few minutes, but it\u2019s scary while it\u2019s happening."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, definitely. Most days I feel like I\u2019m drowning in small stuff\u2014laundry, bottles, trying to shower. I\u2019ll start one chore, the baby cries, and suddenly everything feels impossible. I usually push through, but it\u2019s like treading water; I never feel on top of anything."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "That\u2019s been happening several nights. I\u2019ll finally get the baby down, crawl into bed myself, but my mind keeps circling\u2014worrying I\u2019m doing everything wrong, replaying every little fussy episode. I lie there for an hour or two before I drift off, then wake up at the slightest squeak over the monitor."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, that\u2019s most days. I\u2019ll be feeding the baby and tears just start sliding down without warning. It\u2019s like a heaviness parked on my chest that won\u2019t shift. I keep thinking I should feel grateful, but the sadness keeps leaking through anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "I\u2019ve cried a few times this week\u2014usually when I\u2019m alone with the baby and everything feels too much. Yesterday I put him in the crib for two minutes so I could step into the bathroom, and I just sat on the floor sobbing because I couldn\u2019t soothe him fast enough."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2014never. I feel low and overwhelmed, but I haven\u2019t had any thoughts like that. I just want to feel like myself again so I can be the mom my baby deserves."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0424,
+            "highlight": "Each module starts with common presentations of the suspected condition, from which there are a series of clinical assess - ment questions one should move down answering yes or no, which directs the user to move on for further instructions to reach a \ufb01nal clinical assessment.",
+            "excerpt": "nt guidelines. \n  The modules, organized by individual priority conditions, are a tool for clinical ...",
+            "relevance_explanation": "Some relevance: Contains terms \"one\", \"each\" that have contextual connection to your query."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf",
+            "score": 0.0414,
+            "highlight": "more than 3 7,000  physician members specialize in the diagnosis, treat - ment, prevention and research of mental illnesses, including substance use disorders.",
+            "excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+            "score": 0.0414,
+            "highlight": "more than 3 7,000  physician members specialize in the diagnosis, treat - ment, prevention and research of mental illnesses, including substance use disorders.",
+            "excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 23: **Postpartum Depression / Anxiety Screening \u2013 Brief Summary**\n\n**Presenting Symptoms / Concerns**  \n- Persistent low mood, frequent tearfulness, described \u201cheaviness\u201d most days  \n- Marked anhedonia: minimal enjoyment, anticipatory anxiety about planned activities  \n- Excessive guilt / self-blame over routine parenting challenges  \n- Recurrent, intrusive worries and catastrophic thoughts re: infant safety  \n- Episodic panic symptoms (sudden chest tightness, breathlessness) without clear trigger  \n- Chronic feeling of being overwhelmed, \u201cdrowning\u201d in daily tasks  \n- Initial insomnia and fragmented sleep related to ruminative worry  \n- Denies self-harm ideation (endorsed \u201cnever\u201d on Q10)\n\n**Pattern**  \nSymptoms cluster around mood (depression, anhedonia, guilt) and anxiety (generalized worry, panic episodes), with functional impairment in sleep, coping, and task management. Onset appears linked to postpartum period.\n\n**Screening Significance**  \nFindings meet threshold concern for Major Depressive Episode with Peripartum Onset and possible comorbid Panic/Anxiety Disorder; severity warrants formal diagnostic evaluation and safety planning.\n\n**Risk Factors Identified**  \n\u2713 Depressed mood most days  \n\u2713 Loss of interest/pleasure  \n\u2713 Sleep disturbance beyond infant demands  \n\u2713 Excessive inappropriate guilt  \n\u2713 Recurrent panic-type episodes  \n\u2713 Overwhelm with daily functioning  \n\u2717 Self-harm ideation \u2013 absent (noted as protective)\n\n**Safety**  \nPatient explicitly denies suicidal or self-harm thoughts; no current safety alert. Continue to monitor at each contact.\n\n**Next Steps for Chart**  \n- Schedule full diagnostic interview (DSM-5 criteria) within one week  \n- Provide psycho-education and emergency contact numbers  \n- Consider screening tools: PHQ-9, GAD-7, EPDS on follow-up  \n- Coordinate with OB/pediatric team; involve support person as agreeable",
+          "results_count": 3,
+          "requested_count": 5,
+          "avg_score": 0.0417
+        },
+        "count": 3,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.34232497215271,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3874013423919678,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.343073844909668,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_probable",
+    "question_count": 10,
+    "duration": 67653.01387739182,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 3,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0424,
+        "average_score": 0.0424,
+        "example_excerpt": "nt guidelines. \n  The modules, organized by individual priority conditions, are a tool for clinical ...",
+        "relevance_explanation": "Some relevance: Contains terms \"one\", \"each\" that have contextual connection to your query."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion copy.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0414,
+        "average_score": 0.0414,
+        "example_excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      },
+      "APA_DSM-5-Depression-Bereavement-Exclusion.pdf": {
+        "access_count": 1,
+        "highest_score": 0.0414,
+        "average_score": 0.0414,
+        "example_excerpt": " more than 3 7,000  physician members specialize in the diagnosis, treat -\nment, prevention and rese...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

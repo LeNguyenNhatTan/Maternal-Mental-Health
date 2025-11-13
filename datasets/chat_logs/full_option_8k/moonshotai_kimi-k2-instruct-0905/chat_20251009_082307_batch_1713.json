@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T08:23:54.522538",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014thank you for taking a few minutes to talk with me. I\u2019m a perinatal mental-health clinician, and my job is simply to check in on how moms are feeling after their baby arrives. The tool we\u2019ll use today is called the EPDS, a brief questionnaire that helps us spot signs of depression or anxiety that can creep up any time in the first year postpartum.\n\nAnything you share stays between you and our care team; there\u2019s no judgment here\u2014only support. I\u2019ll ask ten short questions about how you\u2019ve felt in the past seven days. There are no right or wrong answers; we just want to hear your honest experience. When you\u2019re ready, we can dive in.\n\nFirst question: In the past week, have you still been able to enjoy things or take pleasure in the little moments of life, even if it\u2019s just a hot cup of coffee or a quick smile from your baby?"
+    },
+    {
+      "role": "patient",
+      "content": "Honestly\u2026 I do still enjoy some things, but it\u2019s like the joy is turned way down. When my baby looks up at me and smiles, it still melts my heart, but the feeling fades faster than it used to. Even that first hot sip of coffee\u2014used to feel like a tiny celebration, and now it\u2019s just\u2026 coffee. I can\u2019t tell if I\u2019m too tired to feel it or if the sparkle is just gone."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "I can still laugh sometimes\u2014like when my husband made that goofy face while changing a diaper\u2014but it takes way more effort than before. Most days I feel too worn out to find much funny."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "Not really\u2026 I used to get excited about little plans\u2014coffee with a friend, a walk to the park\u2014but now even those feel like chores I have to push myself through. I\u2019ll mark \u201cno, not much.\u201d"
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 a couple of times this week. Yesterday the baby was extra fussy and I kept thinking maybe I ate something that upset his stomach, or that I wasn\u2019t soothing him the \u201cright\u201d way. Rationally I know babies just have rough days, but I still catch myself wondering what I did wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, yeah. Like last night, I kept checking that he was breathing every few minutes even though the monitor was on. Nothing specific triggered it\u2014I just couldn\u2019t shake the tight feeling in my chest."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Not really panicky\u2014more like this low-level scared feeling that something might go wrong with the baby. It\u2019s not full-on panic, but it\u2019s enough to make my stomach knot up out of nowhere."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes... most days. Between the feedings, the laundry, and trying to grab a shower, it feels like I'm always one step behind. Yesterday I just sat on the nursery floor and cried for a minute because I couldn't figure out what to tackle next."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "I wouldn\u2019t call it \u201cso unhappy,\u201d but I do lie there with my mind racing\u2014mostly about whether the baby\u2019s okay or if I\u2019ll hear him cry. I end up staring at the ceiling for an hour or more a few nights a week, even when I\u2019m exhausted."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I do feel sad at times\u2014like a heaviness settles in\u2014but it\u2019s not every moment. It comes in waves, usually when I\u2019m alone during a late-night feeding. I wouldn\u2019t say miserable, but definitely down more days than not."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. I\u2019ve teared up once or twice when I felt overwhelmed, but actual crying\u2014like full-on sobbing\u2014hasn\u2019t happened. Mostly I just feel kind of flat or tired instead of teary."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, never. I\u2019ve felt tired and stretched thin, but I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0614,
+            "highlight": "caine, Methamphetamines & Amphetamine-type stimulantsDilated pupils, increased blood pressure and heart rate, excited, euphoric, hyperactivity, rapid speech, racing thoughts, disordered thinking, paranoia, aggressive, erratic, violentFatigue, increased appetite, depressed, irritable moodWatch out for suicidal thoughtsHypertension, increased risk of cerebrovascular accidents (CVAs), arrythmias, heart disease, anxiety, depression  Khat Alertness, euphoria, and mild excitation Lethargy, depressed mode, irritability Khat users often spend a signi\ufb01cant portion of the  day chewing khat; consti-pation, risk of mental health problems such as psychosis Cannabis Normal pupils, red conjunctivae, delayed  responsiveness, euphoria, relaxationDepressed or labile mood, anxiety, irritability, sleep  disturbance (there may not be any clearly observable features)Increased risk of mental health problems including anxiety, paranoia and psychosis, lack of motivation, dif\ufb01culty in concentration, increased risk of vasospasm leading to myocardial infarction and stroke  Tramadol Opioid effects (sedation, euphoria, etc.) followed by  stimulant effects (excitation and in high doses seizuresPredominantly opio.",
+            "excerpt": "caine, Methamphetamines & Amphetamine-type stimulantsDilated pupils, increased blood pressure and he...",
+            "relevance_explanation": "Some relevance: Contains terms \"mental\", \"thoughts\", \"anxiety\", and 9 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0528,
+            "highlight": "Albert Akpalu, College of Health Sciences, University of Ghana   and Epilepsy Society of Ghana, Ghana; Sophia Achab*, WHO  Collaborating Centre, University of Geneva/H\u00f4pitaux Universitaires de Gen\u00e8ve (HUG), Geneva, Switzerland; Emiliano Albanese*,   WHO Collaborating Centre, University of Geneva/HUG, Geneva, Switzerland; Robert Ali*, Drug and Alcohol Services South Australia (DASSA), WHO Collaborating Centre for the Treatment of Drug and Alcohol Problems, University of Adelaide, Australia; Fredrick Altice, Yale University School of Medicine and School of Public Health, New Haven, USA; Jos\u00e9 Ayuso-Mateos, Universidad Autonoma de Madrid and CIBER, Spain; Corrado Barbui*, WHO Collaborating Centre for Research and Training in Mental Health and Service Evaluation, University of Verona, Italy; Gretchen Birbeck, Michigan State University, Michigan, USA; Anja Busse, United Nations Of\ufb01ce on Drugs and Crime, Vienna, Austria; Vladimir Carli*, National Centre.",
+            "excerpt": " Elise Paul, Charlotte Phillips,  \nPooja Pradeeb, Matthew Schreiber.Technical Reviewers\nInputs and f...",
+            "relevance_explanation": "Some relevance: Contains terms \"mental\", \"health\", \"evaluation\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 16: Postpartum Depression / Anxiety Screening Note  \nPatient: Postpartum mother, self-report via EPDS-style questionnaire  \n\nSymptoms endorsed  \n- Anhedonia: markedly reduced enjoyment/anticipation (Q2); laughter requires effort (Q1)  \n- Low mood: intermittent sadness, \u201cheaviness,\u201d flat affect (Q8)  \n- Excessive guilt / self-blame over routine infant care (Q3)  \n- Generalized anxiety: nocturnal hyper-vigilance, chest tightness, fear of harm to infant (Q4, Q5)  \n- Feeling overwhelmed, \u201cone step behind,\u201d tearful when alone (Q6)  \n- Sleep-onset difficulty linked to racing thoughts about infant safety (Q7)  \n\nFrequency / severity  \n- Symptoms present \u201cmore days than not,\u201d interfere with daily functioning; no frank panic attacks, no suicidal ideation (Q10 denied).  \n\nScreening significance  \nPattern consistent with possible mild\u2013moderate postpartum depression with comorbid anxiety; meets threshold for further assessment (EPDS items suggest score range 10\u201312). No acute safety concerns at this time.  \n\nRisk factors noted  \n- Primiparity, sleep disruption, self-criticism, anxiety focused on infant well-being.  \n\nRecommendation  \nContinue to formal assessment (EPDS total score, PHQ-9/GAD-7) and consider referral for perinatal mental health evaluation.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0571
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.342228889465332,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3558714389801025,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3328351974487305,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 16, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_possible",
+    "question_count": 10,
+    "duration": 93648.87756681442,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0614,
+        "average_score": 0.0571,
+        "example_excerpt": "caine, Methamphetamines & Amphetamine-type stimulantsDilated pupils, increased blood pressure and he...",
+        "relevance_explanation": "Some relevance: Contains terms \"mental\", \"thoughts\", \"anxiety\", and 9 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

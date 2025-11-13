@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-09T10:47:34.727747",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there\u2014my name is Elena, and I\u2019m a perinatal mental-health clinician. I\u2019m here to check in on how you\u2019ve been feeling since your baby arrived. We\u2019ll use a short questionnaire called the Edinburgh Postnatal Depression Scale (EPDS). It\u2019s simply a way to see how your mood, energy, and thoughts have been over the past seven days so we can be sure you\u2019re getting any support you might need. Everything you share stays between you, me, and the clinical team unless you tell me you\u2019re in immediate danger. We\u2019ll go through ten questions; they\u2019re pretty straightforward, and you can answer in your own words. When you\u2019re ready, we can start.  \n\nFirst question: Over the last seven days, have you been able to laugh and see the funny side of things?"
+    },
+    {
+      "role": "patient",
+      "content": "Hi, Elena\u2026 I guess I\u2019ve laughed a little, maybe once or twice when my husband sent a silly meme, but mostly things don\u2019t feel all that funny right now. Even when something should make me chuckle, it feels kind of muted\u2014like I\u2019m too tired or worried to really enjoy it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Not very often. I can still chuckle if something is really funny, but most of the time the laughter just feels forced and fades fast."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I used to get excited about little things\u2014coffee with a friend, a walk, even a shower without interruption\u2014but lately it\u2019s like I have to push myself to care. I still do them, hoping I\u2019ll feel better, but the enjoyment is mostly gone. I\u2019m just going through the motions."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah... I do that a lot. If the baby won\u2019t settle or I can\u2019t get her to nap, I keep thinking it\u2019s because I\u2019m doing something wrong\u2014like I\u2019m not a good enough mom. Even when my husband says it\u2019s normal, I still feel it\u2019s my fault."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Pretty much every day. I\u2019ll be feeding her and suddenly imagine her choking, or I\u2019ll check if she\u2019s breathing a dozen times a night. Nothing specific sets it off\u2014my mind just spins with \u201cwhat-ifs,\u201d and I can\u2019t settle until I\u2019ve triple-checked everything."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes, yeah. It\u2019s like a tightness in my chest out of nowhere\u2014like I\u2019m bracing for something awful to happen, even when the room is quiet and the baby\u2019s fine. It passes if I pace or distract myself, but it keeps creeping back."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Yes, most days. It feels like the laundry, the feedings, the constant worrying\u2014all of it\u2014pile up faster than I can handle. I manage to get through the essentials, but I\u2019m running on empty and snapping at little things that never used to bother me."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah\u2026 I lie down exhausted, but my head keeps circling through everything I might\u2019ve messed up that day, or scary \u201cwhat-ifs\u201d about the baby. Some nights it takes me over an hour to drift off, and then I jolt awake at every tiny sound, checking the monitor again."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "Most of the time, honestly. It\u2019s like a heavy blanket I can\u2019t shake off\u2014I\u2019ll be holding the baby and tears just well up for no clear reason. Some afternoons everything feels gray, and even when I tell myself I should feel grateful, the sadness is right there."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, a few times this week. I\u2019ll be folding onesies or just staring at the mess in the living room and suddenly I\u2019m crying\u2014quietly so no one hears. It\u2019s not over anything big; it just spills out."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No\u2026 I haven\u2019t felt that. I\u2019m exhausted and overwhelmed, but I\u2019ve never thought about hurting myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0339,
+            "highlight": "\u2013  After a potentially traumatic event, the person may have PTSD if the symptoms  involve considerable dif\ufb01culty with daily functioning  for at least 1 month and  include recurring frightening dreams, \ufb02ashbacks or intrusive memories of the events accompanied by intense fear or horror; deliberate avoidance of reminders   of the event; excessive concern and alertness to danger or reacting strongly to   loud noises or unexpected movements.",
+            "excerpt": "ymptoms that include sleep disturbance, sadness, anxiety, irritation and aggression.\n \u2013  Such feelin...",
+            "relevance_explanation": "Some relevance: Contains terms \"intrusive\", \"daily\", \"symptoms\", and 1 more that have contextual connection to your query."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0278,
+            "highlight": "CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS   Assessment CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS 77 Are symptoms persistent, severe, and inappropriate for the   child/adolescent\u2019s developmental level: \u2013  Symptoms are present in different settings (e.g.",
+            "excerpt": "they are told, breaking rules, arguing, whining, \nexaggerating, saying things that aren\u2019t true, deny...",
+            "relevance_explanation": "Some relevance: Contains terms \"inappropriate\", \"persistent\", \"symptoms\", and 1 more that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 23: **Postpartum Depression / Anxiety Screening Note**\n\n**Patient-reported symptoms:**\n- Persistent low mood, frequent tearfulness, anhedonia\n- Marked loss of enjoyment in previously pleasurable activities\n- Daily, unexplained anxiety and panic-like episodes (chest tightness, intrusive \"what-ifs,\" repeated checking on infant)\n- Excessive, inappropriate guilt/blames self when baby is fussy; doubts maternal competence\n- Sleep-onset and maintenance problems driven by ruminating worries\n- Feeling overwhelmed, \"running on empty,\" irritability\n\n**Pattern:** Consistent with depressive and anxious distress emerging since delivery. No self-harm ideation reported.\n\n**Screening significance:** Elevated scores for depressive and anxiety symptoms common in postpartum mood disorders; no current safety concerns.\n\n**Next step:** Recommend formal clinical interview and use of standardized postpartum depression scale; consider referral for psychotherapy and/or medication evaluation as indicated.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0308
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.351681709289551,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.3588662147521973,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.355764865875244,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "Failed to parse JSON response, but screening completed.\n\n**Screening Impression:** Total EPDS Score: 23, Risk Level: Probable depression, urgent referral.\n\n**Reasoning:** Unable to parse detailed reasoning due to JSON error.\n\n**Recommended Next Steps/Support Options:**\n1. Consult a <med>mental health professional</med> for further evaluation.\n2. Contact a <med>primary care provider</med> if <sym>suicidal thoughts</sym> are present.\n\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_probable",
+    "question_count": 10,
+    "duration": 102269.08277630806,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0339,
+        "average_score": 0.0308,
+        "example_excerpt": "ymptoms that include sleep disturbance, sadness, anxiety, irritation and aggression.\n \u2013  Such feelin...",
+        "relevance_explanation": "Some relevance: Contains terms \"intrusive\", \"daily\", \"symptoms\", and 1 more that have contextual connection to your query."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}

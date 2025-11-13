@@ -1,0 +1,219 @@
+{
+  "timestamp": "2025-10-08T10:16:43.290519",
+  "questionnaire": "epds_questionnaire.txt",
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello, I\u2019m so glad you\u2019re here. I\u2019m [Your Name], a perinatal mental-health clinician, and my job is simply to listen and help you feel supported in these early weeks of motherhood. Over the next few minutes we\u2019ll use a short tool called the **Edinburgh Postnatal Depression Scale (EPDS)**\u2014a 10-question check-in designed for new moms to see how you\u2019ve been feeling emotionally and physically in the past seven days. Everything you share stays between us unless you tell me something that makes me worry about your immediate safety, and then we\u2019ll talk together about the next steps. There are no right or wrong answers; we just want to understand how you\u2019re doing so we can offer the best care. Ready to start?  \n\nHere\u2019s the first question, and I\u2019ll keep it conversational:  \nOver the past week, have you still been able to enjoy the little things that used to make you smile, or has that sense of enjoyment slipped away?"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I\u2019ve still been able to enjoy the little things. Like, when the baby gives me one of those sleepy grins or when I get ten quiet minutes to sip my coffee while she naps\u2014those moments still feel good."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been able to laugh and see the funny side of things"
+    },
+    {
+      "role": "patient",
+      "content": "Yeah, I still laugh\u2014maybe not as loudly or as often as before I had the baby, but when my partner makes a goofy face while he\u2019s changing her diaper, I can\u2019t help but crack up."
+    },
+    {
+      "role": "assistant",
+      "content": "I have looked forward with enjoyment to things"
+    },
+    {
+      "role": "patient",
+      "content": "I do look forward to stuff\u2014like our morning stroller walk to the coffee shop or putting on a podcast I like during her nap. They\u2019re small things, but they still feel nice to anticipate."
+    },
+    {
+      "role": "assistant",
+      "content": "I have blamed myself unnecessarily when things went wrong"
+    },
+    {
+      "role": "patient",
+      "content": "Not really. If she spits up a bunch or won\u2019t settle, I figure it\u2019s just part of having a newborn, not something I did wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been anxious or worried for no good reason"
+    },
+    {
+      "role": "patient",
+      "content": "Sometimes I catch myself listening extra-hard to her breathing at night, just to be sure she\u2019s okay, but it\u2019s not constant or anything. I wouldn\u2019t say I\u2019m worried for \u201cno good reason\u201d\u2014it feels pretty normal mom stuff."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt scared or panicky for no very good reason"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t felt that way. I get a little jumpy if she coughs suddenly or there\u2019s a loud noise while she\u2019s sleeping, but it\u2019s not the same as being scared or panicky\u2014just the usual startle you\u2019d expect."
+    },
+    {
+      "role": "assistant",
+      "content": "Things have been getting on top of me"
+    },
+    {
+      "role": "patient",
+      "content": "Most days I\u2019ve got it under control. If the laundry piles up or she has a fussy stretch, I just tackle one thing at a time and it works out."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have had difficulty sleeping"
+    },
+    {
+      "role": "patient",
+      "content": "No, I\u2019ve actually been sleeping pretty well\u2014she gives me one four-hour stretch most nights, and once I\u2019m back in bed I drift off easily. I don\u2019t feel unhappy enough for it to mess with my sleep."
+    },
+    {
+      "role": "assistant",
+      "content": "I have felt sad or miserable"
+    },
+    {
+      "role": "patient",
+      "content": "I really haven\u2019t felt sad or miserable. Tired, sure, but overall my mood\u2019s been steady and pretty positive."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been so unhappy that I have been crying"
+    },
+    {
+      "role": "patient",
+      "content": "No, I haven\u2019t had those kinds of tears. I might get a little teary-eyed when a sappy commercial comes on, but it\u2019s over fast and it doesn\u2019t feel like real crying."
+    },
+    {
+      "role": "assistant",
+      "content": "The thought of harming myself has occurred to me"
+    },
+    {
+      "role": "patient",
+      "content": "No, not at all\u2014I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "You shared that most days feel manageable and you still find joy in small moments like your baby's sleepy smiles or a quiet cup of coffee. You experience normal new-mom vigilance but no persistent sadness, guilt, or panic, and you are sleeping whenever your baby gives you a stretch.\n**Screening Impression:** Total EPDS Score: 3, Risk Level: Depression not likely\n**Reasoning:** EPDS items scored 0-1, well below the 9-point threshold for concern, with no endorsed <sym>anhedonia</sym>, <sym>excessive guilt</sym>, <sym>tearfulness</sym>, or <sym>sleep disruption due to mood</sym>. These findings do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum visits and re-screen with EPDS at the next check-up or sooner if mood changes\n2. Keep engaging in enjoyable daily activities and accept help with chores to preserve rest\n3. Use reliable infant-safe sleep practices to sustain current good sleep stretches\n4. Reach out promptly if you notice persistent low mood, excessive worry, or scary thoughts\n5. Share these results with your <med>obstetrician</med> or <med>primary care provider</med> so they remain informed of your emotional well-being\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+      "rag_usage": {
+        "documents": [
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.0721,
+            "highlight": "OPIOID AGONISTS To treat opioid withdrawal and dependenceMethadone Opioid withdrawal: Methadone initial dose   20 mg, with a supplemental dose of 5-10 mg  4 hours later if necessary.",
+            "excerpt": "mg i.v., i.m., subcutaneous or intranasal. Repeat doses as needed.Discomfort or withdrawal symptoms ...",
+            "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+          },
+          {
+            "title": "PPD_Guidelines copy.pdf",
+            "score": 0.07,
+            "highlight": "\u00bb  Clonidine or Lofexidine: If opioid substitution medications are not available, clonidine or  lofexidine can be used to manage some opioid withdrawal symptoms, namely hyperarousal.",
+            "excerpt": "s.\u00bb  Methadone: Methadone is given orally at an initial dose of 15-20 mg, increasing, if \nnecessary,...",
+            "relevance_explanation": "Some relevance: Contains terms \"symptoms\" that have contextual connection to your query."
+          }
+        ],
+        "stats": {
+          "query": "postpartum depression screening impression for patient with EPDS score 3: Postpartum Depression Screening Note (Edinburgh Postnatal Depression Scale \u2013 patient self-report)\n\nIdentified symptoms/concerns  \n- None endorsed: persistent low mood, anhedonia, excessive guilt, crying spells, sleep disruption secondary to mood, panic, or self-harm ideation.  \n- Mild, situation-appropriate vigilance about infant safety (nocturnal breathing checks, startle to cough/noise); patient attributes this to \u201cnormal mom stuff.\u201d\n\nPattern  \nConsistent absence of affective, cognitive, or physiological indicators suggestive of major postpartum mood disorder. Patient reports stable, positive mood and intact enjoyment of daily activities despite typical post-delivery fatigue.\n\nScreening significance  \nCurrent responses place patient in low-risk range for postpartum depression and anxiety; no items scored in clinical concern zone. No safety issues identified.\n\nSummary  \nScreening reveals no evidence of significant postpartum depressive or anxiety symptoms at this time; no further risk flags noted. Continue routine perinatal follow-up and re-screen at next scheduled visit or sooner if clinical picture changes.",
+          "results_count": 2,
+          "requested_count": 5,
+          "avg_score": 0.0711
+        },
+        "count": 2,
+        "evaluation": {
+          "contextual_relevancy": {
+            "metric": "contextual_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.376357316970825,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "faithfulness": {
+            "metric": "faithfulness",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.348345994949341,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "answer_relevancy": {
+            "metric": "answer_relevancy",
+            "score": 0.5,
+            "passed": false,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "threshold": 0.7,
+            "evaluation_time": 2.354032278060913,
+            "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+          },
+          "average_score": 0.5
+        }
+      }
+    }
+  ],
+  "diagnosis": "You shared that most days feel manageable and you still find joy in small moments like your baby's sleepy smiles or a quiet cup of coffee. You experience normal new-mom vigilance but no persistent sadness, guilt, or panic, and you are sleeping whenever your baby gives you a stretch.\n**Screening Impression:** Total EPDS Score: 3, Risk Level: Depression not likely\n**Reasoning:** EPDS items scored 0-1, well below the 9-point threshold for concern, with no endorsed <sym>anhedonia</sym>, <sym>excessive guilt</sym>, <sym>tearfulness</sym>, or <sym>sleep disruption due to mood</sym>. These findings do not meet <med>DSM-5 criteria for Major Depressive Disorder with Peripartum Onset</med>. This is a screening tool, not a diagnosis. Consult a doctor for medical advice.\n**Recommended Next Steps/Support Options:**\n1. Continue routine postpartum visits and re-screen with EPDS at the next check-up or sooner if mood changes\n2. Keep engaging in enjoyable daily activities and accept help with chores to preserve rest\n3. Use reliable infant-safe sleep practices to sustain current good sleep stretches\n4. Reach out promptly if you notice persistent low mood, excessive worry, or scary thoughts\n5. Share these results with your <med>obstetrician</med> or <med>primary care provider</med> so they remain informed of your emotional well-being\nDisclaimer: This is a screening tool, not a diagnosis. Consult a doctor for medical advice.",
+  "metadata": {
+    "assistant_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_model": "moonshotai/kimi-k2-instruct-0905",
+    "patient_profile": "ppd_low",
+    "question_count": 10,
+    "duration": 14017.645547866821,
+    "full_conversation": false
+  },
+  "rag_summary": {
+    "total_rag_queries": 1,
+    "total_documents_accessed": 2,
+    "documents_accessed": {
+      "PPD_Guidelines copy.pdf": {
+        "access_count": 2,
+        "highest_score": 0.0721,
+        "average_score": 0.0711,
+        "example_excerpt": "mg i.v., i.m., subcutaneous or intranasal. Repeat doses as needed.Discomfort or withdrawal symptoms ...",
+        "relevance_explanation": "Included based on broader contextual relevance to your query topic."
+      }
+    },
+    "rag_disabled": false,
+    "evaluation_metrics": {
+      "contextual_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "faithfulness": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "answer_relevancy": {
+        "total_score": 0.5,
+        "count": 1,
+        "reasons": [
+          {
+            "score": 0.5,
+            "reason": "Evaluation error: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+            "passed": false
+          }
+        ],
+        "average_score": 0.5
+      },
+      "overall": {
+        "total_score": 0.5,
+        "count": 1,
+        "average_score": 0.5
+      }
+    }
+  }
+}
