@@ -132,24 +132,11 @@ class RAGEngine:
         """Load questionnaires from the questionnaire directory."""
         questionnaire_map = {}
         
-        # Default EPDS questions as fallback
-        default_epds_questions = [
-            "I have been able to laugh and see the funny side of things",
-            "I have looked forward with enjoyment to things",
-            "I have blamed myself unnecessarily when things went wrong",
-            "I have been anxious or worried for no good reason",
-            "I have felt scared or panicky for no very good reason",
-            "Things have been getting on top of me",
-            "I have been so unhappy that I have had difficulty sleeping",
-            "I have felt sad or miserable",
-            "I have been so unhappy that I have been crying",
-            "The thought of harming myself has occurred to me"
-        ]
-        
         print(f"Loading questionnaires from {self.questionnaire_dir}")
         
         if self.questionnaire_dir == self.documents_dir:
             # If using the same directory, we've already processed these documents
+            # Just extract questions from what we have
             if '.pdf' in self.document_map:
                 for document in self.document_map['.pdf']:
                     questions = extract_questions_from_text(document.content)
@@ -157,9 +144,6 @@ class RAGEngine:
                     print(f"  - {filename}: Found {len(questions)} questions")
                     if questions:
                         questionnaire_map[filename] = questions
-                    else:
-                        print(f"  - {filename}: No questions found, using default EPDS questions")
-                        questionnaire_map[filename] = default_epds_questions
         else:
             # Process the questionnaire directory separately
             questionnaire_docs = process_documents_directory(self.questionnaire_dir)
@@ -172,14 +156,32 @@ class RAGEngine:
                     print(f"  - {filename}: Found {len(questions)} questions")
                     if questions:
                         questionnaire_map[filename] = questions
-                    else:
-                        print(f"  - {filename}: No questions found, using default EPDS questions")
-                        questionnaire_map[filename] = default_epds_questions
         
-        # If no questionnaires found, use default EPDS questions
-        if not questionnaire_map:
-            print("RAGEngine: No questionnaires detected. Using default EPDS questions.")
-            questionnaire_map["default_epds"] = default_epds_questions
+        # If no questionnaires found but we have documents, try to create placeholder questions
+        if not questionnaire_map and self.document_map:
+            for ext, docs in self.document_map.items():
+                if docs:
+                    # Get first document
+                    doc = docs[0]
+                    filename = doc.metadata.get('filename', 'Unknown')
+                    
+                    # Create some default questions if we can't extract them
+                    print(f"No questions detected in {filename}. Creating default questions.")
+                    
+                    # Split content into chunks and turn them into basic questions
+                    content = doc.content
+                    chunks = [content[i:i+200].replace("\n", " ").strip() 
+                             for i in range(0, min(len(content), 2000), 200)]
+                    
+                    questions = []
+                    for i, chunk in enumerate(chunks, 1):
+                        if chunk:
+                            # Create a question from the chunk
+                            questions.append(f"Question {i}: Based on this text: '{chunk}', how do you feel?")
+                    
+                    if questions:
+                        questionnaire_map[filename] = questions
+                        break
         
         return questionnaire_map
     

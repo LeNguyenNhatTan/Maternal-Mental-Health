@@ -879,7 +879,7 @@ def main():
     if args.batch and args.batch > 0:
         # Initialize RAG engine
         print("Initializing RAG engine and processing documents...")
-        rag_engine = None if args.disable_rag else RAGEngine(args.docs_dir)
+        rag_engine = None if args.disable_rag else RAGEngine(args.docs_dir,questionnaire_dir=args.questionnaires_dir)
         
         # Print a status message about loading questions
         print(f"Loading questions for batch processing...")

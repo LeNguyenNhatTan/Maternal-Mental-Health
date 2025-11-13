@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from main import main
 
-
+os.environ['GROQ_API_KEY'] =  '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'
 
 if __name__ == "__main__":
     # Test English audio mode with EPDS
@@ -21,7 +21,10 @@ if __name__ == "__main__":
 
         # '--patient_model','llama-3.3-70b-versatile',
         '--patient_model','openai/gpt-oss-120b',
-        '--patient_provider','groq'
-    ]
+        '--patient_provider','groq',
+
+        '--batch','1',
+        '--randomize-profiles',
+        ]
     print("Running test...")
     main()
